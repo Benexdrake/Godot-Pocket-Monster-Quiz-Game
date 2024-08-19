@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dnamojxxxtkte"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/vignette.gdshader" id="1_ernfl"]
+
+[resource]
+shader = ExtResource("1_ernfl")
+shader_parameter/vignette_intensity = 0.6
+shader_parameter/vignette_opacity = 0.329
+shader_parameter/vignette_rgb = Color(0, 0, 0, 1)

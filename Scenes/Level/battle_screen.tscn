@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ygbtmx3rkxhw"]
+
+[ext_resource type="Script" path="res://Scripts/Level/battle_screen.gd" id="1_qsitc"]
+
+[node name="BattleScreen" type="Node"]
+script = ExtResource("1_qsitc")

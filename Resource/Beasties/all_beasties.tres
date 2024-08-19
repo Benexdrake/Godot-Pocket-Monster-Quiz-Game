@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://ciniiejnepy55"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/Beasties/all_beasties.gd" id="1_35nj0"]
+
+[resource]
+script = ExtResource("1_35nj0")

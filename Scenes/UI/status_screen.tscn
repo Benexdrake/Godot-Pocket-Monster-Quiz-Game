@@ -1,0 +1,799 @@
+[gd_scene load_steps=8 format=3 uid="uid://b8n835sy3yfmu"]
+
+[ext_resource type="Script" path="res://Scripts/UI/status_screen.gd" id="1_vh6ti"]
+[ext_resource type="Texture2D" uid="uid://dsphvkuspr68m" path="res://Assets/Background/fire_background.jpg" id="2_gahxq"]
+[ext_resource type="Texture2D" uid="uid://cos0jbvimve7t" path="res://Assets/Beasties/2.png" id="3_k2uuj"]
+[ext_resource type="PackedScene" uid="uid://ct85uhd6hy7mo" path="res://Scenes/UI/sound_button.tscn" id="4_yat6n"]
+[ext_resource type="PackedScene" uid="uid://dujgwpibibjgl" path="res://Scenes/UI/vignette.tscn" id="5_eu2ut"]
+[ext_resource type="Texture2D" uid="uid://04556h6rsxbe" path="res://Assets/Beasties/Status/stat1.png" id="5_ey66m"]
+[ext_resource type="Texture2D" uid="uid://c063f11jylvgl" path="res://Assets/Beasties/Status/stat2.png" id="6_uc221"]
+
+[node name="StatusScreen" type="CanvasLayer"]
+script = ExtResource("1_vh6ti")
+stat_full = ExtResource("6_uc221")
+stat_empty = ExtResource("5_ey66m")
+
+[node name="BackgroundTextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_gahxq")
+
+[node name="Vignette" parent="." instance=ExtResource("5_eu2ut")]
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(0, 30)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 1.0
+value = 0.5
+show_percentage = false
+
+[node name="ImageMarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -550.0
+offset_top = -145.0
+offset_bottom = 417.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_bottom = 12
+
+[node name="MarginContainer" type="MarginContainer" parent="ImageMarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 48
+
+[node name="ShadowImage" type="TextureRect" parent="ImageMarginContainer/MarginContainer"]
+unique_name_in_owner = true
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+texture = ExtResource("3_k2uuj")
+
+[node name="BeastieImage" type="TextureRect" parent="ImageMarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(550, 550)
+layout_mode = 2
+texture = ExtResource("3_k2uuj")
+
+[node name="NameMarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -345.0
+offset_top = 64.0
+offset_right = 345.0
+offset_bottom = 287.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="BeastieNameLabel" type="Label" parent="NameMarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 24
+theme_override_font_sizes/font_size = 128
+text = "Glumanda"
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[node name="EXPMarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -318.0
+offset_top = -120.0
+offset_right = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 28
+
+[node name="EXPLabel" type="Label" parent="EXPMarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "10/20 EXP"
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[node name="InformationPanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(800, 0)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -252.0
+offset_top = -237.0
+offset_right = 548.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="InformationPanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="BeastieInformationLabel" type="Label" parent="InformationPanelContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "sss"
+autowrap_mode = 2
+
+[node name="StatusPanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -500.0
+offset_right = 668.0
+offset_bottom = -30.0
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="StatusPanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StatusPanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="HPMarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="HPVBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="TextureRect" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect10" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect11" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect12" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect13" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect14" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect15" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect7" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect8" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect9" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect4" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect5" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect6" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect2" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect3" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/HPVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="MarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="Label" type="Label" parent="StatusPanelContainer/MarginContainer/HBoxContainer/HPMarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "HP"
+horizontal_alignment = 1
+
+[node name="AttackMarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="AttackVBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="TextureRect" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect10" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect11" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect12" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect13" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect14" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect15" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect7" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect8" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect9" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect4" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect5" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect6" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect2" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect3" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/AttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="MarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatusPanelContainer/MarginContainer/HBoxContainer/AttackMarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "Attack"
+horizontal_alignment = 1
+
+[node name="DefenseMarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="DefenseVBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="TextureRect" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect10" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect11" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect12" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect13" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect14" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect15" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect7" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect8" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect9" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect4" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect5" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect6" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect2" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect3" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/DefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="MarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatusPanelContainer/MarginContainer/HBoxContainer/DefenseMarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "Defense"
+horizontal_alignment = 1
+
+[node name="SPAttackMarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="SPAttackVBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="TextureRect" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect10" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect11" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect12" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect13" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect14" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect15" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect7" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect8" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect9" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect4" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect5" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect6" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect2" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect3" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/SPAttackVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="MarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPAttackMarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "Sp-Ang."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="SPDefenseMarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="SPDefenseVBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="TextureRect" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect10" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect11" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect12" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect13" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect14" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect15" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect7" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect8" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect9" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect4" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect5" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect6" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect2" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect3" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/SPDefenseVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="MarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SPDefenseMarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "Sp-Vert."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="SpeedMarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="SpeedVBoxContainer" type="VBoxContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="TextureRect" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect10" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect11" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect12" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect13" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect14" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect15" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect7" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect8" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect9" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect4" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect5" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("5_ey66m")
+
+[node name="TextureRect6" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect2" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="TextureRect3" type="TextureRect" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/SpeedVBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+texture = ExtResource("6_uc221")
+
+[node name="MarginContainer" type="MarginContainer" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatusPanelContainer/MarginContainer/HBoxContainer/SpeedMarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "Speed"
+horizontal_alignment = 1
+
+[node name="BackButton" parent="." instance=ExtResource("4_yat6n")]
+offset_left = 2.0
+offset_right = 152.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 32
+text = "Back"
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(300, 200)
+offset_top = 304.0
+offset_right = 522.0
+offset_bottom = 548.0
+
+[node name="TypesWeaknessesMarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/TypesWeaknessesMarginContainer"]
+layout_mode = 2
+
+[node name="TypeMarginContainer" type="MarginContainer" parent="PanelContainer/TypesWeaknessesMarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/TypesWeaknessesMarginContainer/VBoxContainer/TypeMarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/TypesWeaknessesMarginContainer/VBoxContainer/TypeMarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Type"
+
+[node name="TypeHBoxContainer" type="HBoxContainer" parent="PanelContainer/TypesWeaknessesMarginContainer/VBoxContainer/TypeMarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TypeMarginContainer2" type="MarginContainer" parent="PanelContainer/TypesWeaknessesMarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/TypesWeaknessesMarginContainer/VBoxContainer/TypeMarginContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/TypesWeaknessesMarginContainer/VBoxContainer/TypeMarginContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Weaknesses"
+
+[node name="WeaknessHBoxContainer" type="HBoxContainer" parent="PanelContainer/TypesWeaknessesMarginContainer/VBoxContainer/TypeMarginContainer2/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 12

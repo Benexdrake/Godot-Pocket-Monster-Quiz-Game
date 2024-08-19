@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgitl7pxop45y"]
+
+[ext_resource type="Script" path="res://Scripts/UI/level_select_screen.gd" id="1_jwp0s"]
+[ext_resource type="Texture2D" uid="uid://bew2xsgd5xyo3" path="res://Assets/Background/LevelSelectScreen.jpg" id="2_5d6g1"]
+[ext_resource type="PackedScene" uid="uid://dujgwpibibjgl" path="res://Scenes/UI/vignette.tscn" id="3_ilroy"]
+
+[node name="LevelSelectScreen" type="CanvasLayer"]
+script = ExtResource("1_jwp0s")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5d6g1")
+
+[node name="Vignette" parent="." instance=ExtResource("3_ilroy")]

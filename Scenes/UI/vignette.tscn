@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dujgwpibibjgl"]
+
+[ext_resource type="Script" path="res://Scripts/UI/vignette.gd" id="1_avi3b"]
+[ext_resource type="Material" uid="uid://dnamojxxxtkte" path="res://Assets/Shaders/vignette.tres" id="2_ns5rg"]
+
+[node name="Vignette" type="CanvasLayer"]
+layer = 2
+script = ExtResource("1_avi3b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = ExtResource("2_ns5rg")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

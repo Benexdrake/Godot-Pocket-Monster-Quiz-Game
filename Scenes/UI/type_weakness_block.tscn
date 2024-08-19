@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd7v4j06xh3dd"]
+
+[ext_resource type="Script" path="res://Scripts/UI/type_weakness_block.gd" id="1_bkmy4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qr6q1"]
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.103744, 0.103744, 0.103743, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="TypeWeaknessBlock" type="PanelContainer"]
+custom_minimum_size = Vector2(150, 0)
+offset_right = 200.0
+offset_bottom = 58.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qr6q1")
+script = ExtResource("1_bkmy4")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+text = "Fire"
+horizontal_alignment = 1

@@ -1,0 +1,505 @@
+[
+	{
+		"nr": 1,
+		"name": "Bulbasaur",
+		"image_front": "res://Assets/Beasties/1.png",
+		"image_back": "back",
+		"descriptions": [
+			"While it is young, it uses the nutrients that are stored in the seed on its back in order to grow.",
+			"There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger."
+		],
+		"height": "2' 04\"",
+		"category": "Seed",
+		"weight": "15.2 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weaknesses": [
+			"Fire",
+			"Psychic",
+			"Flying",
+			"Ice"
+		],
+		"hp": 3,
+		"attack": 3,
+		"defense": 3,
+		"specialAttack": 4,
+		"specialDefense": 4,
+		"speed": 3
+	},
+	{
+		"nr": 2,
+		"name": "Ivysaur",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger.",
+			"When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
+		],
+		"height": "3' 03\"",
+		"category": "Seed",
+		"weight": "28.7 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weaknesses": [
+			"Fire",
+			"Psychic",
+			"Flying",
+			"Ice"
+		],
+		"hp": 4,
+		"attack": 4,
+		"defense": 4,
+		"specialAttack": 5,
+		"specialDefense": 5,
+		"speed": 4
+	},
+	{
+		"nr": 3,
+		"name": "Venusaur",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"A bewitching aroma wafts from its flower. The fragrance becalms those engaged in a battle.",
+			"Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
+		],
+		"height": "6' 07\"",
+		"category": "Seed",
+		"weight": "220.5 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weaknesses": [
+			"Fire",
+			"Psychic",
+			"Flying",
+			"Ice"
+		],
+		"hp": 5,
+		"attack": 5,
+		"defense": 5,
+		"specialAttack": 6,
+		"specialDefense": 6,
+		"speed": 5
+	},
+	{
+		"nr": 3,
+		"name": "Mega Venusaur",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"In order to support its flower, which has grown larger due to Mega Evolution, its back and legs have become stronger.",
+			"In order to support its flower, which has grown larger due to Mega Evolution, its back and legs have become stronger."
+		],
+		"height": "7' 10\"",
+		"category": "Seed",
+		"weight": "342.8 lbs",
+		"genders": [
+			"unknown"
+		],
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weaknesses": [
+			"Fire",
+			"Psychic",
+			"Flying",
+			"Ice"
+		],
+		"hp": 5,
+		"attack": 6,
+		"defense": 8,
+		"specialAttack": 8,
+		"specialDefense": 8,
+		"speed": 5
+	},
+	{
+		"nr": 3,
+		"name": "Gigantamax Venusaur",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"Huge amounts of pollen burst from it with the force of a volcanic eruption. Breathing in too much of the pollen can cause fainting.",
+			"In battle, this Pokémon swings around two thick vines. If these vines slammed into a 10-story building, they could easily topple it."
+		],
+		"height": "78' 09\"",
+		"category": "Seed",
+		"weight": "????.? lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weaknesses": [
+			"Fire",
+			"Psychic",
+			"Flying",
+			"Ice"
+		],
+		"hp": 5,
+		"attack": 5,
+		"defense": 5,
+		"specialAttack": 6,
+		"specialDefense": 6,
+		"speed": 5
+	},
+	{
+		"nr": 4,
+		"name": "Charmander",
+		"image_front": "res://Assets/Beasties/2.png",
+		"image_back": "back",
+		"descriptions": [
+			"From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
+			"It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail."
+		],
+		"height": "2' 00\"",
+		"category": "Lizard",
+		"weight": "18.7 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Fire"
+		],
+		"weaknesses": [
+			"Water",
+			"Ground",
+			"Rock"
+		],
+		"hp": 3,
+		"attack": 4,
+		"defense": 3,
+		"specialAttack": 4,
+		"specialDefense": 3,
+		"speed": 4
+	},
+	{
+		"nr": 5,
+		"name": "Charmeleon",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"If it becomes agitated during battle, it spouts intense flames, incinerating its surroundings.",
+			"It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws."
+		],
+		"height": "3' 07\"",
+		"category": "Flame",
+		"weight": "41.9 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Fire"
+		],
+		"weaknesses": [
+			"Water",
+			"Ground",
+			"Rock"
+		],
+		"hp": 4,
+		"attack": 4,
+		"defense": 4,
+		"specialAttack": 5,
+		"specialDefense": 4,
+		"speed": 5
+	},
+	{
+		"nr": 6,
+		"name": "Charizard",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"It is said that Charizard’s fire burns hotter if it has experienced harsh battles.",
+			"It is said that Charizard’s fire burns hotter if it has experienced harsh battles."
+		],
+		"height": "5' 07\"",
+		"category": "Flame",
+		"weight": "199.5 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Fire",
+			"Flying"
+		],
+		"weaknesses": [
+			"Water",
+			"Electric",
+			"Rock"
+		],
+		"hp": 5,
+		"attack": 5,
+		"defense": 5,
+		"specialAttack": 7,
+		"specialDefense": 5,
+		"speed": 6
+	},
+	{
+		"nr": 6,
+		"name": "Mega Charizard X",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"The overwhelming power that fills its entire body causes it to turn black and creates intense blue flames.",
+			"The overwhelming power that fills its entire body causes it to turn black and creates intense blue flames."
+		],
+		"height": "5' 07\"",
+		"category": "Flame",
+		"weight": "243.6 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Fire",
+			"Dragon"
+		],
+		"weaknesses": [
+			"Ground",
+			"Rock",
+			"Dragon"
+		],
+		"hp": 5,
+		"attack": 8,
+		"defense": 7,
+		"specialAttack": 8,
+		"specialDefense": 5,
+		"speed": 6
+	},
+	{
+		"nr": 6,
+		"name": "Mega Charizard Y",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"Its bond with its Trainer is the source of its power. It boasts speed and maneuverability greater than that of a jet fighter.",
+			"Its bond with its Trainer is the source of its power. It boasts speed and maneuverability greater than that of a jet fighter."
+		],
+		"height": "5' 07\"",
+		"category": "Flame",
+		"weight": "221.6 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Fire",
+			"Flying"
+		],
+		"weaknesses": [
+			"Water",
+			"Electric",
+			"Rock"
+		],
+		"hp": 5,
+		"attack": 7,
+		"defense": 5,
+		"specialAttack": 10,
+		"specialDefense": 7,
+		"speed": 6
+	},
+	{
+		"nr": 6,
+		"name": "Gigantamax Charizard",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"The flame inside its body burns hotter than 3,600 degrees Fahrenheit. When Charizard roars, that temperature climbs even higher.",
+			"This colossal, flame-winged figure of a Charizard was brought about by Gigantamax energy."
+		],
+		"height": "91' 10\"",
+		"category": "Flame",
+		"weight": "????.? lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Fire",
+			"Flying"
+		],
+		"weaknesses": [
+			"Water",
+			"Electric",
+			"Rock"
+		],
+		"hp": 5,
+		"attack": 5,
+		"defense": 5,
+		"specialAttack": 7,
+		"specialDefense": 5,
+		"speed": 6
+	},
+	{
+		"nr": 7,
+		"name": "Squirtle",
+		"image_front": "res://Assets/Beasties/3.png",
+		"image_back": "back",
+		"descriptions": [
+			"When it feels threatened, it draws its limbs inside its shell and sprays water from its mouth.",
+			"When it retracts its long neck into its shell, it squirts out water with vigorous force."
+		],
+		"height": "1' 08\"",
+		"category": "Tiny Turtle",
+		"weight": "19.8 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Water"
+		],
+		"weaknesses": [
+			"Grass",
+			"Electric"
+		],
+		"hp": 3,
+		"attack": 3,
+		"defense": 4,
+		"specialAttack": 3,
+		"specialDefense": 4,
+		"speed": 3
+	},
+	{
+		"nr": 8,
+		"name": "Wartortle",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"It cleverly controls its furry ears and tail to maintain its balance while swimming.",
+			"It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old."
+		],
+		"height": "3' 03\"",
+		"category": "Turtle",
+		"weight": "49.6 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Water"
+		],
+		"weaknesses": [
+			"Grass",
+			"Electric"
+		],
+		"hp": 4,
+		"attack": 4,
+		"defense": 5,
+		"specialAttack": 4,
+		"specialDefense": 5,
+		"speed": 4
+	},
+	{
+		"nr": 9,
+		"name": "Blastoise",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"The rocket cannons on its shell fire jets of water capable of punching holes through thick steel.",
+			"It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell."
+		],
+		"height": "5' 03\"",
+		"category": "Shellfish",
+		"weight": "188.5 lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Water"
+		],
+		"weaknesses": [
+			"Grass",
+			"Electric"
+		],
+		"hp": 5,
+		"attack": 5,
+		"defense": 6,
+		"specialAttack": 5,
+		"specialDefense": 7,
+		"speed": 5
+	},
+	{
+		"nr": 9,
+		"name": "Mega Blastoise",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"The cannon on its back is as powerful as a tank gun. Its tough legs and back enable it to withstand the recoil from firing the cannon.",
+			"The cannon on its back is as powerful as a tank gun. Its tough legs and back enable it to withstand the recoil from firing the cannon."
+		],
+		"height": "5' 03\"",
+		"category": "Shellfish",
+		"weight": "222.9 lbs",
+		"genders": [
+			"unknown"
+		],
+		"types": [
+			"Water"
+		],
+		"weaknesses": [
+			"Grass",
+			"Electric"
+		],
+		"hp": 5,
+		"attack": 7,
+		"defense": 8,
+		"specialAttack": 8,
+		"specialDefense": 7,
+		"speed": 5
+	},
+	{
+		"nr": 9,
+		"name": "Gigantamax Blastoise",
+		"image_front": "front",
+		"image_back": "back",
+		"descriptions": [
+			"Water fired from this Pokémon’s central main cannon has enough power to blast a hole into a mountain.",
+			"It’s not very good at precision shooting. When attacking, it just fires its 31 cannons over and over and over."
+		],
+		"height": "82' 00\"",
+		"category": "Shellfish",
+		"weight": "????.? lbs",
+		"genders": [
+			"male",
+			"female"
+		],
+		"types": [
+			"Water"
+		],
+		"weaknesses": [
+			"Grass",
+			"Electric"
+		],
+		"hp": 5,
+		"attack": 5,
+		"defense": 6,
+		"specialAttack": 5,
+		"specialDefense": 7,
+		"speed": 5
+	}
+]

@@ -1,0 +1,105 @@
+[gd_scene load_steps=6 format=3 uid="uid://dyp0tjia14ns4"]
+
+[ext_resource type="PackedScene" uid="uid://ct85uhd6hy7mo" path="res://Scenes/UI/sound_button.tscn" id="1_bylcn"]
+[ext_resource type="Script" path="res://Scripts/UI/options_menu.gd" id="1_y2fh8"]
+[ext_resource type="PackedScene" uid="uid://dujgwpibibjgl" path="res://Scenes/UI/vignette.tscn" id="2_o8ha6"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_0nmdx"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_70vrs"]
+noise = SubResource("FastNoiseLite_0nmdx")
+
+[node name="OptionsMenu" type="CanvasLayer"]
+script = ExtResource("1_y2fh8")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color(0.0509804, 0.243137, 0.560784, 0.486275)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("NoiseTexture2D_70vrs")
+expand_mode = 1
+
+[node name="Vignette" parent="." instance=ExtResource("2_o8ha6")]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(400, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -199.0
+offset_top = -154.0
+offset_right = 201.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="MusicContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/MusicContainer"]
+layout_mode = 2
+text = "Music:"
+
+[node name="MusicProgressBar" type="HSlider" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/MusicContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+max_value = 1.0
+step = 0.1
+value = 0.5
+
+[node name="SFXContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/SFXContainer"]
+layout_mode = 2
+text = "SFX:"
+
+[node name="SFXProgressBar" type="HSlider" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/SFXContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="SFXContainer2" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/SFXContainer2"]
+layout_mode = 2
+text = "Fullscreen Mode:"
+
+[node name="CheckBox" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer/SFXContainer2"]
+layout_mode = 2
+
+[node name="BackButton" parent="PanelContainer/MarginContainer/VBoxContainer2" instance=ExtResource("1_bylcn")]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back"
+
+[node name="QuitButton" parent="PanelContainer/MarginContainer/VBoxContainer2" instance=ExtResource("1_bylcn")]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit"

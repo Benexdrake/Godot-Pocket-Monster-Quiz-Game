@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://ct85uhd6hy7mo"]
+
+[ext_resource type="Script" path="res://Scripts/UI/sound_button.gd" id="1_y5bwm"]
+[ext_resource type="AudioStream" uid="uid://c7occd0rgc7r3" path="res://Assets/SFX/10_UI_Menu_SFX/001_Hover_01.wav" id="2_hkgqt"]
+[ext_resource type="AudioStream" uid="uid://cxeskv57cvmjb" path="res://Assets/SFX/10_UI_Menu_SFX/013_Confirm_03.wav" id="3_g15c0"]
+
+[node name="SoundButton" type="Button"]
+offset_right = 6.0
+offset_bottom = 6.0
+text = "Button"
+script = ExtResource("1_y5bwm")
+hover = ExtResource("2_hkgqt")
+press = ExtResource("3_g15c0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

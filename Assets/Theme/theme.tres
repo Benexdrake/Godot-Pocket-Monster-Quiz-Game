@@ -1,0 +1,108 @@
+[gd_resource type="Theme" load_steps=21 format=3 uid="uid://smp3kudg03ba"]
+
+[ext_resource type="Texture2D" uid="uid://8gpf7lmiec7" path="res://Assets/Theme/ui.png" id="1_bjkfw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eygtj"]
+modulate_color = Color(0.129558, 0.129558, 0.129558, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h81aq"]
+texture = ExtResource("1_bjkfw")
+texture_margin_left = 5.0
+texture_margin_top = 6.0
+texture_margin_right = 5.0
+texture_margin_bottom = 3.0
+region_rect = Rect2(16, 0, 16, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y3qle"]
+texture = ExtResource("1_bjkfw")
+texture_margin_left = 5.0
+texture_margin_top = 6.0
+texture_margin_right = 5.0
+texture_margin_bottom = 3.0
+region_rect = Rect2(16, 0, 16, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_son1h"]
+texture = ExtResource("1_bjkfw")
+texture_margin_left = 5.0
+texture_margin_top = 6.0
+texture_margin_right = 5.0
+texture_margin_bottom = 3.0
+region_rect = Rect2(0, 0, 16, 16)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nbuyr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_taosm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4q66j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n77xn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_82bns"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2n3q8"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_k2le6"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_jyij1"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_8t0gn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k7jlo"]
+bg_color = Color(7.70092e-07, 0.562498, 0.765874, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+corner_detail = 16
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uidd0"]
+bg_color = Color(7.70092e-07, 0.562498, 0.765874, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+corner_detail = 16
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qmc4i"]
+content_margin_left = 2.0
+content_margin_top = 10.0
+content_margin_right = 2.0
+content_margin_bottom = 10.0
+bg_color = Color(0.100713, 2.40654e-07, 0.540859, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4plsg"]
+bg_color = Color(0.100713, 2.40654e-07, 0.540859, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_asrs4"]
+bg_color = Color(0.182466, 0.629029, 1, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_bxkq8"]
+
+[resource]
+default_font = SubResource("SystemFont_bxkq8")
+default_font_size = 24
+Button/colors/font_hover_color = Color(0.151275, 0.151276, 0.151277, 1)
+Button/styles/disabled = SubResource("StyleBoxTexture_eygtj")
+Button/styles/focus = SubResource("StyleBoxTexture_h81aq")
+Button/styles/hover = SubResource("StyleBoxTexture_y3qle")
+Button/styles/normal = SubResource("StyleBoxTexture_son1h")
+CheckBox/styles/disabled = SubResource("StyleBoxEmpty_nbuyr")
+CheckBox/styles/focus = SubResource("StyleBoxEmpty_taosm")
+CheckBox/styles/hover = SubResource("StyleBoxEmpty_4q66j")
+CheckBox/styles/hover_pressed = SubResource("StyleBoxEmpty_n77xn")
+CheckBox/styles/normal = SubResource("StyleBoxEmpty_82bns")
+CheckBox/styles/pressed = SubResource("StyleBoxEmpty_2n3q8")
+HSlider/icons/grabber = SubResource("PlaceholderTexture2D_k2le6")
+HSlider/icons/grabber_disabled = SubResource("PlaceholderTexture2D_jyij1")
+HSlider/icons/grabber_highlight = SubResource("PlaceholderTexture2D_8t0gn")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_k7jlo")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_uidd0")
+HSlider/styles/slider = SubResource("StyleBoxFlat_qmc4i")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_4plsg")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_asrs4")
