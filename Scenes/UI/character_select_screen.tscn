@@ -1,11 +1,142 @@
-[gd_scene load_steps=7 format=3 uid="uid://cdxd60ikis2f0"]
+[gd_scene load_steps=15 format=3 uid="uid://cdxd60ikis2f0"]
 
 [ext_resource type="Texture2D" uid="uid://xvs7oro8pv2f" path="res://Assets/Background/PartnerSelectScreenMain.jpg" id="1_4w1te"]
 [ext_resource type="Script" path="res://Scripts/UI/character_select_screen.gd" id="1_w2hmm"]
-[ext_resource type="Texture2D" uid="uid://c8tk82l5q8rg2" path="res://Assets/Beasties/1.png" id="2_hdkeg"]
 [ext_resource type="PackedScene" uid="uid://dujgwpibibjgl" path="res://Scenes/UI/vignette.tscn" id="3_2d1n6"]
-[ext_resource type="Texture2D" uid="uid://cos0jbvimve7t" path="res://Assets/Beasties/2.png" id="3_dgoq7"]
-[ext_resource type="Texture2D" uid="uid://dkcwswkhqfk1h" path="res://Assets/Beasties/3.png" id="4_3ire8"]
+
+[sub_resource type="Animation" id="Animation_67iev"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HBoxContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_32166"]
+resource_name = "show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HBoxContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_485jj"]
+_data = {
+"RESET": SubResource("Animation_67iev"),
+"show": SubResource("Animation_32166")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h5cda"]
+bg_color = Color(0.164967, 0.171114, 0.167629, 1)
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+corner_detail = 10
+shadow_size = 6
+shadow_offset = Vector2(12, 12)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gmfup"]
+bg_color = Color(0.821789, 0.821789, 0.821788, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.321569, 0.8, 0.101961, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gfr44"]
+bg_color = Color(0.821789, 0.821789, 0.821788, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(1, 0.0156863, 0.101961, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7jcug"]
+bg_color = Color(0.821789, 0.821789, 0.821788, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.0431373, 0, 1, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cembo"]
+bg_color = Color(0.821789, 0.821789, 0.821788, 1)
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color(0.0949753, 0.107952, 0.0966167, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="Animation" id="Animation_jokdq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PanelContainer2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_nytnu"]
+resource_name = "show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PanelContainer2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_asa5i"]
+_data = {
+"RESET": SubResource("Animation_jokdq"),
+"show": SubResource("Animation_nytnu")
+}
 
 [node name="CharacterSelectScreen" type="CanvasLayer"]
 script = ExtResource("1_w2hmm")
@@ -23,111 +154,118 @@ expand_mode = 2
 [node name="Vignette" parent="." instance=ExtResource("3_2d1n6")]
 layer = 1
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_485jj")
+}
+autoplay = "show"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -454.0
-offset_top = -150.0
-offset_right = 454.0
-offset_bottom = 150.0
+offset_left = -216.0
+offset_top = -216.0
+offset_right = 216.0
+offset_bottom = 216.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
-layout_mode = 2
-theme_override_constants/margin_left = 24
-theme_override_constants/margin_top = 24
-theme_override_constants/margin_right = 24
-theme_override_constants/margin_bottom = 24
-
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer"]
-layout_mode = 2
 theme_override_constants/separation = 24
 
-[node name="PartnerContainer1" type="PanelContainer" parent="PanelContainer/MarginContainer/HBoxContainer"]
-unique_name_in_owner = true
+[node name="Beastie1PanelContainer" type="PanelContainer" parent="HBoxContainer"]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_h5cda")
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/HBoxContainer/PartnerContainer1"]
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Beastie1PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 24
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="Partner1" type="TextureRect" parent="PanelContainer/MarginContainer/HBoxContainer/PartnerContainer1/MarginContainer"]
+[node name="PartnerContainer1" type="PanelContainer" parent="HBoxContainer/Beastie1PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gmfup")
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Beastie1PanelContainer/MarginContainer/PartnerContainer1"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Partner1" type="TextureRect" parent="HBoxContainer/Beastie1PanelContainer/MarginContainer/PartnerContainer1/MarginContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource("2_hdkeg")
 expand_mode = 5
 
-[node name="PartnerContainer2" type="PanelContainer" parent="PanelContainer/MarginContainer/HBoxContainer"]
-unique_name_in_owner = true
+[node name="Beastie2PanelContainer" type="PanelContainer" parent="HBoxContainer"]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_h5cda")
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/HBoxContainer/PartnerContainer2"]
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Beastie2PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 24
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="Partner2" type="TextureRect" parent="PanelContainer/MarginContainer/HBoxContainer/PartnerContainer2/MarginContainer"]
+[node name="PartnerContainer2" type="PanelContainer" parent="HBoxContainer/Beastie2PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gfr44")
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Beastie2PanelContainer/MarginContainer/PartnerContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Partner2" type="TextureRect" parent="HBoxContainer/Beastie2PanelContainer/MarginContainer/PartnerContainer2/MarginContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource("3_dgoq7")
 expand_mode = 5
 
-[node name="PartnerContainer3" type="PanelContainer" parent="PanelContainer/MarginContainer/HBoxContainer"]
-unique_name_in_owner = true
+[node name="Beastie3PanelContainer" type="PanelContainer" parent="HBoxContainer"]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_h5cda")
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/HBoxContainer/PartnerContainer3"]
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Beastie3PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 24
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="Partner3" type="TextureRect" parent="PanelContainer/MarginContainer/HBoxContainer/PartnerContainer3/MarginContainer"]
+[node name="PartnerContainer3" type="PanelContainer" parent="HBoxContainer/Beastie3PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7jcug")
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Beastie3PanelContainer/MarginContainer/PartnerContainer3"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Partner3" type="TextureRect" parent="HBoxContainer/Beastie3PanelContainer/MarginContainer/PartnerContainer3/MarginContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource("4_3ire8")
 expand_mode = 5
-
-[node name="PanelContainer2" type="PanelContainer" parent="."]
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer2"]
-layout_mode = 2
-theme_override_constants/margin_left = 24
-theme_override_constants/margin_top = 24
-theme_override_constants/margin_right = 24
-theme_override_constants/margin_bottom = 24
-
-[node name="PartnerInformationLabel" type="Label" parent="PanelContainer2/MarginContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "Information über den Partnerasdasdasd asd ad asdasdasdad adasdasd asdas dasd asdas da das das da das d asd asd asd as da das da das da sd asd asd asd asd asd ad asd as das d as"
-autowrap_mode = 2
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 5
@@ -138,5 +276,43 @@ offset_top = 50.0
 offset_right = 595.0
 offset_bottom = 225.0
 grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 16
+theme_override_constants/outline_size = 24
 theme_override_font_sizes/font_size = 128
 text = "Select your Beastie"
+
+[node name="InformationCanvasLayer" type="CanvasLayer" parent="."]
+layer = 3
+visible = false
+
+[node name="PanelContainer2" type="PanelContainer" parent="InformationCanvasLayer"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -165.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cembo")
+
+[node name="MarginContainer" type="MarginContainer" parent="InformationCanvasLayer/PanelContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="PartnerInformationLabel" type="Label" parent="InformationCanvasLayer/PanelContainer2/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Information über den Partnerasdasdasd asd ad asdasdasdad adasdasd asdas dasd asdas da das das da das d asd asd asd as da das da das da sd asd asd asd asd asd ad asd as das d as"
+autowrap_mode = 2
+
+[node name="InformationAnimationPlayer" type="AnimationPlayer" parent="InformationCanvasLayer"]
+libraries = {
+"": SubResource("AnimationLibrary_asa5i")
+}

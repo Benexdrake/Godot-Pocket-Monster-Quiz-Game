@@ -1,0 +1,130 @@
+[gd_scene load_steps=8 format=3 uid="uid://b02fw1qegeadl"]
+
+[ext_resource type="Script" path="res://Scripts/UI/topic_level_card.gd" id="1_hk200"]
+[ext_resource type="Texture2D" uid="uid://c78vf66jtxnqa" path="res://Assets/TopicCard/Icons/Loop.png" id="2_0du2i"]
+[ext_resource type="Texture2D" uid="uid://dapwyvenjgkps" path="res://Assets/TopicCard/Logo/Linux.png" id="2_kjbry"]
+[ext_resource type="Texture2D" uid="uid://dxgoq5q8iaipo" path="res://Assets/TopicCard/Icons/StopWatch.png" id="3_n8eo6"]
+[ext_resource type="Texture2D" uid="uid://cg1itebqv3jkb" path="res://Assets/TopicCard/Icons/Controller.png" id="4_o6ax1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w0yly"]
+bg_color = Color(0.547785, 0.533233, 0.990719, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r7jff"]
+bg_color = Color(0.894922, 0.894922, 0.894922, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.099986, 0.099986, 0.0999859, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="Card" type="PanelContainer"]
+custom_minimum_size = Vector2(400, 200)
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_w0yly")
+script = ExtResource("1_hk200")
+loop_modus = ExtResource("2_0du2i")
+time_modus = ExtResource("3_n8eo6")
+normal_modus = ExtResource("4_o6ax1")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="TopicNameLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 4
+text = "Linux Essentials"
+horizontal_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_r7jff")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="ModusImageTextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer2/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+expand_mode = 4
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+
+[node name="ImageMarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(120, 100)
+layout_mode = 2
+
+[node name="TopicImageTextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/ImageMarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("2_kjbry")
+expand_mode = 4
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2"]
+layout_mode = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_r7jff")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="InformationLabel" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2/PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+text = "Linux Essential Zertifikat"
+autowrap_mode = 3

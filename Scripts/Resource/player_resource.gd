@@ -4,9 +4,11 @@ class_name PlayerResource
 var player_name:String
 var players_beastie_nr:int
 
-var current_exp:int
-var need_exp:int
+const TARGET_EXP_GROWTH:int = 5
 
-var health_points:int = 10
+var current_exp:int = 0
+@export var need_exp:int = 5
 
-var level:int
+@export var health_points:int = 10
+
+@export var level:int = 1

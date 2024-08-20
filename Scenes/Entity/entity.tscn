@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://351xjncb05ia"]
+
+[ext_resource type="Script" path="res://Scripts/Entity/entity.gd" id="1_kjbhu"]
+[ext_resource type="Texture2D" uid="uid://cr7soje4787of" path="res://Assets/plattform_grass.png" id="2_ad853"]
+[ext_resource type="Texture2D" uid="uid://dqchhu276kobi" path="res://Assets/Beasties/Images/glumanda_front.png" id="3_re1ls"]
+
+[node name="Entity" type="Node2D"]
+script = ExtResource("1_kjbhu")
+
+[node name="Ground" type="TextureRect" parent="."]
+offset_left = -302.0
+offset_top = -98.0
+offset_right = 337.0
+offset_bottom = 105.0
+texture = ExtResource("2_ad853")
+
+[node name="BestieImage" type="TextureRect" parent="."]
+offset_left = -188.0
+offset_top = -356.0
+offset_right = 247.29
+offset_bottom = 44.0
+texture = ExtResource("3_re1ls")
+expand_mode = 3

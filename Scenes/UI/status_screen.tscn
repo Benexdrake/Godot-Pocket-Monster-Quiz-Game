@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://b8n835sy3yfmu"]
+[gd_scene load_steps=7 format=3 uid="uid://b8n835sy3yfmu"]
 
 [ext_resource type="Script" path="res://Scripts/UI/status_screen.gd" id="1_vh6ti"]
 [ext_resource type="Texture2D" uid="uid://dsphvkuspr68m" path="res://Assets/Background/fire_background.jpg" id="2_gahxq"]
-[ext_resource type="Texture2D" uid="uid://cos0jbvimve7t" path="res://Assets/Beasties/2.png" id="3_k2uuj"]
 [ext_resource type="PackedScene" uid="uid://ct85uhd6hy7mo" path="res://Scenes/UI/sound_button.tscn" id="4_yat6n"]
 [ext_resource type="PackedScene" uid="uid://dujgwpibibjgl" path="res://Scenes/UI/vignette.tscn" id="5_eu2ut"]
 [ext_resource type="Texture2D" uid="uid://04556h6rsxbe" path="res://Assets/Beasties/Status/stat1.png" id="5_ey66m"]
@@ -58,13 +57,11 @@ theme_override_constants/margin_top = 48
 unique_name_in_owner = true
 modulate = Color(0, 0, 0, 1)
 layout_mode = 2
-texture = ExtResource("3_k2uuj")
 
 [node name="BeastieImage" type="TextureRect" parent="ImageMarginContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(550, 550)
 layout_mode = 2
-texture = ExtResource("3_k2uuj")
 
 [node name="NameMarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 5

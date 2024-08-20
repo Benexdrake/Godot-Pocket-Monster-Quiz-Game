@@ -16,16 +16,21 @@ func _ready() -> void:
 	status_button.pressed.connect(on_status_button_pressed)
 	quit_button.pressed.connect(on_quit_button_pressed)
 	
+	check_save_exists()
+
+
+func check_save_exists():
 	GameManager.load_save_file()
 	if GameManager.save_file_exists:
 		status_button.visible = true
-
+	else:
+		status_button.visible = false
 
 func on_play_button_pressed():
 	if !GameManager.save_file_exists:
 		ScreenTransition.transition_to_scene("res://Scenes/UI/character_select_screen.tscn")
 	else:
-		pass
+		ScreenTransition.transition_to_scene("res://Scenes/UI/level_select_screen.tscn")
 		
 	
 	
@@ -50,3 +55,4 @@ func on_quit_button_pressed():
 
 func on_options_closed():
 	main_panel_container.visible = true
+	check_save_exists()

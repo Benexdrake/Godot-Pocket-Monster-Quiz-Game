@@ -4,6 +4,7 @@ var player:PlayerResource = PlayerResource.new()
 var wrong_question_ids:Array[String]
 var all_question_ids:Array[String]
 var current_topic_id:String
+var current_modus:int
 
 ## Weiss nicht ob noch benötigt
 var killed_enemies_count:int

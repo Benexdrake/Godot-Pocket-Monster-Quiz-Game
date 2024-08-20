@@ -7,9 +7,9 @@ var green_background = preload("res://Assets/Background/grass_background.jpg")
 var red_background = preload("res://Assets/Background/fire_background.jpg")
 var blue_background = preload("res://Assets/Background/water_background.jpg")
 
-var green_beastie = preload("res://Assets/Beasties/1.png")
-var red_beastie = preload("res://Assets/Beasties/2.png")
-var blue_beastie = preload("res://Assets/Beasties/3.png")
+var green_beastie = preload("res://Assets/Beasties/Images/bisasam_front.png")
+var red_beastie = preload("res://Assets/Beasties/Images/glumanda_front.png")
+var blue_beastie = preload("res://Assets/Beasties/Images/shiggy_front.png")
 
 @onready var background_texture_rect: TextureRect = $BackgroundTextureRect
 @onready var hp_v_box_container: VBoxContainer = %HPVBoxContainer

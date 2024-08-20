@@ -5,13 +5,13 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eygtj"]
 modulate_color = Color(0.129558, 0.129558, 0.129558, 1)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h81aq"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_frimy"]
 texture = ExtResource("1_bjkfw")
 texture_margin_left = 5.0
 texture_margin_top = 6.0
 texture_margin_right = 5.0
 texture_margin_bottom = 3.0
-region_rect = Rect2(16, 0, 16, 16)
+region_rect = Rect2(0, 0, 16, 16)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y3qle"]
 texture = ExtResource("1_bjkfw")
@@ -89,7 +89,7 @@ default_font = SubResource("SystemFont_bxkq8")
 default_font_size = 24
 Button/colors/font_hover_color = Color(0.151275, 0.151276, 0.151277, 1)
 Button/styles/disabled = SubResource("StyleBoxTexture_eygtj")
-Button/styles/focus = SubResource("StyleBoxTexture_h81aq")
+Button/styles/focus = SubResource("StyleBoxTexture_frimy")
 Button/styles/hover = SubResource("StyleBoxTexture_y3qle")
 Button/styles/normal = SubResource("StyleBoxTexture_son1h")
 CheckBox/styles/disabled = SubResource("StyleBoxEmpty_nbuyr")

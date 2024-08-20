@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://b2ew7f1ows2x6"]
+
+[ext_resource type="Script" path="res://Scripts/Resource/Topics/topic.gd" id="1_gdo22"]
+
+[resource]
+script = ExtResource("1_gdo22")
+topic_file = "res://Resource/Topics/Files/linux_essentials.json"

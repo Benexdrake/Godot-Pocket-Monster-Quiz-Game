@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/UI/level_select_screen.gd" id="1_jwp0s"]
 [ext_resource type="Texture2D" uid="uid://bew2xsgd5xyo3" path="res://Assets/Background/LevelSelectScreen.jpg" id="2_5d6g1"]
+[ext_resource type="Resource" uid="uid://b2ew7f1ows2x6" path="res://Resource/Topics/topic.tres" id="2_f3a8o"]
 [ext_resource type="PackedScene" uid="uid://dujgwpibibjgl" path="res://Scenes/UI/vignette.tscn" id="3_ilroy"]
-[ext_resource type="PackedScene" uid="uid://ct85uhd6hy7mo" path="res://Scenes/UI/sound_button.tscn" id="4_m0n77"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xcqo"]
 border_width_left = 12
@@ -15,6 +15,7 @@ shadow_size = 24
 
 [node name="LevelSelectScreen" type="CanvasLayer"]
 script = ExtResource("1_jwp0s")
+topic_resource = ExtResource("2_f3a8o")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 15
@@ -57,7 +58,3 @@ size_flags_vertical = 3
 theme_override_constants/h_separation = 12
 theme_override_constants/v_separation = 12
 columns = 3
-
-[node name="BackButton" parent="." instance=ExtResource("4_m0n77")]
-unique_name_in_owner = true
-text = "Back"

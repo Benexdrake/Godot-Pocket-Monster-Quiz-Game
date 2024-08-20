@@ -1,0 +1,1008 @@
+{
+  "topic_id":"linux_essentials",
+	"topic":"Linux Essentials",
+	"information":"Linux Essential Zertifikat",
+	"icon": "Linux.png",
+  "questions": [
+	{
+	  "id": "1",
+	  "question": "Welcher Befehl zeigt den Inhalt eines Verzeichnisses an?",
+	  "answers": [
+		["dir", false],
+		["ls", true],
+		["list", false],
+		["show", false]
+	  ]
+	},
+	{
+	  "id": "2",
+	  "question": "Wie zeigt man die aktuelle Arbeitsumgebung an?",
+	  "answers": [
+		["pwd", true],
+		["cwd", false],
+		["ld", false],
+		["showdir", false]
+	  ]
+	},
+	{
+	  "id": "3",
+	  "question": "Wie listet man alle laufenden Prozesse auf?",
+	  "answers": [
+		["ps aux", true],
+		["tasklist", false],
+		["jobs", false],
+		["proc", false]
+	  ]
+	},
+	{
+	  "id": "4",
+	  "question": "Wie beendet man einen laufenden Prozess?",
+	  "answers": [
+		["stop", false],
+		["kill", true],
+		["end", false],
+		["terminate", false]
+	  ]
+	},
+	{
+	  "id": "5",
+	  "question": "Welcher Befehl zeigt die letzten 10 Zeilen einer Datei an?",
+	  "answers": [
+		["tail", true],
+		["head", false],
+		["more", false],
+		["less", false]
+	  ]
+	},
+	{
+	  "id": "6",
+	  "question": "Wie wechselt man in ein anderes Verzeichnis?",
+	  "answers": [
+		["chdir", false],
+		["switchdir", false],
+		["cd", true],
+		["moveto", false]
+	  ]
+	},
+	{
+	  "id": "7",
+	  "question": "Wie zeigt man die Netzwerkkonfiguration an?",
+	  "answers": [
+		["ifconfig", true],
+		["netconfig", false],
+		["ipconfig", false],
+		["showip", false]
+	  ]
+	},
+	{
+	  "id": "8",
+	  "question": "Wie erstellt man ein neues Verzeichnis?",
+	  "answers": [
+		["mkdir", true],
+		["createdir", false],
+		["newdir", false],
+		["makedir", false]
+	  ]
+	},
+	{
+	  "id": "9",
+	  "question": "Wie ändert man die Berechtigungen einer Datei?",
+	  "answers": [
+		["chown", false],
+		["chmod", true],
+		["permset", false],
+		["modperm", false]
+	  ]
+	},
+	{
+	  "id": "10",
+	  "question": "Wie installiert man ein Paket auf einem Debian-basierten System?",
+	  "answers": [
+		["yum install", false],
+		["apt-get install", true],
+		["dnf install", false],
+		["installpkg", false]
+	  ]
+	},
+	{
+	  "id": "11",
+	  "question": "Welcher Befehl zeigt die aktuelle Uhrzeit und das Datum an?",
+	  "answers": [
+		["date", true],
+		["clock", false],
+		["time", false],
+		["datetime", false]
+	  ]
+	},
+	{
+	  "id": "12",
+	  "question": "Wie zeigt man den verfügbaren Speicherplatz auf dem System an?",
+	  "answers": [
+		["df -h", true],
+		["du -h", false],
+		["free -h", false],
+		["stat", false]
+	  ]
+	},
+	{
+	  "id": "13",
+	  "question": "Wie zeigt man die IP-Adresse des aktuellen Systems an?",
+	  "answers": [
+		["ifconfig", true],
+		["netstat", false],
+		["hostname", false],
+		["nslookup", false]
+	  ]
+	},
+	{
+	  "id": "14",
+	  "question": "Welcher Befehl zeigt die Kernel-Version des Systems an?",
+	  "answers": [
+		["uname -r", true],
+		["version", false],
+		["kernver", false],
+		["osrelease", false]
+	  ]
+	},
+	{
+	  "id": "15",
+	  "question": "Wie zeigt man die aktiven Netzwerkverbindungen an?",
+	  "answers": [
+		["netstat", true],
+		["ping", false],
+		["route", false],
+		["traceroute", false]
+	  ]
+	},
+	{
+	  "id": "16",
+	  "question": "Wie zeigt man die Benutzer im System an?",
+	  "answers": [
+		["who", true],
+		["users", false],
+		["listusers", false],
+		["id", false]
+	  ]
+	},
+	{
+	  "id": "17",
+	  "question": "Welcher Befehl zeigt die Prozessauslastung des Systems an?",
+	  "answers": [
+		["top", true],
+		["procinfo", false],
+		["ps", false],
+		["uptime", false]
+	  ]
+	},
+	{
+	  "id": "18",
+	  "question": "Wie erstellt man eine neue Datei?",
+	  "answers": [
+		["touch", true],
+		["newfile", false],
+		["maketext", false],
+		["createfile", false]
+	  ]
+	},
+	{
+	  "id": "19",
+	  "question": "Wie zeigt man die Details einer Datei an?",
+	  "answers": [
+		["stat", true],
+		["details", false],
+		["info", false],
+		["showfile", false]
+	  ]
+	},
+	{
+	  "id": "20",
+	  "question": "Welcher Befehl zeigt die Umgebungsvariablen an?",
+	  "answers": [
+		["env", true],
+		["variables", false],
+		["showvars", false],
+		["envvars", false]
+	  ]
+	},
+	{
+	  "id": "21",
+	  "question": "Wie verschiebt man eine Datei?",
+	  "answers": [
+		["mv", true],
+		["movefile", false],
+		["shift", false],
+		["move", false]
+	  ]
+	},
+	{
+	  "id": "22",
+	  "question": "Welcher Befehl zeigt den verfügbaren Speicher eines Prozesses an?",
+	  "answers": [
+		["ps aux", true],
+		["memstat", false],
+		["procinfo", false],
+		["top", false]
+	  ]
+	},
+	{
+	  "id": "23",
+	  "question": "Wie zeigt man den Hostnamen des Systems an?",
+	  "answers": [
+		["hostname", true],
+		["uname -n", false],
+		["sysname", false],
+		["host", false]
+	  ]
+	},
+	{
+	  "id": "24",
+	  "question": "Wie zeigt man die Protokolldateien des Systems an?",
+	  "answers": [
+		["dmesg", true],
+		["logfiles", false],
+		["syslogs", false],
+		["logs", false]
+	  ]
+	},
+	{
+	  "id": "25",
+	  "question": "Wie zeigt man die Zugriffsrechte einer Datei an?",
+	  "answers": [
+		["ls -l", true],
+		["chmod", false],
+		["permissions", false],
+		["rights", false]
+	  ]
+	},
+	{
+	  "id": "26",
+	  "question": "Wie erstellt man eine symbolische Verknüpfung?",
+	  "answers": [
+		["ln -s", true],
+		["symlink", false],
+		["link", false],
+		["create-symlink", false]
+	  ]
+	},
+	{
+	  "id": "27",
+	  "question": "Welcher Befehl zeigt die Größe einer Datei an?",
+	  "answers": [
+		["du -h", true],
+		["ls -s", false],
+		["file-size", false],
+		["stat -s", false]
+	  ]
+	},
+	{
+	  "id": "28",
+	  "question": "Wie beendet man einen Benutzerprozess?",
+	  "answers": [
+		["kill", true],
+		["endproc", false],
+		["stopuser", false],
+		["terminate", false]
+	  ]
+	},
+	{
+	  "id": "29",
+	  "question": "Welcher Befehl zeigt die CPU-Auslastung an?",
+	  "answers": [
+		["top", true],
+		["ps aux", false],
+		["cpuinfo", false],
+		["uptime", false]
+	  ]
+	},
+	{
+	  "id": "30",
+	  "question": "Wie zeigt man den Status eines Dienstes an?",
+	  "answers": [
+		["systemctl status", true],
+		["service status", false],
+		["check-service", false],
+		["servstat", false]
+	  ]
+	},
+	{
+	  "id": "31",
+	  "question": "Welcher Befehl zeigt die Partitionstabelle an?",
+	  "answers": [
+		["fdisk -l", true],
+		["partitions", false],
+		["diskpart", false],
+		["lsblk", false]
+	  ]
+	},
+	{
+	  "id": "32",
+	  "question": "Wie erstellt man eine Datei mit Inhalt?",
+	  "answers": [
+		["echo 'text' > file", true],
+		["cat > file", false],
+		["addtext file", false],
+		["newfile text", false]
+	  ]
+	},
+	{
+	  "id": "33",
+	  "question": "Wie mountet man ein Dateisystem?",
+	  "answers": [
+		["mount", true],
+		["diskmount", false],
+		["attach", false],
+		["mnt", false]
+	  ]
+	},
+	{
+	  "id": "34",
+	  "question": "Wie ändert man die Besitzer einer Datei?",
+	  "answers": [
+		["chown", true],
+		["chmod", false],
+		["own", false],
+		["changeowner", false]
+	  ]
+	},
+	{
+	  "id": "35",
+	  "question": "Wie zeigt man den freien Speicherplatz an?",
+	  "answers": [
+		["df", true],
+		["du", false],
+		["free", false],
+		["memfree", false]
+	  ]
+	},
+	{
+	  "id": "36",
+	  "question": "Wie kann man Dateien in einem Archiv zusammenfassen?",
+	  "answers": [
+		["tar", true],
+		["zip", false],
+		["archive", false],
+		["package", false]
+	  ]
+	},
+	{
+	  "id": "37",
+	  "question": "Wie zeigt man Informationen über das Netzwerkinterface an?",
+	  "answers": [
+		["ifconfig", true],
+		["netinfo", false],
+		["netstat", false],
+		["iplink", false]
+	  ]
+	},
+	{
+	  "id": "38",
+	  "question": "Wie erstellt man eine einfache Textdatei?",
+	  "answers": [
+		["nano file.txt", true],
+		["cat file.txt", false],
+		["vim file.txt", false],
+		["create file.txt", false]
+	  ]
+	},
+	{
+	  "id": "39",
+	  "question": "Wie zeigt man die Kernel-Nachrichten an?",
+	  "answers": [
+		["dmesg", true],
+		["kernlog", false],
+		["syslog", false],
+		["kmsg", false]
+	  ]
+	},
+	{
+	  "id": "40",
+	  "question": "Wie zeigt man die Benutzerrechte einer Datei an?",
+	  "answers": [
+		["ls -l", true],
+		["stat", false],
+		["showperm", false],
+		["perm", false]
+	  ]
+	},
+	{
+	  "id": "41",
+	  "question": "Welcher Befehl wird verwendet, um eine Datei zu kopieren?",
+	  "answers": [
+		["cp", true],
+		["copy", false],
+		["move", false],
+		["duplicate", false]
+	  ]
+	},
+	{
+	  "id": "42",
+	  "question": "Wie zeigt man Informationen über die Hardware an?",
+	  "answers": [
+		["lshw", true],
+		["hwinfo", false],
+		["lscpu", false],
+		["sysinfo", false]
+	  ]
+	},
+	{
+	  "id": "43",
+	  "question": "Wie zeigt man die laufenden Dienste an?",
+	  "answers": [
+		["systemctl list-units", true],
+		["servicectl", false],
+		["services", false],
+		["service list", false]
+	  ]
+	},
+	{
+	  "id": "44",
+	  "question": "Wie erstellt man einen neuen Benutzer?",
+	  "answers": [
+		["useradd", true],
+		["adduser", false],
+		["newuser", false],
+		["createuser", false]
+	  ]
+	},
+	{
+	  "id": "45",
+	  "question": "Welcher Befehl wird verwendet, um Dateien zu löschen?",
+	  "answers": [
+		["rm", true],
+		["delete", false],
+		["del", false],
+		["erase", false]
+	  ]
+	},
+	{
+	  "id": "46",
+	  "question": "Wie wechselt man zu einem anderen Benutzer?",
+	  "answers": [
+		["su", true],
+		["userchange", false],
+		["switch", false],
+		["login", false]
+	  ]
+	},
+	{
+	  "id": "47",
+	  "question": "Wie zeigt man die Prozess-ID eines laufenden Prozesses an?",
+	  "answers": [
+		["pidof", true],
+		["ps id", false],
+		["procid", false],
+		["idproc", false]
+	  ]
+	},
+	{
+	  "id": "48",
+	  "question": "Welcher Befehl zeigt die Systemprotokolle an?",
+	  "answers": [
+		["journalctl", true],
+		["syslog", false],
+		["logcat", false],
+		["dmesg", false]
+	  ]
+	},
+	{
+	  "id": "49",
+	  "question": "Wie führt man einen Befehl mit Superuser-Rechten aus?",
+	  "answers": [
+		["sudo", true],
+		["su", false],
+		["root", false],
+		["admin", false]
+	  ]
+	},
+	{
+	  "id": "50",
+	  "question": "Welcher Befehl zeigt den Inhalt einer Datei zeilenweise an?",
+	  "answers": [
+		["less", true],
+		["cat", false],
+		["showfile", false],
+		["view", false]
+	  ]
+	},
+	{
+	  "id": "51",
+	  "question": "Wie zeigt man die Verzeichnisstruktur an?",
+	  "answers": [
+		["tree", true],
+		["ls -R", false],
+		["dir /s", false],
+		["showdir", false]
+	  ]
+	},
+	{
+	  "id": "52",
+	  "question": "Wie zeigt man den Systemstartstatus an?",
+	  "answers": [
+		["systemctl status", true],
+		["bootstatus", false],
+		["startstatus", false],
+		["sysstat", false]
+	  ]
+	},
+	{
+	  "id": "53",
+	  "question": "Welcher Befehl zeigt die Benutzergruppen an?",
+	  "answers": [
+		["groups", true],
+		["groupinfo", false],
+		["groupstat", false],
+		["usergroups", false]
+	  ]
+	},
+	{
+	  "id": "54",
+	  "question": "Wie führt man eine Suche nach Dateien im Dateisystem durch?",
+	  "answers": [
+		["find", true],
+		["search", false],
+		["locate", false],
+		["grep", false]
+	  ]
+	},
+	{
+	  "id": "55",
+	  "question": "Wie zeigt man den Speicherverbrauch einer Datei oder eines Verzeichnisses an?",
+	  "answers": [
+		["du", true],
+		["df", false],
+		["memcheck", false],
+		["size", false]
+	  ]
+	},
+	{
+	  "id": "56",
+	  "question": "Welcher Befehl startet das System neu?",
+	  "answers": [
+		["reboot", true],
+		["restart", false],
+		["shutdown -r", false],
+		["sysrestart", false]
+	  ]
+	},
+	{
+	  "id": "57",
+	  "question": "Wie zeigt man die Version eines installierten Pakets an?",
+	  "answers": [
+		["dpkg -l", true],
+		["apt list", false],
+		["rpm -q", false],
+		["pkginfo", false]
+	  ]
+	},
+	{
+	  "id": "58",
+	  "question": "Wie schaltet man einen Dienst ab?",
+	  "answers": [
+		["systemctl stop", true],
+		["service stop", false],
+		["stopservice", false],
+		["servctl stop", false]
+	  ]
+	},
+	{
+	  "id": "59",
+	  "question": "Wie zeigt man die Auslastung des Speichers an?",
+	  "answers": [
+		["free -m", true],
+		["top", false],
+		["htop", false],
+		["memusage", false]
+	  ]
+	},
+	{
+	  "id": "60",
+	  "question": "Wie zeigt man die angemeldeten Benutzer an?",
+	  "answers": [
+		["who", true],
+		["w", false],
+		["users", false],
+		["listusers", false]
+	  ]
+	},
+	{
+	  "id": "61",
+	  "question": "Wie erstellt man eine komprimierte Datei?",
+	  "answers": [
+		["tar -czf", true],
+		["zip", false],
+		["compress", false],
+		["gzip", false]
+	  ]
+	},
+	{
+	  "id": "62",
+	  "question": "Welcher Befehl zeigt die eingehängten Dateisysteme an?",
+	  "answers": [
+		["mount", true],
+		["df -h", false],
+		["lsblk", false],
+		["fstab", false]
+	  ]
+	},
+	{
+	  "id": "63",
+	  "question": "Wie prüft man die Integrität einer Datei?",
+	  "answers": [
+		["md5sum", true],
+		["hashcheck", false],
+		["sha256sum", false],
+		["checksum", false]
+	  ]
+	},
+	{
+	  "id": "64",
+	  "question": "Wie führt man eine Suche in Dateien durch?",
+	  "answers": [
+		["grep", true],
+		["search", false],
+		["find", false],
+		["locate", false]
+	  ]
+	},
+	{
+	  "id": "65",
+	  "question": "Wie ändert man die Gruppenzugehörigkeit einer Datei?",
+	  "answers": [
+		["chgrp", true],
+		["chown", false],
+		["chmod", false],
+		["grpmod", false]
+	  ]
+	},
+	{
+	  "id": "66",
+	  "question": "Welcher Befehl startet einen Dienst neu?",
+	  "answers": [
+		["systemctl restart", true],
+		["service restart", false],
+		["restartservice", false],
+		["startctl", false]
+	  ]
+	},
+	{
+	  "id": "67",
+	  "question": "Wie zeigt man die Systeminformationen wie CPU und RAM an?",
+	  "answers": [
+		["lscpu", true],
+		["sysinfo", false],
+		["hwinfo", false],
+		["info", false]
+	  ]
+	},
+	{
+	  "id": "68",
+	  "question": "Welcher Befehl zeigt die Kernelversion an?",
+	  "answers": [
+		["uname -r", true],
+		["kernelver", false],
+		["sysver", false],
+		["version", false]
+	  ]
+	},
+	{
+	  "id": "69",
+	  "question": "Wie zeigt man die offenen Ports an?",
+	  "answers": [
+		["netstat -tuln", true],
+		["openports", false],
+		["lsport", false],
+		["portscan", false]
+	  ]
+	},
+	{
+	  "id": "70",
+	  "question": "Wie beendet man einen Befehl?",
+	  "answers": [
+		["Ctrl+C", true],
+		["stop", false],
+		["end", false],
+		["terminate", false]
+	  ]
+	},
+	{
+	  "id": "71",
+	  "question": "Wie aktualisiert man die Paketquellen?",
+	  "answers": [
+		["apt-get update", true],
+		["updatepkg", false],
+		["pkgrefresh", false],
+		["update", false]
+	  ]
+	},
+	{
+	  "id": "72",
+	  "question": "Wie installiert man ein Paket aus einer Datei?",
+	  "answers": [
+		["dpkg -i", true],
+		["pkginstall", false],
+		["installpkg", false],
+		["yum install", false]
+	  ]
+	},
+	{
+	  "id": "73",
+	  "question": "Wie zeigt man die Systemzeit an?",
+	  "answers": [
+		["date", true],
+		["time", false],
+		["clock", false],
+		["datetime", false]
+	  ]
+	},
+	{
+	  "id": "74",
+	  "question": "Wie erstellt man einen symbolischen Link?",
+	  "answers": [
+		["ln -s", true],
+		["link", false],
+		["symlink", false],
+		["ln", false]
+	  ]
+	},
+	{
+	  "id": "75",
+	  "question": "Wie startet man den X-Server neu?",
+	  "answers": [
+		["startx", true],
+		["xstart", false],
+		["xorg restart", false],
+		["systemctl start x", false]
+	  ]
+	},
+	{
+	  "id": "76",
+	  "question": "Wie listet man die installierten Pakete auf?",
+	  "answers": [
+		["dpkg -l", true],
+		["pkglist", false],
+		["listpkg", false],
+		["yum list", false]
+	  ]
+	},
+	{
+	  "id": "77",
+	  "question": "Wie zeigt man Informationen über USB-Geräte an?",
+	  "answers": [
+		["lsusb", true],
+		["usbinfo", false],
+		["lshw", false],
+		["lsusb -v", false]
+	  ]
+	},
+	{
+	  "id": "78",
+	  "question": "Wie wechselt man zu einem anderen Verzeichnis?",
+	  "answers": [
+		["cd", true],
+		["chdir", false],
+		["change", false],
+		["goto", false]
+	  ]
+	},
+	{
+	  "id": "79",
+	  "question": "Wie überprüft man den Status eines Dienstes?",
+	  "answers": [
+		["systemctl status", true],
+		["service status", false],
+		["servstat", false],
+		["status", false]
+	  ]
+	},
+	{
+	  "id": "80",
+	  "question": "Wie zeigt man die IP-Adresse des Systems an?",
+	  "answers": [
+		["ip addr", true],
+		["ifconfig", false],
+		["netstat", false],
+		["ipconfig", false]
+	  ]
+	},
+	{
+	  "id": "81",
+	  "question": "Welcher Befehl zeigt die Prozesse im System an?",
+	  "answers": [
+		["ps", true],
+		["procview", false],
+		["listproc", false],
+		["showproc", false]
+	  ]
+	},
+	{
+	  "id": "82",
+	  "question": "Wie beendet man einen Prozess anhand der Prozess-ID?",
+	  "answers": [
+		["kill", true],
+		["endproc", false],
+		["terminate", false],
+		["procend", false]
+	  ]
+	},
+	{
+	  "id": "83",
+	  "question": "Wie zeigt man die Größe eines Verzeichnisses an?",
+	  "answers": [
+		["du -sh", true],
+		["df -h", false],
+		["dirsize", false],
+		["size -d", false]
+	  ]
+	},
+	{
+	  "id": "84",
+	  "question": "Wie zeigt man den Verlauf der eingegebenen Befehle an?",
+	  "answers": [
+		["history", true],
+		["cmdlog", false],
+		["log", false],
+		["hist", false]
+	  ]
+	},
+	{
+	  "id": "85",
+	  "question": "Wie bearbeitet man die Netzwerkinterfaces?",
+	  "answers": [
+		["ip link", true],
+		["netconfig", false],
+		["ifedit", false],
+		["netedit", false]
+	  ]
+	},
+	{
+	  "id": "86",
+	  "question": "Wie zeigt man die Kernelmodule an?",
+	  "answers": [
+		["lsmod", true],
+		["modinfo", false],
+		["kernelmod", false],
+		["modules", false]
+	  ]
+	},
+	{
+	  "id": "87",
+	  "question": "Wie führt man ein Backup eines Verzeichnisses durch?",
+	  "answers": [
+		["rsync", true],
+		["backup", false],
+		["copydir", false],
+		["cp -r", false]
+	  ]
+	},
+	{
+	  "id": "88",
+	  "question": "Wie zeigt man die Systemlast an?",
+	  "answers": [
+		["uptime", true],
+		["sysload", false],
+		["loadavg", false],
+		["sysstat", false]
+	  ]
+	},
+	{
+	  "id": "89",
+	  "question": "Wie sperrt man einen Benutzer?",
+	  "answers": [
+		["passwd -l", true],
+		["userlock", false],
+		["lockuser", false],
+		["lock -u", false]
+	  ]
+	},
+	{
+	  "id": "90",
+	  "question": "Wie synchronisiert man die Systemzeit?",
+	  "answers": [
+		["ntpdate", true],
+		["timesync", false],
+		["syncdate", false],
+		["timedatectl", false]
+	  ]
+	},
+	{
+	  "id": "91",
+	  "question": "Wie zeigt man den Inhalt eines Textdokuments seitenweise an?",
+	  "answers": [
+		["more", true],
+		["cat", false],
+		["read", false],
+		["textview", false]
+	  ]
+	},
+	{
+	  "id": "92",
+	  "question": "Wie startet man ein Programm im Hintergrund?",
+	  "answers": [
+		["nohup", true],
+		["bgstart", false],
+		["startbg", false],
+		["background", false]
+	  ]
+	},
+	{
+	  "id": "93",
+	  "question": "Wie gibt man den Namen des aktuellen Verzeichnisses aus?",
+	  "answers": [
+		["pwd", true],
+		["whereami", false],
+		["cwd", false],
+		["dirpath", false]
+	  ]
+	},
+	{
+	  "id": "94",
+	  "question": "Wie durchsucht man den Inhalt von Dateien nach einem bestimmten Begriff?",
+	  "answers": [
+		["grep", true],
+		["search", false],
+		["find", false],
+		["locate", false]
+	  ]
+	},
+	{
+	  "id": "95",
+	  "question": "Wie löscht man einen leeren Ordner?",
+	  "answers": [
+		["rmdir", true],
+		["rm", false],
+		["del", false],
+		["delete", false]
+	  ]
+	},
+	{
+	  "id": "96",
+	  "question": "Wie zeigt man die Größe der Partitionen an?",
+	  "answers": [
+		["df -h", true],
+		["partsize", false],
+		["diskusage", false],
+		["lsblk", false]
+	  ]
+	},
+	{
+	  "id": "97",
+	  "question": "Wie beendet man den aktuell laufenden Shell-Prozess?",
+	  "answers": [
+		["exit", true],
+		["quit", false],
+		["end", false],
+		["close", false]
+	  ]
+	},
+	{
+	  "id": "98",
+	  "question": "Wie zeigt man den verfügbaren Festplattenspeicher an?",
+	  "answers": [
+		["df", true],
+		["du", false],
+		["lsblk", false],
+		["diskfree", false]
+	  ]
+	},
+	{
+	  "id": "99",
+	  "question": "Wie ändert man die Zugriffsrechte einer Datei?",
+	  "answers": [
+		["chmod", true],
+		["chown", false],
+		["setperm", false],
+		["chperm", false]
+	  ]
+	},
+	{
+	  "id": "100",
+	  "question": "Wie überprüft man die IP-Routen des Systems?",
+	  "answers": [
+		["route", true],
+		["netroute", false],
+		["iproute", false],
+		["traceroute", false]
+	  ]
+	}
+  ]
+}

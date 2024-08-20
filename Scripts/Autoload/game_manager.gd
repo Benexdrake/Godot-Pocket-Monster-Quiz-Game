@@ -4,15 +4,18 @@ const SAVE_FILE_PATH:String = "user://game.save"
 
 var beasties = preload("res://Resource/Beasties/all_beasties.tres") as AllBeasties
 
+var all_topics:AllTopicsResource = preload("res://Resource/Topics/all_topics.tres")
+
 var save_file_exists:bool
 
 func _ready() -> void:
 	load_save_file()
 	beasties.load_beasties()
-	
+	all_topics.get_all_topics()
 	
 func load_save_file():
 	if !FileAccess.file_exists(SAVE_FILE_PATH):
+		
 		save_file_exists = false
 		return
 		
@@ -28,6 +31,9 @@ func save():
 	var save_data = set_player(GlobalVariables.player)
 	file.store_var(save_data)
 
+
+func delete_save():
+	DirAccess.remove_absolute(SAVE_FILE_PATH)
 
 func set_player(player:PlayerResource):
 	var p = {

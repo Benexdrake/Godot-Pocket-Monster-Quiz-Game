@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cos0jbvimve7t"
-path="res://.godot/imported/2.png-008a4e5e13ef8438b330d440fe1d9140.ctex"
+uid="uid://dapwyvenjgkps"
+path="res://.godot/imported/Linux.png-9ae268ec2c04ba1ab895696098efb674.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Beasties/2.png"
-dest_files=["res://.godot/imported/2.png-008a4e5e13ef8438b330d440fe1d9140.ctex"]
+source_file="res://Assets/TopicCard/Logo/Linux.png"
+dest_files=["res://.godot/imported/Linux.png-9ae268ec2c04ba1ab895696098efb674.ctex"]
 
 [params]
 

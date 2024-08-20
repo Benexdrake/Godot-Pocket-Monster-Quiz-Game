@@ -99,6 +99,11 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Back"
 
+[node name="DeleteButton" parent="PanelContainer/MarginContainer/VBoxContainer2" instance=ExtResource("1_bylcn")]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Delete your Save"
+
 [node name="QuitButton" parent="PanelContainer/MarginContainer/VBoxContainer2" instance=ExtResource("1_bylcn")]
 unique_name_in_owner = true
 layout_mode = 2

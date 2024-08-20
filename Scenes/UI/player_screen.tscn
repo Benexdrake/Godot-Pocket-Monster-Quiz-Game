@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=3 uid="uid://bageij0jym25k"]
+
+[ext_resource type="PackedScene" uid="uid://351xjncb05ia" path="res://Scenes/Entity/entity.tscn" id="1_d63yv"]
+[ext_resource type="Script" path="res://Scripts/UI/player_screen.gd" id="1_ph6qo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uughg"]
+bg_color = Color(0.0846899, 0.0846899, 0.0846899, 1)
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+
+[node name="PlayerScreen" type="CanvasLayer"]
+script = ExtResource("1_ph6qo")
+
+[node name="PlayerEntity" parent="." instance=ExtResource("1_d63yv")]
+position = Vector2(180, 876)
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 500.0
+offset_bottom = 185.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_uughg")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NameLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Glumanda"
+
+[node name="MarginContainer2" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LevelLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/MarginContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Lv. 6"
+horizontal_alignment = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HPProgressBar" type="ProgressBar" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+
+[node name="MarginContainer3" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="EXPProgressBar" type="ProgressBar" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+value = 0.5

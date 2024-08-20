@@ -2,8 +2,8 @@
 	{
 		"nr": 1,
 		"name": "Bulbasaur",
-		"image_front": "res://Assets/Beasties/1.png",
-		"image_back": "back",
+		"image_front": "res://Assets/Beasties/Images/bisasam_front.png",
+		"image_back": "res://Assets/Beasties/Images/bisasam_back.png",
 		"descriptions": [
 			"While it is young, it uses the nutrients that are stored in the seed on its back in order to grow.",
 			"There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger."
@@ -166,8 +166,8 @@
 	{
 		"nr": 4,
 		"name": "Charmander",
-		"image_front": "res://Assets/Beasties/2.png",
-		"image_back": "back",
+		"image_front": "res://Assets/Beasties/Images/glumanda_front.png",
+		"image_back": "res://Assets/Beasties/Images/glumanda_back.png",
 		"descriptions": [
 			"From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
 			"It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail."
@@ -356,8 +356,8 @@
 	{
 		"nr": 7,
 		"name": "Squirtle",
-		"image_front": "res://Assets/Beasties/3.png",
-		"image_back": "back",
+		"image_front": "res://Assets/Beasties/Images/shiggy_front.png",
+		"image_back": "res://Assets/Beasties/Images/shiggy_back.png",
 		"descriptions": [
 			"When it feels threatened, it draws its limbs inside its shell and sprays water from its mouth.",
 			"When it retracts its long neck into its shell, it squirts out water with vigorous force."
