@@ -1,37 +1,28 @@
-[gd_scene load_steps=6 format=3 uid="uid://ygbtmx3rkxhw"]
+[gd_scene load_steps=7 format=3 uid="uid://ygbtmx3rkxhw"]
 
 [ext_resource type="Script" path="res://Scripts/Level/battle_screen.gd" id="1_qsitc"]
 [ext_resource type="PackedScene" uid="uid://ct85uhd6hy7mo" path="res://Scenes/UI/sound_button.tscn" id="2_dfu1c"]
 [ext_resource type="PackedScene" uid="uid://bageij0jym25k" path="res://Scenes/UI/player_screen.tscn" id="2_nfwdh"]
 [ext_resource type="PackedScene" uid="uid://dqs8t0fmvlpkt" path="res://Scenes/UI/quiz_screen.tscn" id="2_sex5l"]
+[ext_resource type="Texture2D" uid="uid://d1pdk1wn4eqd8" path="res://Assets/Background/BattleScreen.png" id="2_wlk3t"]
 [ext_resource type="PackedScene" uid="uid://bp04yhcnw5h0b" path="res://Scenes/UI/enemy_screen.tscn" id="3_e7iuu"]
 
 [node name="BattleScreen" type="Node" groups=["battle_screen"]]
 script = ExtResource("1_qsitc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_wlk3t")
 
 [node name="PlayerScreen" parent="." instance=ExtResource("2_nfwdh")]
 
 [node name="EnemyScreen" parent="." instance=ExtResource("3_e7iuu")]
 
 [node name="QuizScreen" parent="." instance=ExtResource("2_sex5l")]
-
-[node name="Label" type="Label" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -17.0
-offset_right = 20.0
-offset_bottom = 17.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 64
-text = "Demo"
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
 
 [node name="BackButton" parent="." instance=ExtResource("2_dfu1c")]
 unique_name_in_owner = true

@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://ckwakhdl668qe"]
+[gd_scene load_steps=3 format=3 uid="uid://ckwakhdl668qe"]
 
 [ext_resource type="Script" path="res://Scripts/UI/end_screen.gd" id="1_iqgi1"]
+[ext_resource type="PackedScene" uid="uid://ct85uhd6hy7mo" path="res://Scenes/UI/sound_button.tscn" id="2_vq5u6"]
 
 [node name="EndScreen" type="CanvasLayer"]
 script = ExtResource("1_iqgi1")
+
+[node name="BackButton" parent="." instance=ExtResource("2_vq5u6")]
+unique_name_in_owner = true
+offset_right = 65.0
+offset_bottom = 43.0
+text = "Back"

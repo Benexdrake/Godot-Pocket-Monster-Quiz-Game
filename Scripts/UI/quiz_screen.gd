@@ -21,6 +21,7 @@ func _ready() -> void:
 func create_question(id:String):
 	if owner is BattleScreen:
 		current_question = owner.topic.get_question(id)
+		current_question.answers.shuffle()
 		question_label.text = current_question.question
 		quiz_button_1.text = current_question.answers[0][0]
 		quiz_button_2.text = current_question.answers[1][0]

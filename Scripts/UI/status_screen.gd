@@ -7,10 +7,6 @@ var green_background = preload("res://Assets/Background/grass_background.jpg")
 var red_background = preload("res://Assets/Background/fire_background.jpg")
 var blue_background = preload("res://Assets/Background/water_background.jpg")
 
-var green_beastie = preload("res://Assets/Beasties/Images/bisasam_front.png")
-var red_beastie = preload("res://Assets/Beasties/Images/glumanda_front.png")
-var blue_beastie = preload("res://Assets/Beasties/Images/shiggy_front.png")
-
 @onready var background_texture_rect: TextureRect = $BackgroundTextureRect
 @onready var hp_v_box_container: VBoxContainer = %HPVBoxContainer
 @onready var attack_v_box_container: VBoxContainer = %AttackVBoxContainer
@@ -44,10 +40,12 @@ func _ready() -> void:
 	
 	beastie_name_label.text = beastie.beastie_name
 	
+	
+	
 	change_exp(beastie)
 	type_weaknesses(beastie.types, type_h_box_container)
 	type_weaknesses(beastie.weaknesses, weakness_h_box_container)
-	change_background_and_beastie_image(beastie.nr)
+	change_background_and_beastie_image(beastie.nr, beastie.image_front)
 
 
 func change_exp(beastie:Beastie):
@@ -74,18 +72,16 @@ func type_weaknesses(types:Array[String], hbox_container:HBoxContainer):
 		instance.create(t)
 		
 		
-func change_background_and_beastie_image(nr:int):
-	var texture
+func change_background_and_beastie_image(nr:int, beastie_image_front:String):
+	var texture = load(beastie_image_front)
 	match nr:
 		1:
 			background_texture_rect.texture = green_background
-			texture = green_beastie
 		4:
 			background_texture_rect.texture = red_background
-			texture = red_beastie
 		7:
 			background_texture_rect.texture = blue_background
-			texture = blue_beastie
+			
 			
 	beastie_image.texture = texture
 	shadow_image.texture = texture

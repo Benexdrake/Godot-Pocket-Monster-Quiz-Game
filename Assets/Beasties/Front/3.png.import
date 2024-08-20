@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqchhu276kobi"
-path="res://.godot/imported/glumanda_front.png-560d76ee948722dc45f111e1cbc59a13.ctex"
+uid="uid://cc3r7geg4xh5p"
+path="res://.godot/imported/3.png-18f8a971f78e75142553bd0c61b90ae5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Beasties/Images/glumanda_front.png"
-dest_files=["res://.godot/imported/glumanda_front.png-560d76ee948722dc45f111e1cbc59a13.ctex"]
+source_file="res://Assets/Beasties/Front/3.png"
+dest_files=["res://.godot/imported/3.png-18f8a971f78e75142553bd0c61b90ae5.ctex"]
 
 [params]
 

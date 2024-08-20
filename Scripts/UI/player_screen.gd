@@ -12,7 +12,6 @@ func _ready() -> void:
 	if battle_screen == null:
 		return
 	
-	battle_screen.exp_changed.connect(on_exp_changed)
 	player_entity.hp_changed.connect(on_hp_changed)
 
 func update():
@@ -23,8 +22,4 @@ func update():
 	
 
 func on_hp_changed():
-	update()
-
-
-func on_exp_changed():
 	update()

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://diepbscnivlsc"
-path="res://.godot/imported/shiggy_back.png-b4cc64c3cca2ce11391292a656abce48.ctex"
+uid="uid://43q3ra85efpw"
+path="res://.godot/imported/8.png-73d7ca1504e86fc0cd749ddb33a28a9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Beasties/Images/shiggy_back.png"
-dest_files=["res://.godot/imported/shiggy_back.png-b4cc64c3cca2ce11391292a656abce48.ctex"]
+source_file="res://Assets/Beasties/Back/8.png"
+dest_files=["res://.godot/imported/8.png-73d7ca1504e86fc0cd749ddb33a28a9d.ctex"]
 
 [params]
 

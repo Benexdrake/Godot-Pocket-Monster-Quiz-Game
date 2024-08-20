@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cud7btfthwl3c"
-path="res://.godot/imported/bisasam_front.png-2e994fb8bae5b4c2fb3cf2e7a6a39675.ctex"
+uid="uid://bmghum0lj3k8n"
+path="res://.godot/imported/6.png-18c509dd5a1880afe10665c7184ba9f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Beasties/Images/bisasam_front.png"
-dest_files=["res://.godot/imported/bisasam_front.png-2e994fb8bae5b4c2fb3cf2e7a6a39675.ctex"]
+source_file="res://Assets/Beasties/Back/6.png"
+dest_files=["res://.godot/imported/6.png-18c509dd5a1880afe10665c7184ba9f5.ctex"]
 
 [params]
 

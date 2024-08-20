@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8g3g3dm5f4b2"
-path="res://.godot/imported/shiggy_front.png-b52fb6b169c16958078620057a2e3817.ctex"
+uid="uid://d1pdk1wn4eqd8"
+path="res://.godot/imported/BattleScreen.png-8474f3590528d9434ae818add6c4baf5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Beasties/Images/shiggy_front.png"
-dest_files=["res://.godot/imported/shiggy_front.png-b52fb6b169c16958078620057a2e3817.ctex"]
+source_file="res://Assets/Background/BattleScreen.png"
+dest_files=["res://.godot/imported/BattleScreen.png-8474f3590528d9434ae818add6c4baf5.ctex"]
 
 [params]
 

@@ -27,8 +27,9 @@ func create(_topic_id:String,_topic_name:String, topic_image:Texture, informatio
 	information_label.text = information
 	select_modus(modus)
 
-func select_modus(modus:int):
-	match modus:
+
+func select_modus(_modus:int):
+	match _modus:
 		1:
 			modus_image_texture_rect.texture = normal_modus
 		2:

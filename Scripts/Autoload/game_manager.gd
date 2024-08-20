@@ -1,6 +1,6 @@
 extends Node
 
-const SAVE_FILE_PATH:String = "user://game.save"
+const SAVE_FILE_PATH:String = "user://save.file_20_08"
 
 var beasties = preload("res://Resource/Beasties/all_beasties.tres") as AllBeasties
 
