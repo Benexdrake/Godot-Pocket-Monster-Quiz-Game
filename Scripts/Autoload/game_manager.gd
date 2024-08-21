@@ -8,6 +8,8 @@ var all_topics:AllTopicsResource = preload("res://Resource/Topics/all_topics.tre
 
 var save_file_exists:bool
 
+enum game_modus {normal, loop, exam}
+
 func _ready() -> void:
 	load_save_file()
 	beasties.load_beasties()

@@ -22,3 +22,10 @@ func get_question(id:String):
 	for question in questions:
 		if question.id == id:
 			return question
+			
+func get_right_question(id:String):
+	var question = get_question(id)
+	for answer in question.answers:
+		if answer[1] == true:
+			return {"question": question.question, "answer": answer[0]}
+		

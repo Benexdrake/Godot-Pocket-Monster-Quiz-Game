@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://clpm1hxrb3hdl"]
+
+[ext_resource type="Script" path="res://Scripts/UI/wrong_card.gd" id="1_ly05d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ftg54"]
+bg_color = Color(0.288518, 0.288518, 0.288518, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.157392, 0.468335, 1, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="WrongCard" type="PanelContainer"]
+custom_minimum_size = Vector2(0, 100)
+theme_override_styles/panel = SubResource("StyleBoxFlat_ftg54")
+script = ExtResource("1_ly05d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="QuestionLabel" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Mit welchem Befehl zeigt man XYZ"
+
+[node name="AnswerLabel" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "ls"

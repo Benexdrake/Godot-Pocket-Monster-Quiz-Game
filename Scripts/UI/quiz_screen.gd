@@ -8,6 +8,7 @@ signal check_answer
 @onready var quiz_button_3: Button = %QuizButton3
 @onready var quiz_button_4: Button = %QuizButton4
 @onready var question_label: Label = %QuestionLabel
+@onready var time_progress_bar: ProgressBar = $TimeProgressBar
 
 var current_question
 
@@ -27,6 +28,10 @@ func create_question(id:String):
 		quiz_button_2.text = current_question.answers[1][0]
 		quiz_button_3.text = current_question.answers[2][0]
 		quiz_button_4.text = current_question.answers[3][0]
+		
+
+func update_time_bar(current, max):
+	time_progress_bar.value = 1.0 - (current / max)
 		
 	
 func on_button_pressed(index:int):

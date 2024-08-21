@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=21 format=3 uid="uid://smp3kudg03ba"]
+[gd_resource type="Theme" load_steps=25 format=3 uid="uid://smp3kudg03ba"]
 
 [ext_resource type="Texture2D" uid="uid://8gpf7lmiec7" path="res://Assets/Theme/ui.png" id="1_bjkfw"]
 
@@ -41,6 +41,71 @@ region_rect = Rect2(0, 0, 16, 16)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2n3q8"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lay3x"]
+bg_color = Color(0.176471, 0.176471, 0.176471, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ohpsy"]
+bg_color = Color(0.176471, 0.858824, 1, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d07ma"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jqkh4"]
+bg_color = Color(0.817347, 0.0377322, 0, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ayp2"]
+bg_color = Color(0.176471, 0.176471, 0.176471, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6wk1b"]
+bg_color = Color(0.176471, 0.858824, 0.176471, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_k2le6"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_jyij1"]
@@ -76,12 +141,6 @@ border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4plsg"]
-bg_color = Color(0.100713, 2.40654e-07, 0.540859, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_asrs4"]
-bg_color = Color(0.182466, 0.629029, 1, 1)
-
 [sub_resource type="SystemFont" id="SystemFont_bxkq8"]
 
 [resource]
@@ -98,11 +157,18 @@ CheckBox/styles/hover = SubResource("StyleBoxEmpty_4q66j")
 CheckBox/styles/hover_pressed = SubResource("StyleBoxEmpty_n77xn")
 CheckBox/styles/normal = SubResource("StyleBoxEmpty_82bns")
 CheckBox/styles/pressed = SubResource("StyleBoxEmpty_2n3q8")
+EXP_Progress_Bar/base_type = &"ProgressBar"
+EXP_Progress_Bar/styles/background = SubResource("StyleBoxFlat_lay3x")
+EXP_Progress_Bar/styles/fill = SubResource("StyleBoxFlat_ohpsy")
+HP_Background_Progress_Bar/base_type = &"ProgressBar"
+HP_Background_Progress_Bar/styles/background = SubResource("StyleBoxEmpty_d07ma")
+HP_Background_Progress_Bar/styles/fill = SubResource("StyleBoxFlat_jqkh4")
+HP_Progress_Bar/base_type = &"ProgressBar"
+HP_Progress_Bar/styles/background = SubResource("StyleBoxFlat_6ayp2")
+HP_Progress_Bar/styles/fill = SubResource("StyleBoxFlat_6wk1b")
 HSlider/icons/grabber = SubResource("PlaceholderTexture2D_k2le6")
 HSlider/icons/grabber_disabled = SubResource("PlaceholderTexture2D_jyij1")
 HSlider/icons/grabber_highlight = SubResource("PlaceholderTexture2D_8t0gn")
 HSlider/styles/grabber_area = SubResource("StyleBoxFlat_k7jlo")
 HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_uidd0")
 HSlider/styles/slider = SubResource("StyleBoxFlat_qmc4i")
-ProgressBar/styles/background = SubResource("StyleBoxFlat_4plsg")
-ProgressBar/styles/fill = SubResource("StyleBoxFlat_asrs4")
