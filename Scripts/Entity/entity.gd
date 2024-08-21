@@ -24,9 +24,9 @@ func create(_hp:int, beastie_image_path:String, _beastie_name:String):
 	died_animation_player.play_backwards("died")
 	
 
-func get_hit():
+func get_hit(dmg:int):
 	hit_animation_player.play("hit")
-	current_hp -=1
+	current_hp -=dmg
 	hp_changed.emit()
 	
 	if current_hp <= 0:

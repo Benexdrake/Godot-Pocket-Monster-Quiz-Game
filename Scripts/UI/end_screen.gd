@@ -24,6 +24,7 @@ func _ready() -> void:
 		
 	points_label.text = str(right) + " / " + str(all)
 	message_label.text = end_screen_text(right, all)
+	GlobalVariables.reset()
 
 func end_screen_text(right:int, all:int):
 	var text = ""

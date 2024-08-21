@@ -34,3 +34,5 @@ text = "Back"
 
 [node name="QuestionTimer" type="Timer" parent="."]
 wait_time = 10.0
+
+[node name="Timer" type="Timer" parent="."]

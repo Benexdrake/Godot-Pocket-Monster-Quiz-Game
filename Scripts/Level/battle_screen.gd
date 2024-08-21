@@ -23,11 +23,8 @@ func _ready() -> void:
 	quiz_screen.check_answer.connect(on_check_answer)
 	topic = GameManager.all_topics.get_topic_by_id(GlobalVariables.current_topic_id)
 	topic.questions.shuffle()
-	
 	questions = topic.questions.duplicate(true)
-	
 	max_questions = questions.size()
-	
 	quiz_screen.create_question(questions[0].id)
 	
 	var beastie = GameManager.get_beastie(GlobalVariables.player.players_beastie_nr)
@@ -38,6 +35,7 @@ func _ready() -> void:
 		
 	if GlobalVariables.current_modus == GameManager.game_modus.exam:
 		question_timer.start()
+		quiz_screen.time_progress_bar.visible = true
 
 
 func _process(delta: float) -> void:
@@ -45,6 +43,8 @@ func _process(delta: float) -> void:
 		quiz_screen.update_time_bar(question_timer.time_left, question_timer.wait_time)
 
 func create_enemy():
+	if questions.size() == 0:
+		return
 	var nrs = GameManager.beasties.load_beasties()
 	var rand = randi_range(0,nrs.size()-1)
 	var beastie = GameManager.get_beastie(nrs[rand])
@@ -70,7 +70,7 @@ func on_check_answer(answer:bool):
 			GlobalVariables.right_question_ids.append(questions[0].id)
 		GlobalVariables.insert_question_id(questions[0].id)
 		questions.remove_at(0)
-		enemy_screen.enemy_entity.get_hit()
+		enemy_screen.enemy_entity.get_hit(1)
 		question_timer.stop()
 		question_timer.start()
 		
@@ -80,20 +80,23 @@ func on_check_answer(answer:bool):
 				questions = topic.questions.duplicate(true)
 				return
 			
-			GameManager.save()
+			enemy_screen.enemy_entity.get_hit(99)
+			$Timer.start()
+			await $Timer.timeout
+				
 			ScreenTransition.transition_to_scene("res://Scenes/UI/end_screen.tscn")
 			return
-		
 		quiz_screen.next_question(questions[0].id)
 		was_right_answer = true
 	else:
 		was_right_answer = false
-		player_screen.player_entity.get_hit()
+		player_screen.player_entity.get_hit(1)
 		GlobalVariables.insert_wrong_question_id(questions[0].id)
 
 
 func on_back_button_pressed():
 	ScreenTransition.transition_to_scene("res://Scenes/UI/main_menu.tscn")
+	GlobalVariables.reset()
 	
 	
 func on_player_died():

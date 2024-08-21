@@ -26,5 +26,6 @@ func insert_question_id(id:String):
 func reset():
 	wrong_question_ids = []
 	all_question_ids = []
+	right_question_ids = []
 	killed_enemies_count = 0
 	collected_exp = 0
