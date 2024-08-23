@@ -1,0 +1,509 @@
+{
+  "topic_id":"python_beginner",
+	"topic":"Python Beginner",
+	"information":"Python Beginner Level",
+	"icon": "Python.png",
+	"difficulty": 1,
+  "questions": [
+    {
+      "id": "1",
+      "question": "Wie deklariert man eine Variable in Python?",
+      "answers": [
+        ["variable_name = value", true],
+        ["var variable_name = value", false],
+        ["declare variable_name = value", false],
+        ["let variable_name = value", false]
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Welcher Datentyp wird verwendet, um Text darzustellen?",
+      "answers": [
+        ["str", true],
+        ["text", false],
+        ["char", false],
+        ["string", false]
+      ]
+    },
+    {
+      "id": "3",
+      "question": "Wie gibt man eine Nachricht auf der Konsole aus?",
+      "answers": [
+        ["print('Nachricht')", true],
+        ["echo('Nachricht')", false],
+        ["write('Nachricht')", false],
+        ["output('Nachricht')", false]
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Wie kommentiert man eine einzelne Zeile in Python?",
+      "answers": [
+        ["# Kommentar", true],
+        ["// Kommentar", false],
+        ["<!-- Kommentar -->", false],
+        ["/* Kommentar */", false]
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Wie erstellt man eine Liste in Python?",
+      "answers": [
+        ["my_list = [1, 2, 3]", true],
+        ["my_list = (1, 2, 3)", false],
+        ["my_list = {1, 2, 3}", false],
+        ["my_list = list[1, 2, 3]", false]
+      ]
+    },
+    {
+      "id": "6",
+      "question": "Welches Schlüsselwort wird verwendet, um eine Schleife zu erstellen?",
+      "answers": [
+        ["for", true],
+        ["loop", false],
+        ["repeat", false],
+        ["iterate", false]
+      ]
+    },
+    {
+      "id": "7",
+      "question": "Wie beendet man eine Schleife vorzeitig?",
+      "answers": [
+        ["break", true],
+        ["exit", false],
+        ["stop", false],
+        ["return", false]
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Wie kann man die Länge einer Liste ermitteln?",
+      "answers": [
+        ["len(my_list)", true],
+        ["size(my_list)", false],
+        ["length(my_list)", false],
+        ["count(my_list)", false]
+      ]
+    },
+    {
+      "id": "9",
+      "question": "Welcher Operator wird verwendet, um zwei Werte zu vergleichen?",
+      "answers": [
+        ["==", true],
+        ["=", false],
+        ["!=", false],
+        ["<>", false]
+      ]
+    },
+    {
+      "id": "10",
+      "question": "Wie erstellt man eine Funktion in Python?",
+      "answers": [
+        ["def my_function():", true],
+        ["function my_function():", false],
+        ["create my_function():", false],
+        ["func my_function():", false]
+      ]
+    },
+    {
+      "id": "11",
+      "question": "Wie kommentiert man mehrere Zeilen in Python?",
+      "answers": [
+        ["''' Kommentar '''", true],
+        ["// Kommentar", false],
+        ["/* Kommentar */", false],
+        ["# Kommentar", false]
+      ]
+    },
+    {
+      "id": "12",
+      "question": "Wie konvertiert man eine Zeichenkette in eine Ganzzahl?",
+      "answers": [
+        ["int('123')", true],
+        ["parseInt('123')", false],
+        ["toInt('123')", false],
+        ["convert_to_int('123')", false]
+      ]
+    },
+    {
+      "id": "13",
+      "question": "Welcher der folgenden ist kein primitiver Datentyp in Python?",
+      "answers": [
+        ["list", true],
+        ["int", false],
+        ["str", false],
+        ["bool", false]
+      ]
+    },
+    {
+      "id": "14",
+      "question": "Wie öffnet man eine Datei zum Lesen?",
+      "answers": [
+        ["open('file.txt', 'r')", true],
+        ["read('file.txt')", false],
+        ["file('file.txt')", false],
+        ["open('file.txt', 'read')", false]
+      ]
+    },
+    {
+      "id": "15",
+      "question": "Wie iteriert man durch die Elemente einer Liste?",
+      "answers": [
+        ["for element in my_list:", true],
+        ["while element in my_list:", false],
+        ["repeat element in my_list:", false],
+        ["each element in my_list:", false]
+      ]
+    },
+    {
+      "id": "16",
+      "question": "Welcher Operator wird verwendet, um Listen zu verketten?",
+      "answers": [
+        ["+", true],
+        ["&", false],
+        ["concat()", false],
+        ["append()", false]
+      ]
+    },
+    {
+      "id": "17",
+      "question": "Wie entfernt man das letzte Element einer Liste?",
+      "answers": [
+        ["my_list.pop()", true],
+        ["my_list.remove()", false],
+        ["del my_list[-1]", false],
+        ["my_list.delete()", false]
+      ]
+    },
+    {
+      "id": "18",
+      "question": "Wie kann man prüfen, ob ein Element in einer Liste vorhanden ist?",
+      "answers": [
+        ["if element in my_list:", true],
+        ["if element is in my_list:", false],
+        ["if my_list.contains(element):", false],
+        ["if element exists in my_list:", false]
+      ]
+    },
+    {
+      "id": "19",
+      "question": "Wie kann man eine Bedingung in Python prüfen?",
+      "answers": [
+        ["if condition:", true],
+        ["check condition:", false],
+        ["when condition:", false],
+        ["test condition:", false]
+      ]
+    },
+    {
+      "id": "20",
+      "question": "Welcher Wert wird zurückgegeben, wenn eine Funktion keinen `return`-Befehl hat?",
+      "answers": [
+        ["None", true],
+        ["0", false],
+        ["False", false],
+        ["null", false]
+      ]
+    },
+    {
+      "id": "21",
+      "question": "Wie erstellt man ein Dictionary in Python?",
+      "answers": [
+        ["my_dict = {'key': 'value'}", true],
+        ["my_dict = ['key', 'value']", false],
+        ["my_dict = ('key': 'value')", false],
+        ["my_dict = dict('key': 'value')", false]
+      ]
+    },
+    {
+      "id": "22",
+      "question": "Wie gibt man die Schlüssel eines Dictionaries aus?",
+      "answers": [
+        ["my_dict.keys()", true],
+        ["my_dict.getKeys()", false],
+        ["my_dict.values()", false],
+        ["my_dict['keys']", false]
+      ]
+    },
+    {
+      "id": "23",
+      "question": "Welcher Befehl beendet ein Python-Skript?",
+      "answers": [
+        ["exit()", true],
+        ["stop()", false],
+        ["terminate()", false],
+        ["halt()", false]
+      ]
+    },
+    {
+      "id": "24",
+      "question": "Welche Methode fügt ein Element am Ende einer Liste hinzu?",
+      "answers": [
+        ["append()", true],
+        ["add()", false],
+        ["insert()", false],
+        ["push()", false]
+      ]
+    },
+    {
+      "id": "25",
+      "question": "Wie konvertiert man eine Liste in eine Zeichenkette?",
+      "answers": [
+        ["' '.join(my_list)", true],
+        ["str(my_list)", false],
+        ["my_list.toString()", false],
+        ["concat(my_list)", false]
+      ]
+    },
+    {
+      "id": "26",
+      "question": "Welcher Befehl wird verwendet, um eine Ausnahme abzufangen?",
+      "answers": [
+        ["try...except", true],
+        ["try...catch", false],
+        ["handle...error", false],
+        ["catch...except", false]
+      ]
+    },
+    {
+      "id": "27",
+      "question": "Wie gibt man eine formatierte Zeichenkette aus?",
+      "answers": [
+        ["print(f'Hello, {name}')", true],
+        ["print('Hello, %s' % name)", false],
+        ["print('Hello, '.format(name))", false],
+        ["print('Hello, ' + name)", false]
+      ]
+    },
+    {
+      "id": "28",
+      "question": "Wie konvertiert man eine Ganzzahl in eine Zeichenkette?",
+      "answers": [
+        ["str(123)", true],
+        ["int.toString(123)", false],
+        ["string(123)", false],
+        ["123.toStr()", false]
+      ]
+    },
+    {
+      "id": "29",
+      "question": "Welches Schlüsselwort wird verwendet, um eine Klasse zu erstellen?",
+      "answers": [
+        ["class", true],
+        ["object", false],
+        ["def", false],
+        ["type", false]
+      ]
+    },
+    {
+      "id": "30",
+      "question": "Wie kann man eine Methode einer Klasse definieren?",
+      "answers": [
+        ["def my_method(self):", true],
+        ["def my_method():", false],
+        ["function my_method(self):", false],
+        ["method my_method(self):", false]
+      ]
+    },
+    {
+      "id": "31",
+      "question": "Welches Modul wird für die Arbeit mit zufälligen Zahlen verwendet?",
+      "answers": [
+        ["random", true],
+        ["math", false],
+        ["numbers", false],
+        ["statistics", false]
+      ]
+    },
+    {
+      "id": "32",
+      "question": "Wie wird eine Liste umgekehrt?",
+      "answers": [
+        ["my_list.reverse()", true],
+        ["my_list[::-1]", false],
+        ["my_list.invert()", false],
+        ["my_list.reverse_order()", false]
+      ]
+    },
+    {
+      "id": "33",
+      "question": "Wie überprüft man, ob eine Zahl gerade ist?",
+      "answers": [
+        ["if number % 2 == 0:", true],
+        ["if number / 2 == 0:", false],
+        ["if number.is_even():", false],
+        ["if even(number):", false]
+      ]
+    },
+    {
+      "id": "34",
+      "question": "Wie erstellt man eine unendliche Schleife?",
+      "answers": [
+        ["while True:", true],
+        ["for ever:", false],
+        ["loop forever:", false],
+        ["repeat forever:", false]
+      ]
+    },
+    {
+      "id": "35",
+      "question": "Welcher Operator wird für Exponentialberechnungen verwendet?",
+      "answers": [
+        ["**", true],
+        ["^", false],
+        ["exp()", false],
+        ["^^", false]
+      ]
+    },
+    {
+      "id": "36",
+      "question": "Wie importiert man das Modul `math`?",
+      "answers": [
+        ["import math", true],
+        ["import mathematics", false],
+        ["import maths", false],
+        ["import calc", false]
+      ]
+    },
+    {
+      "id": "37",
+      "question": "Wie rundet man eine Zahl auf die nächste ganze Zahl ab?",
+      "answers": [
+        ["round(number)", true],
+        ["int(number)", false],
+        ["floor(number)", false],
+        ["ceil(number)", false]
+      ]
+    },
+    {
+      "id": "38",
+      "question": "Wie entfernt man ein Element aus einer Liste nach dem Index?",
+      "answers": [
+        ["del my_list[index]", true],
+        ["my_list.remove(index)", false],
+        ["pop(my_list[index])", false],
+        ["remove(my_list[index])", false]
+      ]
+    },
+    {
+      "id": "39",
+      "question": "Was gibt die Methode `range()` zurück?",
+      "answers": [
+        ["Ein iterierbares Objekt", true],
+        ["Eine Liste", false],
+        ["Eine Funktion", false],
+        ["Eine Schleife", false]
+      ]
+    },
+    {
+      "id": "40",
+      "question": "Welches Schlüsselwort wird verwendet, um eine Ausnahme auszulösen?",
+      "answers": [
+        ["raise", true],
+        ["throw", false],
+        ["error", false],
+        ["catch", false]
+      ]
+    },
+    {
+      "id": "41",
+      "question": "Wie kann man sicherstellen, dass eine Methode nicht überschrieben wird?",
+      "answers": [
+        ["Mit dem Dekorator `@final`", true],
+        ["Mit dem Schlüsselwort `private`", false],
+        ["Mit dem Schlüsselwort `sealed`", false],
+        ["Mit dem Schlüsselwort `immutable`", false]
+      ]
+    },
+    {
+      "id": "42",
+      "question": "Wie überprüft man, ob eine Liste leer ist?",
+      "answers": [
+        ["if not my_list:", true],
+        ["if my_list == []:", false],
+        ["if len(my_list) == 0:", false],
+        ["if empty(my_list):", false]
+      ]
+    },
+    {
+      "id": "43",
+      "question": "Wie entfernt man doppelte Werte aus einer Liste?",
+      "answers": [
+        ["my_list = list(set(my_list))", true],
+        ["my_list.remove_duplicates()", false],
+        ["my_list.clear_duplicates()", false],
+        ["my_list.unique()", false]
+      ]
+    },
+    {
+      "id": "44",
+      "question": "Wie iteriert man gleichzeitig über zwei Listen?",
+      "answers": [
+        ["for a, b in zip(list1, list2):", true],
+        ["for a in list1, b in list2:", false],
+        ["for (a, b) in (list1, list2):", false],
+        ["for a, b over (list1, list2):", false]
+      ]
+    },
+    {
+      "id": "45",
+      "question": "Welcher Operator wird für logische UND-Bedingungen verwendet?",
+      "answers": [
+        ["and", true],
+        ["&&", false],
+        ["&", false],
+        ["AND", false]
+      ]
+    },
+    {
+      "id": "46",
+      "question": "Wie erstellt man eine Liste von Zahlen von 1 bis 10?",
+      "answers": [
+        ["list(range(1, 11))", true],
+        ["[1...10]", false],
+        ["range(1, 10)", false],
+        ["range[1, 10]", false]
+      ]
+    },
+    {
+      "id": "47",
+      "question": "Wie kann man alle Elemente einer Liste verdoppeln?",
+      "answers": [
+        ["[x * 2 for x in my_list]", true],
+        ["my_list.double()", false],
+        ["my_list *= 2", false],
+        ["multiply(my_list, 2)", false]
+      ]
+    },
+    {
+      "id": "48",
+      "question": "Welches Modul verwendet man zur Verarbeitung von JSON-Daten?",
+      "answers": [
+        ["json", true],
+        ["data", false],
+        ["csv", false],
+        ["pickle", false]
+      ]
+    },
+    {
+      "id": "49",
+      "question": "Wie kann man eine Zeichenkette in Kleinbuchstaben umwandeln?",
+      "answers": [
+        ["string.lower()", true],
+        ["string.toLower()", false],
+        ["string.to_lowercase()", false],
+        ["string.lowercase()", false]
+      ]
+    },
+    {
+      "id": "50",
+      "question": "Welches Schlüsselwort wird verwendet, um eine Methode in einer Klasse zu überschreiben?",
+      "answers": [
+        ["def", true],
+        ["override", false],
+        ["extend", false],
+        ["method", false]
+      ]
+    }
+  ]
+}

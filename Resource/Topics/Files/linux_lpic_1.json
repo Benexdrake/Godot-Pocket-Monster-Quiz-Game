@@ -3,1007 +3,1008 @@
 	"topic":"Linux LPIC-1",
 	"information":"Linux LPIC-1 101 und 102 Zertifikat",
 	"icon": "Linux.png",
+	"difficulty": 2,
   "questions": [
-    {
-      "id": "1",
-      "question": "Welcher Befehl wird verwendet, um den Bootloader GRUB neu zu installieren?",
-      "answers": [
-        ["grub-install", true],
-        ["grub-setup", false],
-        ["grub-config", false],
-        ["grub-update", false]
-      ]
-    },
-    {
-      "id": "2",
-      "question": "Welcher Befehl zeigt die Partitionstabelle einer Festplatte an?",
-      "answers": [
-        ["fdisk -l", true],
-        ["parted -l", false],
-        ["lsblk", false],
-        ["blkid", false]
-      ]
-    },
-    {
-      "id": "3",
-      "question": "Wie überprüft man, ob eine bestimmte Portnummer vom System verwendet wird?",
-      "answers": [
-        ["netstat -tuln", true],
-        ["lsof -i", false],
-        ["ss -s", false],
-        ["nmap -sS", false]
-      ]
-    },
-    {
-      "id": "4",
-      "question": "Welcher Befehl wird verwendet, um die UID eines Benutzers zu ändern?",
-      "answers": [
-        ["usermod -u", true],
-        ["useradd -u", false],
-        ["passwd -u", false],
-        ["chuid", false]
-      ]
-    },
-    {
-      "id": "5",
-      "question": "Wie listet man die mountbaren Dateisysteme im System auf?",
-      "answers": [
-        ["cat /proc/filesystems", true],
-        ["lsblk", false],
-        ["df -T", false],
-        ["mount -a", false]
-      ]
-    },
-    {
-      "id": "6",
-      "question": "Welcher Befehl zeigt die Kernel-Nachrichten während des Bootvorgangs an?",
-      "answers": [
-        ["dmesg", true],
-        ["journalctl -k", false],
-        ["syslog", false],
-        ["bootctl", false]
-      ]
-    },
-    {
-      "id": "7",
-      "question": "Wie fügt man eine Umgebungsvariable dauerhaft zu einer Benutzerumgebung hinzu?",
-      "answers": [
-        ["In der Datei ~/.bashrc", true],
-        ["In der Datei /etc/profile", false],
-        ["Im Verzeichnis /usr/local/etc", false],
-        ["In der Datei /etc/environment", false]
-      ]
-    },
-    {
-      "id": "8",
-      "question": "Welcher Befehl wird verwendet, um die Netzwerkschnittstellen zu konfigurieren?",
-      "answers": [
-        ["ip", true],
-        ["ifconfig", false],
-        ["netcfg", false],
-        ["netconfig", false]
-      ]
-    },
-    {
-      "id": "9",
-      "question": "Welcher Befehl wird verwendet, um das Dateisystem einer Partition zu überprüfen?",
-      "answers": [
-        ["fsck", true],
-        ["checkfs", false],
-        ["mkfs", false],
-        ["diskchk", false]
-      ]
-    },
-    {
-      "id": "10",
-      "question": "Wie zeigt man die Liste der geladenen Kernel-Module an?",
-      "answers": [
-        ["lsmod", true],
-        ["modinfo", false],
-        ["insmod", false],
-        ["rmmod", false]
-      ]
-    },
-    {
-      "id": "11",
-      "question": "Wie erstellt man einen Hardlink auf eine Datei?",
-      "answers": [
-        ["ln", true],
-        ["ln -s", false],
-        ["link", false],
-        ["mklink", false]
-      ]
-    },
-    {
-      "id": "12",
-      "question": "Welcher Befehl wird verwendet, um einen neuen Benutzer hinzuzufügen?",
-      "answers": [
-        ["useradd", true],
-        ["usermod", false],
-        ["adduser", false],
-        ["passwd", false]
-      ]
-    },
-    {
-      "id": "13",
-      "question": "Wie ändert man die Zugriffsrechte einer Datei auf 755?",
-      "answers": [
-        ["chmod 755", true],
-        ["chown 755", false],
-        ["chgrp 755", false],
-        ["chmod +x", false]
-      ]
-    },
-    {
-      "id": "14",
-      "question": "Wie zeigt man die Partitionen einer Festplatte an?",
-      "answers": [
-        ["fdisk -l", true],
-        ["parted", false],
-        ["blkid", false],
-        ["df", false]
-      ]
-    },
-    {
-      "id": "15",
-      "question": "Welcher Befehl wird verwendet, um einen Dienst zu stoppen?",
-      "answers": [
-        ["systemctl stop", true],
-        ["service halt", false],
-        ["systemctl halt", false],
-        ["sysv-stop", false]
-      ]
-    },
-    {
-      "id": "16",
-      "question": "Welcher Befehl zeigt die Konfigurationsdateien an, die von einem Paket installiert wurden?",
-      "answers": [
-        ["dpkg -L", true],
-        ["apt show", false],
-        ["rpm -qf", false],
-        ["pkg-config", false]
-      ]
-    },
-    {
-      "id": "17",
-      "question": "Wie beendet man einen Prozess anhand seiner Prozess-ID (PID)?",
-      "answers": [
-        ["kill", true],
-        ["killall", false],
-        ["stop", false],
-        ["terminate", false]
-      ]
-    },
-    {
-      "id": "18",
-      "question": "Welcher Befehl zeigt die IP-Adresse einer Netzwerkschnittstelle an?",
-      "answers": [
-        ["ip addr show", true],
-        ["ifconfig addr", false],
-        ["netstat -i", false],
-        ["netaddr", false]
-      ]
-    },
-    {
-      "id": "19",
-      "question": "Welcher Befehl wird verwendet, um die Partitionen zu formatieren?",
-      "answers": [
-        ["mkfs", true],
-        ["format", false],
-        ["parted", false],
-        ["fdisk", false]
-      ]
-    },
-    {
-      "id": "20",
-      "question": "Wie installiert man ein Paket auf einem Debian-basierten System?",
-      "answers": [
-        ["apt install", true],
-        ["rpm -i", false],
-        ["yum install", false],
-        ["zypper install", false]
-      ]
-    },
-    {
-      "id": "21",
-      "question": "Welcher Befehl wird verwendet, um den Inhalt eines RPM-Pakets anzuzeigen?",
-      "answers": [
-        ["rpm -ql", true],
-        ["rpm -q", false],
-        ["dpkg -L", false],
-        ["zypper list", false]
-      ]
-    },
-    {
-      "id": "22",
-      "question": "Wie zeigt man die aktiven Verbindungen auf einem Server an?",
-      "answers": [
-        ["netstat -an", true],
-        ["ss -an", false],
-        ["ifconfig -a", false],
-        ["route -n", false]
-      ]
-    },
-    {
-      "id": "23",
-      "question": "Welcher Befehl zeigt die aktuelle Shell-Umgebung an?",
-      "answers": [
-        ["env", true],
-        ["echo $PATH", false],
-        ["sh -c", false],
-        ["printenv", false]
-      ]
-    },
-    {
-      "id": "24",
-      "question": "Welcher Befehl wird verwendet, um die Paketliste zu aktualisieren?",
-      "answers": [
-        ["apt update", true],
-        ["yum check-update", false],
-        ["dnf update", false],
-        ["rpm refresh", false]
-      ]
-    },
-    {
-      "id": "25",
-      "question": "Welcher Befehl wird verwendet, um den Speicherbedarf eines Verzeichnisses zu ermitteln?",
-      "answers": [
-        ["du -sh", true],
-        ["df -h", false],
-        ["ls -lh", false],
-        ["diskcheck", false]
-      ]
-    },
-    {
-      "id": "26",
-      "question": "Wie zeigt man die Laufzeit des Systems seit dem letzten Neustart an?",
-      "answers": [
-        ["uptime", true],
-        ["time", false],
-        ["sysctl status", false],
-        ["showtime", false]
-      ]
-    },
-    {
-      "id": "27",
-      "question": "Wie konfiguriert man ein neues Repository auf einem Debian-System?",
-      "answers": [
-        ["Bearbeiten der Datei /etc/apt/sources.list", true],
-        ["apt repo add", false],
-        ["repository add", false],
-        ["apt-get repository", false]
-      ]
-    },
-    {
-      "id": "28",
-      "question": "Wie beendet man die Sitzung eines Benutzers?",
-      "answers": [
-        ["logout", true],
-        ["exit", false],
-        ["end", false],
-        ["terminate", false]
-      ]
-    },
-    {
-      "id": "29",
-      "question": "Welcher Befehl listet die verfügbaren Systemd-Services auf?",
-      "answers": [
-        ["systemctl list-units", true],
-        ["service --status-all", false],
-        ["sysv list", false],
-        ["systemctl services", false]
-      ]
-    },
-    {
-      "id": "30",
-      "question": "Wie zeigt man die Routing-Tabelle des Systems an?",
-      "answers": [
-        ["ip route", true],
-        ["route -n", false],
-        ["netstat -r", false],
-        ["traceroute", false]
-      ]
-    },
-    {
-      "id": "31",
-      "question": "Wie installiert man ein Paket auf einem Red Hat-basierten System?",
-      "answers": [
-        ["yum install", true],
-        ["apt install", false],
-        ["zypper install", false],
-        ["rpm install", false]
-      ]
-    },
-    {
-      "id": "32",
-      "question": "Wie zeigt man die Größe des verfügbaren und belegten Festplattenspeichers an?",
-      "answers": [
-        ["df -h", true],
-        ["du -h", false],
-        ["lsblk", false],
-        ["fdisk -l", false]
-      ]
-    },
-    {
-      "id": "33",
-      "question": "Welcher Befehl wird verwendet, um einen Benutzer aus einer Gruppe zu entfernen?",
-      "answers": [
-        ["gpasswd -d", true],
-        ["groupdel", false],
-        ["usermod -g", false],
-        ["delgroup", false]
-      ]
-    },
-    {
-      "id": "34",
-      "question": "Wie startet man einen neuen Bash-Prozess?",
-      "answers": [
-        ["bash", true],
-        ["sh", false],
-        ["startbash", false],
-        ["newbash", false]
-      ]
-    },
-    {
-      "id": "35",
-      "question": "Welcher Befehl wird verwendet, um den SSH-Dienst zu starten?",
-      "answers": [
-        ["systemctl start sshd", true],
-        ["service ssh start", false],
-        ["sshd --start", false],
-        ["init.d/sshd start", false]
-      ]
-    },
-    {
-      "id": "36",
-      "question": "Wie fügt man eine statische Route zu einer Netzwerk-Schnittstelle hinzu?",
-      "answers": [
-        ["ip route add", true],
-        ["route add", false],
-        ["net add route", false],
-        ["ifconfig route add", false]
-      ]
-    },
-    {
-      "id": "37",
-      "question": "Wie überprüft man die Integrität eines Dateisystems?",
-      "answers": [
-        ["fsck", true],
-        ["e2fsck", false],
-        ["chkfs", false],
-        ["diskchk", false]
-      ]
-    },
-    {
-      "id": "38",
-      "question": "Welcher Befehl listet die installierten Pakete auf einem Red Hat-basierten System auf?",
-      "answers": [
-        ["rpm -qa", true],
-        ["yum list installed", false],
-        ["dnf list installed", false],
-        ["apt list", false]
-      ]
-    },
-    {
-      "id": "39",
-      "question": "Welcher Befehl wird verwendet, um eine Datei zu komprimieren?",
-      "answers": [
-        ["gzip", true],
-        ["zip", false],
-        ["tar -z", false],
-        ["compress", false]
-      ]
-    },
-    {
-      "id": "40",
-      "question": "Wie zeigt man die Prozesse eines bestimmten Benutzers an?",
-      "answers": [
-        ["ps -u", true],
-        ["top -u", false],
-        ["proc -u", false],
-        ["listproc -u", false]
-      ]
-    },
-    {
-      "id": "41",
-      "question": "Welcher Befehl zeigt die Systemzeit an?",
-      "answers": [
-        ["date", true],
-        ["time", false],
-        ["clock", false],
-        ["timedatectl", false]
-      ]
-    },
-    {
-      "id": "42",
-      "question": "Wie ändert man den Hostnamen eines Systems?",
-      "answers": [
-        ["hostnamectl set-hostname", true],
-        ["hostname set", false],
-        ["sysctl hostname", false],
-        ["hostctl change", false]
-      ]
-    },
-    {
-      "id": "43",
-      "question": "Wie deaktiviert man einen Dienst beim Booten?",
-      "answers": [
-        ["systemctl disable", true],
-        ["service disable", false],
-        ["chkconfig off", false],
-        ["bootctl disable", false]
-      ]
-    },
-    {
-      "id": "44",
-      "question": "Welcher Befehl zeigt die Systemauslastung in Echtzeit an?",
-      "answers": [
-        ["top", true],
-        ["uptime", false],
-        ["ps aux", false],
-        ["sysload", false]
-      ]
-    },
-    {
-      "id": "45",
-      "question": "Wie zeigt man den Pfad zu einer ausführbaren Datei an?",
-      "answers": [
-        ["which", true],
-        ["whereis", false],
-        ["find", false],
-        ["locate", false]
-      ]
-    },
-    {
-      "id": "46",
-      "question": "Welcher Befehl wird verwendet, um den Speicherverbrauch eines Prozesses anzuzeigen?",
-      "answers": [
-        ["ps aux", true],
-        ["top", false],
-        ["free -m", false],
-        ["vmstat", false]
-      ]
-    },
-    {
-      "id": "47",
-      "question": "Wie fügt man einen Benutzer einer Gruppe hinzu?",
-      "answers": [
-        ["usermod -aG", true],
-        ["groupadd", false],
-        ["gpasswd -a", false],
-        ["addusergroup", false]
-      ]
-    },
-    {
-      "id": "48",
-      "question": "Wie überwacht man den Netzwerkverkehr auf einer Schnittstelle?",
-      "answers": [
-        ["tcpdump", true],
-        ["netstat -i", false],
-        ["iftop", false],
-        ["iptraf", false]
-      ]
-    },
-    {
-      "id": "49",
-      "question": "Wie startet man einen Dienst nach einem Neustart automatisch?",
-      "answers": [
-        ["systemctl enable", true],
-        ["chkconfig on", false],
-        ["service auto", false],
-        ["rc-update add", false]
-      ]
-    },
-    {
-      "id": "50",
-      "question": "Welcher Befehl wird verwendet, um den Speicher eines Systems anzuzeigen?",
-      "answers": [
-        ["free", true],
-        ["vmstat", false],
-        ["meminfo", false],
-        ["top", false]
-      ]
-    },
-    {
-      "id": "51",
-      "question": "Wie zeigt man die Kernel-Version an?",
-      "answers": [
-        ["uname -r", true],
-        ["kernel -v", false],
-        ["sysctl kernel", false],
-        ["version -k", false]
-      ]
-    },
-    {
-      "id": "52",
-      "question": "Wie installiert man ein Paket aus einer lokalen RPM-Datei?",
-      "answers": [
-        ["rpm -i", true],
-        ["yum install", false],
-        ["dpkg -i", false],
-        ["zypper in", false]
-      ]
-    },
-    {
-      "id": "53",
-      "question": "Wie erstellt man eine neue Partition auf einer Festplatte?",
-      "answers": [
-        ["fdisk", true],
-        ["parted", false],
-        ["mkpart", false],
-        ["diskpart", false]
-      ]
-    },
-    {
-      "id": "54",
-      "question": "Wie ändert man die Zeit eines cronjobs?",
-      "answers": [
-        ["crontab -e", true],
-        ["cronedit", false],
-        ["cron -u", false],
-        ["editcron", false]
-      ]
-    },
-    {
-      "id": "55",
-      "question": "Wie mountet man ein NFS-Verzeichnis?",
-      "answers": [
-        ["mount -t nfs", true],
-        ["mount.nfs", false],
-        ["nfsmount", false],
-        ["mount -o nfs", false]
-      ]
-    },
-    {
-      "id": "56",
-      "question": "Wie zeigt man die Systemlogdateien an?",
-      "answers": [
-        ["journalctl", true],
-        ["syslog", false],
-        ["logread", false],
-        ["dmesg", false]
-      ]
-    },
-    {
-      "id": "57",
-      "question": "Wie ändert man den Standard-Editor für die Shell?",
-      "answers": [
-        ["export EDITOR", true],
-        ["set-editor", false],
-        ["editorconfig", false],
-        ["sysctl editor", false]
-      ]
-    },
-    {
-      "id": "58",
-      "question": "Welcher Befehl wird verwendet, um ein Terminal-Programm im Hintergrund zu starten?",
-      "answers": [
-        ["nohup", true],
-        ["bg", false],
-        ["&", false],
-        ["disown", false]
-      ]
-    },
-    {
-      "id": "59",
-      "question": "Welcher Befehl wird verwendet, um Informationen über die CPU anzuzeigen?",
-      "answers": [
-        ["lscpu", true],
-        ["cpuinfo", false],
-        ["sysctl cpu", false],
-        ["cpuinfo -all", false]
-      ]
-    },
-    {
-      "id": "60",
-      "question": "Wie zeigt man die aktuelle Arbeitsumgebung eines Benutzers an?",
-      "answers": [
-        ["env", true],
-        ["printenv", false],
-        ["setenv", false],
-        ["getenv", false]
-      ]
-    },
-    {
-      "id": "61",
-      "question": "Welcher Befehl wird verwendet, um den Kernel zu aktualisieren?",
-      "answers": [
-        ["yum update kernel", true],
-        ["apt upgrade kernel", false],
-        ["kernel-update", false],
-        ["sysctl update", false]
-      ]
-    },
-    {
-      "id": "62",
-      "question": "Wie entfernt man ein installiertes Paket auf einem Debian-System?",
-      "answers": [
-        ["apt remove", true],
-        ["dpkg -r", false],
-        ["rpm -e", false],
-        ["apt purge", false]
-      ]
-    },
-    {
-      "id": "63",
-      "question": "Wie ändert man die Berechtigungen einer Datei auf schreibgeschützt?",
-      "answers": [
-        ["chmod 444", true],
-        ["chmod 755", false],
-        ["chown read-only", false],
-        ["chperm ro", false]
-      ]
-    },
-    {
-      "id": "64",
-      "question": "Welcher Befehl wird verwendet, um die Kernel-Nachrichten im laufenden Betrieb zu verfolgen?",
-      "answers": [
-        ["dmesg -w", true],
-        ["syslog -f", false],
-        ["journalctl -f", false],
-        ["logwatch", false]
-      ]
-    },
-    {
-      "id": "65",
-      "question": "Wie synchronisiert man die Zeit mit einem NTP-Server?",
-      "answers": [
-        ["ntpdate", true],
-        ["timesyncd", false],
-        ["time update", false],
-        ["timedatectl sync", false]
-      ]
-    },
-    {
-      "id": "66",
-      "question": "Wie zeigt man die Netzwerkkonfiguration an?",
-      "answers": [
-        ["ifconfig", true],
-        ["netstat", false],
-        ["ipconfig", false],
-        ["netinfo", false]
-      ]
-    },
-    {
-      "id": "67",
-      "question": "Wie erstellt man ein neues Dateisystem auf einer Partition?",
-      "answers": [
-        ["mkfs", true],
-        ["mkswap", false],
-        ["format", false],
-        ["newfs", false]
-      ]
-    },
-    {
-      "id": "68",
-      "question": "Wie zeigt man die Routing-Tabelle des Systems an?",
-      "answers": [
-        ["route", true],
-        ["netstat -r", false],
-        ["ip route show", false],
-        ["traceroute", false]
-      ]
-    },
-    {
-      "id": "69",
-      "question": "Welcher Befehl wird verwendet, um die Paketquellen auf einem Debian-System zu aktualisieren?",
-      "answers": [
-        ["apt update", true],
-        ["apt upgrade", false],
-        ["dpkg update", false],
-        ["apt-cache refresh", false]
-      ]
-    },
-    {
-      "id": "70",
-      "question": "Wie entfernt man ein Verzeichnis samt Inhalt?",
-      "answers": [
-        ["rm -r", true],
-        ["rmdir -r", false],
-        ["del /r", false],
-        ["delete -d", false]
-      ]
-    },
-    {
-      "id": "71",
-      "question": "Welcher Befehl wird verwendet, um den DNS-Cache zu leeren?",
-      "answers": [
-        ["systemd-resolve --flush-caches", true],
-        ["ipconfig /flushdns", false],
-        ["dnsflush", false],
-        ["resolvectl flush", false]
-      ]
-    },
-    {
-      "id": "72",
-      "question": "Wie überprüft man den Status eines Dienstes?",
-      "answers": [
-        ["systemctl status", true],
-        ["service status", false],
-        ["chkstatus", false],
-        ["init.d status", false]
-      ]
-    },
-    {
-      "id": "73",
-      "question": "Welcher Befehl wird verwendet, um den MBR einer Festplatte wiederherzustellen?",
-      "answers": [
-        ["grub-install", true],
-        ["grub-restore", false],
-        ["mbr-repair", false],
-        ["bootloader-fix", false]
-      ]
-    },
-    {
-      "id": "74",
-      "question": "Wie zeigt man die MAC-Adresse einer Netzwerkschnittstelle an?",
-      "answers": [
-        ["ip link show", true],
-        ["ifconfig hw", false],
-        ["netstat -m", false],
-        ["macaddr show", false]
-      ]
-    },
-    {
-      "id": "75",
-      "question": "Welcher Befehl wird verwendet, um die Systemdienste zu steuern?",
-      "answers": [
-        ["systemctl", true],
-        ["service", false],
-        ["init.d", false],
-        ["sysctl", false]
-      ]
-    },
-    {
-      "id": "76",
-      "question": "Wie listet man die Kernel-Module auf?",
-      "answers": [
-        ["lsmod", true],
-        ["modlist", false],
-        ["listmod", false],
-        ["modprobe -l", false]
-      ]
-    },
-    {
-      "id": "77",
-      "question": "Welcher Befehl wird verwendet, um den Swap-Speicher zu aktivieren?",
-      "answers": [
-        ["swapon", true],
-        ["swap enable", false],
-        ["swap -on", false],
-        ["swap activate", false]
-      ]
-    },
-    {
-      "id": "78",
-      "question": "Wie zeigt man die Größe einer Datei an?",
-      "answers": [
-        ["ls -lh", true],
-        ["du -h", false],
-        ["df -h", false],
-        ["filesize", false]
-      ]
-    },
-    {
-      "id": "79",
-      "question": "Wie konfiguriert man die Firewall auf einem Linux-System?",
-      "answers": [
-        ["ufw", true],
-        ["firewalld", false],
-        ["iptables -config", false],
-        ["firewall-config", false]
-      ]
-    },
-    {
-      "id": "80",
-      "question": "Wie setzt man das Passwort eines Benutzers zurück?",
-      "answers": [
-        ["passwd", true],
-        ["usermod -p", false],
-        ["resetpasswd", false],
-        ["chpasswd", false]
-      ]
-    },
-    {
-      "id": "81",
-      "question": "Wie zeigt man die UUID einer Festplattenpartition an?",
-      "answers": [
-        ["blkid", true],
-        ["lsblk -u", false],
-        ["uuidgen", false],
-        ["partuuid", false]
-      ]
-    },
-    {
-      "id": "82",
-      "question": "Wie schaltet man einen Dienst in den Hintergrund?",
-      "answers": [
-        ["&", true],
-        ["bg", false],
-        ["fg", false],
-        ["nohup", false]
-      ]
-    },
-    {
-      "id": "83",
-      "question": "Welcher Befehl zeigt die Zeit seit dem letzten Neustart an?",
-      "answers": [
-        ["uptime", true],
-        ["time", false],
-        ["lastboot", false],
-        ["sysuptime", false]
-      ]
-    },
-    {
-      "id": "84",
-      "question": "Wie konfiguriert man die Netzwerkschnittstellen dauerhaft?",
-      "answers": [
-        ["/etc/network/interfaces", true],
-        ["/etc/sysconfig/network", false],
-        ["/etc/netplan/config", false],
-        ["/etc/network/config", false]
-      ]
-    },
-    {
-      "id": "85",
-      "question": "Wie ändert man den Standard-Gateway des Systems?",
-      "answers": [
-        ["ip route add default", true],
-        ["route add default gw", false],
-        ["netconfig gateway", false],
-        ["gateway -set", false]
-      ]
-    },
-    {
-      "id": "86",
-      "question": "Wie mountet man eine ISO-Datei?",
-      "answers": [
-        ["mount -o loop", true],
-        ["mount iso", false],
-        ["iso-mount", false],
-        ["loopmount", false]
-      ]
-    },
-    {
-      "id": "87",
-      "question": "Wie ändert man die Priorität eines Prozesses?",
-      "answers": [
-        ["renice", true],
-        ["nice -p", false],
-        ["procprio", false],
-        ["chpriority", false]
-      ]
-    },
-    {
-      "id": "88",
-      "question": "Welcher Befehl wird verwendet, um die Speicherstatistik anzuzeigen?",
-      "answers": [
-        ["free -m", true],
-        ["vmstat", false],
-        ["meminfo", false],
-        ["top", false]
-      ]
-    },
-    {
-      "id": "89",
-      "question": "Wie installiert man eine Software über ein tar.gz-Archiv?",
-      "answers": [
-        ["tar -xzf und make install", true],
-        ["untar und install", false],
-        ["tar -install", false],
-        ["make package", false]
-      ]
-    },
-    {
-      "id": "90",
-      "question": "Wie zeigt man alle Benutzer des Systems an?",
-      "answers": [
-        ["cat /etc/passwd", true],
-        ["getent users", false],
-        ["who", false],
-        ["users -all", false]
-      ]
-    },
-    {
-      "id": "91",
-      "question": "Welcher Befehl zeigt den Platzbedarf eines Verzeichnisses an?",
-      "answers": [
-        ["du -sh", true],
-        ["df -h", false],
-        ["ls -lh", false],
-        ["space -dir", false]
-      ]
-    },
-    {
-      "id": "92",
-      "question": "Wie ändert man die Standard-Shell eines Benutzers?",
-      "answers": [
-        ["chsh", true],
-        ["usermod -s", false],
-        ["setshell", false],
-        ["changeshell", false]
-      ]
-    },
-    {
-      "id": "93",
-      "question": "Wie beendet man einen Prozess auf Basis der Prozess-ID?",
-      "answers": [
-        ["kill", true],
-        ["stop", false],
-        ["endproc", false],
-        ["terminate", false]
-      ]
-    },
-    {
-      "id": "94",
-      "question": "Welcher Befehl wird verwendet, um die Netzwerkschnittstellen zu konfigurieren?",
-      "answers": [
-        ["ifconfig", true],
-        ["ipconfig", false],
-        ["netcfg", false],
-        ["nmcli", false]
-      ]
-    },
-    {
-      "id": "95",
-      "question": "Wie zeigt man den verfügbaren Speicherplatz eines Dateisystems an?",
-      "answers": [
-        ["df", true],
-        ["du", false],
-        ["lsblk", false],
-        ["filesys", false]
-      ]
-    },
-    {
-      "id": "96",
-      "question": "Wie zeigt man die Protokolldateien eines Systems an?",
-      "answers": [
-        ["cat /var/log/syslog", true],
-        ["journalctl", false],
-        ["logview", false],
-        ["syslogctl", false]
-      ]
-    },
-    {
-      "id": "97",
-      "question": "Wie installiert man ein Paket aus einer PPA auf Ubuntu?",
-      "answers": [
-        ["add-apt-repository", true],
-        ["apt add ppa", false],
-        ["dpkg -add", false],
-        ["ppa install", false]
-      ]
-    },
-    {
-      "id": "98",
-      "question": "Wie zeigt man den aktuellen Benutzer an?",
-      "answers": [
-        ["whoami", true],
-        ["who", false],
-        ["getuser", false],
-        ["currentuser", false]
-      ]
-    },
-    {
-      "id": "99",
-      "question": "Wie wechselt man den Benutzer in einer Shell?",
-      "answers": [
-        ["su", true],
-        ["switchuser", false],
-        ["userchange", false],
-        ["loginas", false]
-      ]
-    },
-    {
-      "id": "100",
-      "question": "Welcher Befehl wird verwendet, um alle geöffneten Dateien eines Prozesses anzuzeigen?",
-      "answers": [
-        ["lsof", true],
-        ["openfiles", false],
-        ["listproc", false],
-        ["procinfo", false]
-      ]
-    }
+	{
+	  "id": "1",
+	  "question": "Welcher Befehl wird verwendet, um den Bootloader GRUB neu zu installieren?",
+	  "answers": [
+		["grub-install", true],
+		["grub-setup", false],
+		["grub-config", false],
+		["grub-update", false]
+	  ]
+	},
+	{
+	  "id": "2",
+	  "question": "Welcher Befehl zeigt die Partitionstabelle einer Festplatte an?",
+	  "answers": [
+		["fdisk -l", true],
+		["parted -l", false],
+		["lsblk", false],
+		["blkid", false]
+	  ]
+	},
+	{
+	  "id": "3",
+	  "question": "Wie überprüft man, ob eine bestimmte Portnummer vom System verwendet wird?",
+	  "answers": [
+		["netstat -tuln", true],
+		["lsof -i", false],
+		["ss -s", false],
+		["nmap -sS", false]
+	  ]
+	},
+	{
+	  "id": "4",
+	  "question": "Welcher Befehl wird verwendet, um die UID eines Benutzers zu ändern?",
+	  "answers": [
+		["usermod -u", true],
+		["useradd -u", false],
+		["passwd -u", false],
+		["chuid", false]
+	  ]
+	},
+	{
+	  "id": "5",
+	  "question": "Wie listet man die mountbaren Dateisysteme im System auf?",
+	  "answers": [
+		["cat /proc/filesystems", true],
+		["lsblk", false],
+		["df -T", false],
+		["mount -a", false]
+	  ]
+	},
+	{
+	  "id": "6",
+	  "question": "Welcher Befehl zeigt die Kernel-Nachrichten während des Bootvorgangs an?",
+	  "answers": [
+		["dmesg", true],
+		["journalctl -k", false],
+		["syslog", false],
+		["bootctl", false]
+	  ]
+	},
+	{
+	  "id": "7",
+	  "question": "Wie fügt man eine Umgebungsvariable dauerhaft zu einer Benutzerumgebung hinzu?",
+	  "answers": [
+		["In der Datei ~/.bashrc", true],
+		["In der Datei /etc/profile", false],
+		["Im Verzeichnis /usr/local/etc", false],
+		["In der Datei /etc/environment", false]
+	  ]
+	},
+	{
+	  "id": "8",
+	  "question": "Welcher Befehl wird verwendet, um die Netzwerkschnittstellen zu konfigurieren?",
+	  "answers": [
+		["ip", true],
+		["ifconfig", false],
+		["netcfg", false],
+		["netconfig", false]
+	  ]
+	},
+	{
+	  "id": "9",
+	  "question": "Welcher Befehl wird verwendet, um das Dateisystem einer Partition zu überprüfen?",
+	  "answers": [
+		["fsck", true],
+		["checkfs", false],
+		["mkfs", false],
+		["diskchk", false]
+	  ]
+	},
+	{
+	  "id": "10",
+	  "question": "Wie zeigt man die Liste der geladenen Kernel-Module an?",
+	  "answers": [
+		["lsmod", true],
+		["modinfo", false],
+		["insmod", false],
+		["rmmod", false]
+	  ]
+	},
+	{
+	  "id": "11",
+	  "question": "Wie erstellt man einen Hardlink auf eine Datei?",
+	  "answers": [
+		["ln", true],
+		["ln -s", false],
+		["link", false],
+		["mklink", false]
+	  ]
+	},
+	{
+	  "id": "12",
+	  "question": "Welcher Befehl wird verwendet, um einen neuen Benutzer hinzuzufügen?",
+	  "answers": [
+		["useradd", true],
+		["usermod", false],
+		["adduser", false],
+		["passwd", false]
+	  ]
+	},
+	{
+	  "id": "13",
+	  "question": "Wie ändert man die Zugriffsrechte einer Datei auf 755?",
+	  "answers": [
+		["chmod 755", true],
+		["chown 755", false],
+		["chgrp 755", false],
+		["chmod +x", false]
+	  ]
+	},
+	{
+	  "id": "14",
+	  "question": "Wie zeigt man die Partitionen einer Festplatte an?",
+	  "answers": [
+		["fdisk -l", true],
+		["parted", false],
+		["blkid", false],
+		["df", false]
+	  ]
+	},
+	{
+	  "id": "15",
+	  "question": "Welcher Befehl wird verwendet, um einen Dienst zu stoppen?",
+	  "answers": [
+		["systemctl stop", true],
+		["service halt", false],
+		["systemctl halt", false],
+		["sysv-stop", false]
+	  ]
+	},
+	{
+	  "id": "16",
+	  "question": "Welcher Befehl zeigt die Konfigurationsdateien an, die von einem Paket installiert wurden?",
+	  "answers": [
+		["dpkg -L", true],
+		["apt show", false],
+		["rpm -qf", false],
+		["pkg-config", false]
+	  ]
+	},
+	{
+	  "id": "17",
+	  "question": "Wie beendet man einen Prozess anhand seiner Prozess-ID (PID)?",
+	  "answers": [
+		["kill", true],
+		["killall", false],
+		["stop", false],
+		["terminate", false]
+	  ]
+	},
+	{
+	  "id": "18",
+	  "question": "Welcher Befehl zeigt die IP-Adresse einer Netzwerkschnittstelle an?",
+	  "answers": [
+		["ip addr show", true],
+		["ifconfig addr", false],
+		["netstat -i", false],
+		["netaddr", false]
+	  ]
+	},
+	{
+	  "id": "19",
+	  "question": "Welcher Befehl wird verwendet, um die Partitionen zu formatieren?",
+	  "answers": [
+		["mkfs", true],
+		["format", false],
+		["parted", false],
+		["fdisk", false]
+	  ]
+	},
+	{
+	  "id": "20",
+	  "question": "Wie installiert man ein Paket auf einem Debian-basierten System?",
+	  "answers": [
+		["apt install", true],
+		["rpm -i", false],
+		["yum install", false],
+		["zypper install", false]
+	  ]
+	},
+	{
+	  "id": "21",
+	  "question": "Welcher Befehl wird verwendet, um den Inhalt eines RPM-Pakets anzuzeigen?",
+	  "answers": [
+		["rpm -ql", true],
+		["rpm -q", false],
+		["dpkg -L", false],
+		["zypper list", false]
+	  ]
+	},
+	{
+	  "id": "22",
+	  "question": "Wie zeigt man die aktiven Verbindungen auf einem Server an?",
+	  "answers": [
+		["netstat -an", true],
+		["ss -an", false],
+		["ifconfig -a", false],
+		["route -n", false]
+	  ]
+	},
+	{
+	  "id": "23",
+	  "question": "Welcher Befehl zeigt die aktuelle Shell-Umgebung an?",
+	  "answers": [
+		["env", true],
+		["echo $PATH", false],
+		["sh -c", false],
+		["printenv", false]
+	  ]
+	},
+	{
+	  "id": "24",
+	  "question": "Welcher Befehl wird verwendet, um die Paketliste zu aktualisieren?",
+	  "answers": [
+		["apt update", true],
+		["yum check-update", false],
+		["dnf update", false],
+		["rpm refresh", false]
+	  ]
+	},
+	{
+	  "id": "25",
+	  "question": "Welcher Befehl wird verwendet, um den Speicherbedarf eines Verzeichnisses zu ermitteln?",
+	  "answers": [
+		["du -sh", true],
+		["df -h", false],
+		["ls -lh", false],
+		["diskcheck", false]
+	  ]
+	},
+	{
+	  "id": "26",
+	  "question": "Wie zeigt man die Laufzeit des Systems seit dem letzten Neustart an?",
+	  "answers": [
+		["uptime", true],
+		["time", false],
+		["sysctl status", false],
+		["showtime", false]
+	  ]
+	},
+	{
+	  "id": "27",
+	  "question": "Wie konfiguriert man ein neues Repository auf einem Debian-System?",
+	  "answers": [
+		["Bearbeiten der Datei /etc/apt/sources.list", true],
+		["apt repo add", false],
+		["repository add", false],
+		["apt-get repository", false]
+	  ]
+	},
+	{
+	  "id": "28",
+	  "question": "Wie beendet man die Sitzung eines Benutzers?",
+	  "answers": [
+		["logout", true],
+		["exit", false],
+		["end", false],
+		["terminate", false]
+	  ]
+	},
+	{
+	  "id": "29",
+	  "question": "Welcher Befehl listet die verfügbaren Systemd-Services auf?",
+	  "answers": [
+		["systemctl list-units", true],
+		["service --status-all", false],
+		["sysv list", false],
+		["systemctl services", false]
+	  ]
+	},
+	{
+	  "id": "30",
+	  "question": "Wie zeigt man die Routing-Tabelle des Systems an?",
+	  "answers": [
+		["ip route", true],
+		["route -n", false],
+		["netstat -r", false],
+		["traceroute", false]
+	  ]
+	},
+	{
+	  "id": "31",
+	  "question": "Wie installiert man ein Paket auf einem Red Hat-basierten System?",
+	  "answers": [
+		["yum install", true],
+		["apt install", false],
+		["zypper install", false],
+		["rpm install", false]
+	  ]
+	},
+	{
+	  "id": "32",
+	  "question": "Wie zeigt man die Größe des verfügbaren und belegten Festplattenspeichers an?",
+	  "answers": [
+		["df -h", true],
+		["du -h", false],
+		["lsblk", false],
+		["fdisk -l", false]
+	  ]
+	},
+	{
+	  "id": "33",
+	  "question": "Welcher Befehl wird verwendet, um einen Benutzer aus einer Gruppe zu entfernen?",
+	  "answers": [
+		["gpasswd -d", true],
+		["groupdel", false],
+		["usermod -g", false],
+		["delgroup", false]
+	  ]
+	},
+	{
+	  "id": "34",
+	  "question": "Wie startet man einen neuen Bash-Prozess?",
+	  "answers": [
+		["bash", true],
+		["sh", false],
+		["startbash", false],
+		["newbash", false]
+	  ]
+	},
+	{
+	  "id": "35",
+	  "question": "Welcher Befehl wird verwendet, um den SSH-Dienst zu starten?",
+	  "answers": [
+		["systemctl start sshd", true],
+		["service ssh start", false],
+		["sshd --start", false],
+		["init.d/sshd start", false]
+	  ]
+	},
+	{
+	  "id": "36",
+	  "question": "Wie fügt man eine statische Route zu einer Netzwerk-Schnittstelle hinzu?",
+	  "answers": [
+		["ip route add", true],
+		["route add", false],
+		["net add route", false],
+		["ifconfig route add", false]
+	  ]
+	},
+	{
+	  "id": "37",
+	  "question": "Wie überprüft man die Integrität eines Dateisystems?",
+	  "answers": [
+		["fsck", true],
+		["e2fsck", false],
+		["chkfs", false],
+		["diskchk", false]
+	  ]
+	},
+	{
+	  "id": "38",
+	  "question": "Welcher Befehl listet die installierten Pakete auf einem Red Hat-basierten System auf?",
+	  "answers": [
+		["rpm -qa", true],
+		["yum list installed", false],
+		["dnf list installed", false],
+		["apt list", false]
+	  ]
+	},
+	{
+	  "id": "39",
+	  "question": "Welcher Befehl wird verwendet, um eine Datei zu komprimieren?",
+	  "answers": [
+		["gzip", true],
+		["zip", false],
+		["tar -z", false],
+		["compress", false]
+	  ]
+	},
+	{
+	  "id": "40",
+	  "question": "Wie zeigt man die Prozesse eines bestimmten Benutzers an?",
+	  "answers": [
+		["ps -u", true],
+		["top -u", false],
+		["proc -u", false],
+		["listproc -u", false]
+	  ]
+	},
+	{
+	  "id": "41",
+	  "question": "Welcher Befehl zeigt die Systemzeit an?",
+	  "answers": [
+		["date", true],
+		["time", false],
+		["clock", false],
+		["timedatectl", false]
+	  ]
+	},
+	{
+	  "id": "42",
+	  "question": "Wie ändert man den Hostnamen eines Systems?",
+	  "answers": [
+		["hostnamectl set-hostname", true],
+		["hostname set", false],
+		["sysctl hostname", false],
+		["hostctl change", false]
+	  ]
+	},
+	{
+	  "id": "43",
+	  "question": "Wie deaktiviert man einen Dienst beim Booten?",
+	  "answers": [
+		["systemctl disable", true],
+		["service disable", false],
+		["chkconfig off", false],
+		["bootctl disable", false]
+	  ]
+	},
+	{
+	  "id": "44",
+	  "question": "Welcher Befehl zeigt die Systemauslastung in Echtzeit an?",
+	  "answers": [
+		["top", true],
+		["uptime", false],
+		["ps aux", false],
+		["sysload", false]
+	  ]
+	},
+	{
+	  "id": "45",
+	  "question": "Wie zeigt man den Pfad zu einer ausführbaren Datei an?",
+	  "answers": [
+		["which", true],
+		["whereis", false],
+		["find", false],
+		["locate", false]
+	  ]
+	},
+	{
+	  "id": "46",
+	  "question": "Welcher Befehl wird verwendet, um den Speicherverbrauch eines Prozesses anzuzeigen?",
+	  "answers": [
+		["ps aux", true],
+		["top", false],
+		["free -m", false],
+		["vmstat", false]
+	  ]
+	},
+	{
+	  "id": "47",
+	  "question": "Wie fügt man einen Benutzer einer Gruppe hinzu?",
+	  "answers": [
+		["usermod -aG", true],
+		["groupadd", false],
+		["gpasswd -a", false],
+		["addusergroup", false]
+	  ]
+	},
+	{
+	  "id": "48",
+	  "question": "Wie überwacht man den Netzwerkverkehr auf einer Schnittstelle?",
+	  "answers": [
+		["tcpdump", true],
+		["netstat -i", false],
+		["iftop", false],
+		["iptraf", false]
+	  ]
+	},
+	{
+	  "id": "49",
+	  "question": "Wie startet man einen Dienst nach einem Neustart automatisch?",
+	  "answers": [
+		["systemctl enable", true],
+		["chkconfig on", false],
+		["service auto", false],
+		["rc-update add", false]
+	  ]
+	},
+	{
+	  "id": "50",
+	  "question": "Welcher Befehl wird verwendet, um den Speicher eines Systems anzuzeigen?",
+	  "answers": [
+		["free", true],
+		["vmstat", false],
+		["meminfo", false],
+		["top", false]
+	  ]
+	},
+	{
+	  "id": "51",
+	  "question": "Wie zeigt man die Kernel-Version an?",
+	  "answers": [
+		["uname -r", true],
+		["kernel -v", false],
+		["sysctl kernel", false],
+		["version -k", false]
+	  ]
+	},
+	{
+	  "id": "52",
+	  "question": "Wie installiert man ein Paket aus einer lokalen RPM-Datei?",
+	  "answers": [
+		["rpm -i", true],
+		["yum install", false],
+		["dpkg -i", false],
+		["zypper in", false]
+	  ]
+	},
+	{
+	  "id": "53",
+	  "question": "Wie erstellt man eine neue Partition auf einer Festplatte?",
+	  "answers": [
+		["fdisk", true],
+		["parted", false],
+		["mkpart", false],
+		["diskpart", false]
+	  ]
+	},
+	{
+	  "id": "54",
+	  "question": "Wie ändert man die Zeit eines cronjobs?",
+	  "answers": [
+		["crontab -e", true],
+		["cronedit", false],
+		["cron -u", false],
+		["editcron", false]
+	  ]
+	},
+	{
+	  "id": "55",
+	  "question": "Wie mountet man ein NFS-Verzeichnis?",
+	  "answers": [
+		["mount -t nfs", true],
+		["mount.nfs", false],
+		["nfsmount", false],
+		["mount -o nfs", false]
+	  ]
+	},
+	{
+	  "id": "56",
+	  "question": "Wie zeigt man die Systemlogdateien an?",
+	  "answers": [
+		["journalctl", true],
+		["syslog", false],
+		["logread", false],
+		["dmesg", false]
+	  ]
+	},
+	{
+	  "id": "57",
+	  "question": "Wie ändert man den Standard-Editor für die Shell?",
+	  "answers": [
+		["export EDITOR", true],
+		["set-editor", false],
+		["editorconfig", false],
+		["sysctl editor", false]
+	  ]
+	},
+	{
+	  "id": "58",
+	  "question": "Welcher Befehl wird verwendet, um ein Terminal-Programm im Hintergrund zu starten?",
+	  "answers": [
+		["nohup", true],
+		["bg", false],
+		["&", false],
+		["disown", false]
+	  ]
+	},
+	{
+	  "id": "59",
+	  "question": "Welcher Befehl wird verwendet, um Informationen über die CPU anzuzeigen?",
+	  "answers": [
+		["lscpu", true],
+		["cpuinfo", false],
+		["sysctl cpu", false],
+		["cpuinfo -all", false]
+	  ]
+	},
+	{
+	  "id": "60",
+	  "question": "Wie zeigt man die aktuelle Arbeitsumgebung eines Benutzers an?",
+	  "answers": [
+		["env", true],
+		["printenv", false],
+		["setenv", false],
+		["getenv", false]
+	  ]
+	},
+	{
+	  "id": "61",
+	  "question": "Welcher Befehl wird verwendet, um den Kernel zu aktualisieren?",
+	  "answers": [
+		["yum update kernel", true],
+		["apt upgrade kernel", false],
+		["kernel-update", false],
+		["sysctl update", false]
+	  ]
+	},
+	{
+	  "id": "62",
+	  "question": "Wie entfernt man ein installiertes Paket auf einem Debian-System?",
+	  "answers": [
+		["apt remove", true],
+		["dpkg -r", false],
+		["rpm -e", false],
+		["apt purge", false]
+	  ]
+	},
+	{
+	  "id": "63",
+	  "question": "Wie ändert man die Berechtigungen einer Datei auf schreibgeschützt?",
+	  "answers": [
+		["chmod 444", true],
+		["chmod 755", false],
+		["chown read-only", false],
+		["chperm ro", false]
+	  ]
+	},
+	{
+	  "id": "64",
+	  "question": "Welcher Befehl wird verwendet, um die Kernel-Nachrichten im laufenden Betrieb zu verfolgen?",
+	  "answers": [
+		["dmesg -w", true],
+		["syslog -f", false],
+		["journalctl -f", false],
+		["logwatch", false]
+	  ]
+	},
+	{
+	  "id": "65",
+	  "question": "Wie synchronisiert man die Zeit mit einem NTP-Server?",
+	  "answers": [
+		["ntpdate", true],
+		["timesyncd", false],
+		["time update", false],
+		["timedatectl sync", false]
+	  ]
+	},
+	{
+	  "id": "66",
+	  "question": "Wie zeigt man die Netzwerkkonfiguration an?",
+	  "answers": [
+		["ifconfig", true],
+		["netstat", false],
+		["ipconfig", false],
+		["netinfo", false]
+	  ]
+	},
+	{
+	  "id": "67",
+	  "question": "Wie erstellt man ein neues Dateisystem auf einer Partition?",
+	  "answers": [
+		["mkfs", true],
+		["mkswap", false],
+		["format", false],
+		["newfs", false]
+	  ]
+	},
+	{
+	  "id": "68",
+	  "question": "Wie zeigt man die Routing-Tabelle des Systems an?",
+	  "answers": [
+		["route", true],
+		["netstat -r", false],
+		["ip route show", false],
+		["traceroute", false]
+	  ]
+	},
+	{
+	  "id": "69",
+	  "question": "Welcher Befehl wird verwendet, um die Paketquellen auf einem Debian-System zu aktualisieren?",
+	  "answers": [
+		["apt update", true],
+		["apt upgrade", false],
+		["dpkg update", false],
+		["apt-cache refresh", false]
+	  ]
+	},
+	{
+	  "id": "70",
+	  "question": "Wie entfernt man ein Verzeichnis samt Inhalt?",
+	  "answers": [
+		["rm -r", true],
+		["rmdir -r", false],
+		["del /r", false],
+		["delete -d", false]
+	  ]
+	},
+	{
+	  "id": "71",
+	  "question": "Welcher Befehl wird verwendet, um den DNS-Cache zu leeren?",
+	  "answers": [
+		["systemd-resolve --flush-caches", true],
+		["ipconfig /flushdns", false],
+		["dnsflush", false],
+		["resolvectl flush", false]
+	  ]
+	},
+	{
+	  "id": "72",
+	  "question": "Wie überprüft man den Status eines Dienstes?",
+	  "answers": [
+		["systemctl status", true],
+		["service status", false],
+		["chkstatus", false],
+		["init.d status", false]
+	  ]
+	},
+	{
+	  "id": "73",
+	  "question": "Welcher Befehl wird verwendet, um den MBR einer Festplatte wiederherzustellen?",
+	  "answers": [
+		["grub-install", true],
+		["grub-restore", false],
+		["mbr-repair", false],
+		["bootloader-fix", false]
+	  ]
+	},
+	{
+	  "id": "74",
+	  "question": "Wie zeigt man die MAC-Adresse einer Netzwerkschnittstelle an?",
+	  "answers": [
+		["ip link show", true],
+		["ifconfig hw", false],
+		["netstat -m", false],
+		["macaddr show", false]
+	  ]
+	},
+	{
+	  "id": "75",
+	  "question": "Welcher Befehl wird verwendet, um die Systemdienste zu steuern?",
+	  "answers": [
+		["systemctl", true],
+		["service", false],
+		["init.d", false],
+		["sysctl", false]
+	  ]
+	},
+	{
+	  "id": "76",
+	  "question": "Wie listet man die Kernel-Module auf?",
+	  "answers": [
+		["lsmod", true],
+		["modlist", false],
+		["listmod", false],
+		["modprobe -l", false]
+	  ]
+	},
+	{
+	  "id": "77",
+	  "question": "Welcher Befehl wird verwendet, um den Swap-Speicher zu aktivieren?",
+	  "answers": [
+		["swapon", true],
+		["swap enable", false],
+		["swap -on", false],
+		["swap activate", false]
+	  ]
+	},
+	{
+	  "id": "78",
+	  "question": "Wie zeigt man die Größe einer Datei an?",
+	  "answers": [
+		["ls -lh", true],
+		["du -h", false],
+		["df -h", false],
+		["filesize", false]
+	  ]
+	},
+	{
+	  "id": "79",
+	  "question": "Wie konfiguriert man die Firewall auf einem Linux-System?",
+	  "answers": [
+		["ufw", true],
+		["firewalld", false],
+		["iptables -config", false],
+		["firewall-config", false]
+	  ]
+	},
+	{
+	  "id": "80",
+	  "question": "Wie setzt man das Passwort eines Benutzers zurück?",
+	  "answers": [
+		["passwd", true],
+		["usermod -p", false],
+		["resetpasswd", false],
+		["chpasswd", false]
+	  ]
+	},
+	{
+	  "id": "81",
+	  "question": "Wie zeigt man die UUID einer Festplattenpartition an?",
+	  "answers": [
+		["blkid", true],
+		["lsblk -u", false],
+		["uuidgen", false],
+		["partuuid", false]
+	  ]
+	},
+	{
+	  "id": "82",
+	  "question": "Wie schaltet man einen Dienst in den Hintergrund?",
+	  "answers": [
+		["&", true],
+		["bg", false],
+		["fg", false],
+		["nohup", false]
+	  ]
+	},
+	{
+	  "id": "83",
+	  "question": "Welcher Befehl zeigt die Zeit seit dem letzten Neustart an?",
+	  "answers": [
+		["uptime", true],
+		["time", false],
+		["lastboot", false],
+		["sysuptime", false]
+	  ]
+	},
+	{
+	  "id": "84",
+	  "question": "Wie konfiguriert man die Netzwerkschnittstellen dauerhaft?",
+	  "answers": [
+		["/etc/network/interfaces", true],
+		["/etc/sysconfig/network", false],
+		["/etc/netplan/config", false],
+		["/etc/network/config", false]
+	  ]
+	},
+	{
+	  "id": "85",
+	  "question": "Wie ändert man den Standard-Gateway des Systems?",
+	  "answers": [
+		["ip route add default", true],
+		["route add default gw", false],
+		["netconfig gateway", false],
+		["gateway -set", false]
+	  ]
+	},
+	{
+	  "id": "86",
+	  "question": "Wie mountet man eine ISO-Datei?",
+	  "answers": [
+		["mount -o loop", true],
+		["mount iso", false],
+		["iso-mount", false],
+		["loopmount", false]
+	  ]
+	},
+	{
+	  "id": "87",
+	  "question": "Wie ändert man die Priorität eines Prozesses?",
+	  "answers": [
+		["renice", true],
+		["nice -p", false],
+		["procprio", false],
+		["chpriority", false]
+	  ]
+	},
+	{
+	  "id": "88",
+	  "question": "Welcher Befehl wird verwendet, um die Speicherstatistik anzuzeigen?",
+	  "answers": [
+		["free -m", true],
+		["vmstat", false],
+		["meminfo", false],
+		["top", false]
+	  ]
+	},
+	{
+	  "id": "89",
+	  "question": "Wie installiert man eine Software über ein tar.gz-Archiv?",
+	  "answers": [
+		["tar -xzf und make install", true],
+		["untar und install", false],
+		["tar -install", false],
+		["make package", false]
+	  ]
+	},
+	{
+	  "id": "90",
+	  "question": "Wie zeigt man alle Benutzer des Systems an?",
+	  "answers": [
+		["cat /etc/passwd", true],
+		["getent users", false],
+		["who", false],
+		["users -all", false]
+	  ]
+	},
+	{
+	  "id": "91",
+	  "question": "Welcher Befehl zeigt den Platzbedarf eines Verzeichnisses an?",
+	  "answers": [
+		["du -sh", true],
+		["df -h", false],
+		["ls -lh", false],
+		["space -dir", false]
+	  ]
+	},
+	{
+	  "id": "92",
+	  "question": "Wie ändert man die Standard-Shell eines Benutzers?",
+	  "answers": [
+		["chsh", true],
+		["usermod -s", false],
+		["setshell", false],
+		["changeshell", false]
+	  ]
+	},
+	{
+	  "id": "93",
+	  "question": "Wie beendet man einen Prozess auf Basis der Prozess-ID?",
+	  "answers": [
+		["kill", true],
+		["stop", false],
+		["endproc", false],
+		["terminate", false]
+	  ]
+	},
+	{
+	  "id": "94",
+	  "question": "Welcher Befehl wird verwendet, um die Netzwerkschnittstellen zu konfigurieren?",
+	  "answers": [
+		["ifconfig", true],
+		["ipconfig", false],
+		["netcfg", false],
+		["nmcli", false]
+	  ]
+	},
+	{
+	  "id": "95",
+	  "question": "Wie zeigt man den verfügbaren Speicherplatz eines Dateisystems an?",
+	  "answers": [
+		["df", true],
+		["du", false],
+		["lsblk", false],
+		["filesys", false]
+	  ]
+	},
+	{
+	  "id": "96",
+	  "question": "Wie zeigt man die Protokolldateien eines Systems an?",
+	  "answers": [
+		["cat /var/log/syslog", true],
+		["journalctl", false],
+		["logview", false],
+		["syslogctl", false]
+	  ]
+	},
+	{
+	  "id": "97",
+	  "question": "Wie installiert man ein Paket aus einer PPA auf Ubuntu?",
+	  "answers": [
+		["add-apt-repository", true],
+		["apt add ppa", false],
+		["dpkg -add", false],
+		["ppa install", false]
+	  ]
+	},
+	{
+	  "id": "98",
+	  "question": "Wie zeigt man den aktuellen Benutzer an?",
+	  "answers": [
+		["whoami", true],
+		["who", false],
+		["getuser", false],
+		["currentuser", false]
+	  ]
+	},
+	{
+	  "id": "99",
+	  "question": "Wie wechselt man den Benutzer in einer Shell?",
+	  "answers": [
+		["su", true],
+		["switchuser", false],
+		["userchange", false],
+		["loginas", false]
+	  ]
+	},
+	{
+	  "id": "100",
+	  "question": "Welcher Befehl wird verwendet, um alle geöffneten Dateien eines Prozesses anzuzeigen?",
+	  "answers": [
+		["lsof", true],
+		["openfiles", false],
+		["listproc", false],
+		["procinfo", false]
+	  ]
+	}
   ]
 
 

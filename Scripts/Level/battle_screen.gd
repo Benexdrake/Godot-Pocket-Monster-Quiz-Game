@@ -48,8 +48,7 @@ func create_enemy():
 	var nrs = GameManager.beasties.load_beasties()
 	var rand = randi_range(0,nrs.size()-1)
 	var beastie = GameManager.get_beastie(nrs[rand])
-	## Gegner haben erstmal nur 3 HP
-	enemy_screen.enemy_entity.create(3,beastie.image_front, beastie.beastie_name)
+	enemy_screen.enemy_entity.create(2 + topic.difficulty,beastie.image_front, beastie.beastie_name)
 	enemy_screen.update()
 	
 	
@@ -63,6 +62,7 @@ func check_level_up():
 	
 func on_check_answer(answer:bool):
 	if GlobalVariables.current_modus == GameManager.game_modus.exam:
+		question_timer.stop()
 		question_timer.start()
 	GameManager.save()
 	if answer:
@@ -71,8 +71,6 @@ func on_check_answer(answer:bool):
 		GlobalVariables.insert_question_id(questions[0].id)
 		questions.remove_at(0)
 		enemy_screen.enemy_entity.get_hit(1)
-		question_timer.stop()
-		question_timer.start()
 		
 		if questions.size() <=0:
 			if GlobalVariables.current_modus == GameManager.game_modus.loop:
@@ -104,8 +102,8 @@ func on_player_died():
 	
 
 func on_enemy_died():
-	GlobalVariables.collected_exp += 1
-	GlobalVariables.player.current_exp += 1
+	GlobalVariables.collected_exp += topic.difficulty
+	GlobalVariables.player.current_exp += topic.difficulty
 	GameManager.save()
 	check_level_up()
 	create_enemy()
@@ -113,4 +111,4 @@ func on_enemy_died():
 	
 
 func on_question_timer_timeout():
-	player_screen.player_entity.get_hit()
+	player_screen.player_entity.get_hit(1)

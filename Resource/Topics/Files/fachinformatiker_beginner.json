@@ -1,0 +1,509 @@
+{
+  "topic_id":"fachinformatiker_beginner",
+	"topic":"Fachinformatiker Beginner",
+	"information":"Fachinformatiker Beginner Level",
+	"icon": "IT.png",
+	"difficulty": 1,
+  "questions": [
+    {
+      "id": "1",
+      "question": "Was versteht man unter dem Begriff 'Hardware'?",
+      "answers": [
+        ["Physische Komponenten eines Computers", true],
+        ["Programme und Betriebssysteme", false],
+        ["Daten, die auf dem Computer gespeichert sind", false],
+        ["Alle Geräte, die mit dem Internet verbunden sind", false]
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Was bedeutet die Abkürzung 'RAM'?",
+      "answers": [
+        ["Random Access Memory", true],
+        ["Read Access Memory", false],
+        ["Random Allocation Memory", false],
+        ["Read Application Memory", false]
+      ]
+    },
+    {
+      "id": "3",
+      "question": "Welche Programmiersprache wird oft für Webentwicklung verwendet?",
+      "answers": [
+        ["JavaScript", true],
+        ["Python", false],
+        ["C++", false],
+        ["Java", false]
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Welches Betriebssystem ist Open Source?",
+      "answers": [
+        ["Linux", true],
+        ["Windows", false],
+        ["macOS", false],
+        ["iOS", false]
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Was ist ein Compiler?",
+      "answers": [
+        ["Ein Programm, das Quellcode in Maschinensprache übersetzt", true],
+        ["Eine Hardwarekomponente eines Computers", false],
+        ["Ein Gerät zur Speicherung von Daten", false],
+        ["Ein Netzwerkprotokoll", false]
+      ]
+    },
+    {
+      "id": "6",
+      "question": "Was ist eine IP-Adresse?",
+      "answers": [
+        ["Eine eindeutige numerische Kennung eines Geräts im Netzwerk", true],
+        ["Eine Programmiersprache für Netzwerke", false],
+        ["Eine Art von Betriebssystem", false],
+        ["Ein Speichertyp für Computer", false]
+      ]
+    },
+    {
+      "id": "7",
+      "question": "Welche Einheit misst die Prozessorgeschwindigkeit?",
+      "answers": [
+        ["Gigahertz (GHz)", true],
+        ["Terabyte (TB)", false],
+        ["Megabyte (MB)", false],
+        ["Millisekunde (ms)", false]
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Welches der folgenden Geräte ist ein Beispiel für Eingabegeräte?",
+      "answers": [
+        ["Tastatur", true],
+        ["Monitor", false],
+        ["Drucker", false],
+        ["Festplatte", false]
+      ]
+    },
+    {
+      "id": "9",
+      "question": "Was ist ein Betriebssystem?",
+      "answers": [
+        ["Software, die Hardware und andere Software steuert", true],
+        ["Eine Art von Hardware", false],
+        ["Ein Computerprogramm zum Surfen im Internet", false],
+        ["Ein Speichertyp im Computer", false]
+      ]
+    },
+    {
+      "id": "10",
+      "question": "Welches der folgenden Geräte ist ein Beispiel für Ausgabegeräte?",
+      "answers": [
+        ["Drucker", true],
+        ["Maus", false],
+        ["Mikrofon", false],
+        ["Festplatte", false]
+      ]
+    },
+    {
+      "id": "11",
+      "question": "Was bedeutet die Abkürzung 'SSD'?",
+      "answers": [
+        ["Solid State Drive", true],
+        ["Secure Storage Device", false],
+        ["Super Speed Disk", false],
+        ["Safe Software Deployment", false]
+      ]
+    },
+    {
+      "id": "12",
+      "question": "Welche der folgenden Aussagen beschreibt 'Software'?",
+      "answers": [
+        ["Programme und Anwendungen, die auf einem Computer ausgeführt werden", true],
+        ["Physische Komponenten eines Computers", false],
+        ["Ein Speichertyp im Computer", false],
+        ["Geräte, die mit dem Internet verbunden sind", false]
+      ]
+    },
+    {
+      "id": "13",
+      "question": "Welcher der folgenden Begriffe ist eine Programmiersprache?",
+      "answers": [
+        ["Python", true],
+        ["HTML", false],
+        ["TCP/IP", false],
+        ["HTTP", false]
+      ]
+    },
+    {
+      "id": "14",
+      "question": "Was ist der Unterschied zwischen einem Switch und einem Router?",
+      "answers": [
+        ["Ein Router verbindet Netzwerke, während ein Switch Geräte innerhalb eines Netzwerks verbindet", true],
+        ["Ein Switch verbindet Netzwerke, während ein Router Geräte innerhalb eines Netzwerks verbindet", false],
+        ["Ein Switch und ein Router haben die gleiche Funktion", false],
+        ["Ein Router dient nur zur Internetverbindung, ein Switch nur zur Datenspeicherung", false]
+      ]
+    },
+    {
+      "id": "15",
+      "question": "Was ist ein Virus in der Informatik?",
+      "answers": [
+        ["Schädliche Software, die sich selbst repliziert", true],
+        ["Ein physischer Fehler in der Hardware", false],
+        ["Eine Art von Speicherfehler", false],
+        ["Ein Sicherheitsprotokoll für Netzwerke", false]
+      ]
+    },
+    {
+      "id": "16",
+      "question": "Welches Dateisystem wird typischerweise von Windows verwendet?",
+      "answers": [
+        ["NTFS", true],
+        ["ext4", false],
+        ["HFS+", false],
+        ["FAT32", false]
+      ]
+    },
+    {
+      "id": "17",
+      "question": "Was ist ein Bit?",
+      "answers": [
+        ["Die kleinste Dateneinheit in einem Computer", true],
+        ["Ein Datenspeicherort", false],
+        ["Eine Programmiersprache", false],
+        ["Eine Art von Netzwerkprotokoll", false]
+      ]
+    },
+    {
+      "id": "18",
+      "question": "Was bedeutet die Abkürzung 'CPU'?",
+      "answers": [
+        ["Central Processing Unit", true],
+        ["Computer Processing Unit", false],
+        ["Core Processing Unit", false],
+        ["Control Processing Unit", false]
+      ]
+    },
+    {
+      "id": "19",
+      "question": "Was ist die Aufgabe einer Firewall?",
+      "answers": [
+        ["Den Netzwerkverkehr zu überwachen und unerwünschte Verbindungen zu blockieren", true],
+        ["Ein Backup des Systems zu erstellen", false],
+        ["Den Computer vor physischen Schäden zu schützen", false],
+        ["Die CPU-Geschwindigkeit zu verbessern", false]
+      ]
+    },
+    {
+      "id": "20",
+      "question": "Welches der folgenden ist ein gängiges Netzwerkprotokoll?",
+      "answers": [
+        ["HTTP", true],
+        ["HTML", false],
+        ["SSD", false],
+        ["RAM", false]
+      ]
+    },
+    {
+      "id": "21",
+      "question": "Welche Art von Speichermedien ist eine Festplatte (HDD)?",
+      "answers": [
+        ["Magnetisch", true],
+        ["Optisch", false],
+        ["Elektronisch", false],
+        ["Mechanisch", false]
+      ]
+    },
+    {
+      "id": "22",
+      "question": "Was ist eine URL?",
+      "answers": [
+        ["Eine eindeutige Adresse einer Ressource im Internet", true],
+        ["Ein Programm zur Bearbeitung von Bildern", false],
+        ["Ein Typ von Computervirus", false],
+        ["Eine Speichertechnologie", false]
+      ]
+    },
+    {
+      "id": "23",
+      "question": "Welche der folgenden ist keine Programmiersprache?",
+      "answers": [
+        ["HTTP", true],
+        ["Python", false],
+        ["JavaScript", false],
+        ["C#", false]
+      ]
+    },
+    {
+      "id": "24",
+      "question": "Was ist eine SSD im Vergleich zu einer HDD?",
+      "answers": [
+        ["Eine schnellere Speicherlösung ohne bewegliche Teile", true],
+        ["Eine größere Festplatte", false],
+        ["Eine ältere Speichertechnologie", false],
+        ["Eine externe Speicherlösung", false]
+      ]
+    },
+    {
+      "id": "25",
+      "question": "Was bedeutet die Abkürzung 'LAN'?",
+      "answers": [
+        ["Local Area Network", true],
+        ["Large Access Network", false],
+        ["Long Area Network", false],
+        ["Linked Access Network", false]
+      ]
+    },
+    {
+      "id": "26",
+      "question": "Was ist ein Router?",
+      "answers": [
+        ["Ein Gerät, das Datenpakete zwischen Netzwerken weiterleitet", true],
+        ["Ein Gerät, das Geräte innerhalb eines Netzwerks verbindet", false],
+        ["Eine Art von Computerprogramm", false],
+        ["Ein Gerät zur Datenspeicherung", false]
+      ]
+    },
+    {
+      "id": "27",
+      "question": "Was ist ein Algorithmus?",
+      "answers": [
+        ["Eine Reihe von Anweisungen zur Lösung eines Problems", true],
+        ["Ein spezieller Computervirus", false],
+        ["Eine Art von Hardwarekomponente", false],
+        ["Ein Betriebssystem", false]
+      ]
+    },
+    {
+      "id": "28",
+      "question": "Was ist ein Motherboard?",
+      "answers": [
+        ["Die Hauptplatine, die alle Komponenten eines Computers verbindet", true],
+        ["Ein Teil des Netzwerks", false],
+        ["Ein Gerät zur Datenspeicherung", false],
+        ["Ein Betriebssystem", false]
+      ]
+    },
+    {
+      "id": "29",
+      "question": "Welches der folgenden ist ein optisches Speichermedium?",
+      "answers": [
+        ["CD", true],
+        ["SSD", false],
+        ["HDD", false],
+        ["RAM", false]
+      ]
+    },
+    {
+      "id": "30",
+      "question": "Was ist ein Byte?",
+      "answers": [
+        ["Eine Gruppe von 8 Bits", true],
+        ["Ein Netzwerkprotokoll", false],
+        ["Ein Speichergerät", false],
+        ["Eine Programmiersprache", false]
+      ]
+    },
+    {
+      "id": "31",
+      "question": "Was versteht man unter 'Virtualisierung'?",
+      "answers": [
+        ["Die Erstellung virtueller Maschinen auf einem physischen Computer", true],
+        ["Das Erstellen von Backups", false],
+        ["Ein spezielles Netzwerkprotokoll", false],
+        ["Die physische Speichererweiterung eines Computers", false]
+      ]
+    },
+    {
+      "id": "32",
+      "question": "Welches Protokoll wird für E-Mail verwendet?",
+      "answers": [
+        ["SMTP", true],
+        ["HTTP", false],
+        ["FTP", false],
+        ["HTML", false]
+      ]
+    },
+    {
+      "id": "33",
+      "question": "Was ist ein Backup?",
+      "answers": [
+        ["Eine Kopie von Daten, die zur Wiederherstellung verwendet wird", true],
+        ["Ein Netzwerkprotokoll", false],
+        ["Eine Programmiersprache", false],
+        ["Ein Speichergerät", false]
+      ]
+    },
+    {
+      "id": "34",
+      "question": "Was bedeutet die Abkürzung 'BIOS'?",
+      "answers": [
+        ["Basic Input Output System", true],
+        ["Binary Input Output System", false],
+        ["Boot Input Output System", false],
+        ["Backup Input Output System", false]
+      ]
+    },
+    {
+      "id": "35",
+      "question": "Was ist ein VPN?",
+      "answers": [
+        ["Ein virtuelles privates Netzwerk, das eine sichere Verbindung über das Internet ermöglicht", true],
+        ["Ein Speichergerät", false],
+        ["Ein Computervirus", false],
+        ["Eine Programmiersprache", false]
+      ]
+    },
+    {
+      "id": "36",
+      "question": "Was bedeutet die Abkürzung 'HTTP'?",
+      "answers": [
+        ["Hypertext Transfer Protocol", true],
+        ["Hyperlink Transfer Protocol", false],
+        ["Hypertext Transmission Protocol", false],
+        ["Hyperlink Text Protocol", false]
+      ]
+    },
+    {
+      "id": "37",
+      "question": "Was ist ein Kernel in einem Betriebssystem?",
+      "answers": [
+        ["Der zentrale Teil eines Betriebssystems, der Hardware und Software verwaltet", true],
+        ["Ein Datenspeicherort", false],
+        ["Eine Art von Computervirus", false],
+        ["Ein Sicherheitsprotokoll", false]
+      ]
+    },
+    {
+      "id": "38",
+      "question": "Was ist ein 'Ping' in der Netzwerktechnik?",
+      "answers": [
+        ["Ein Test, um die Erreichbarkeit eines Geräts im Netzwerk zu überprüfen", true],
+        ["Eine Art von Computervirus", false],
+        ["Ein Gerät zur Speicherung von Daten", false],
+        ["Ein Protokoll zur Datenübertragung", false]
+      ]
+    },
+    {
+      "id": "39",
+      "question": "Welches Dateisystem wird typischerweise von macOS verwendet?",
+      "answers": [
+        ["APFS", true],
+        ["NTFS", false],
+        ["ext4", false],
+        ["FAT32", false]
+      ]
+    },
+    {
+      "id": "40",
+      "question": "Welche Programmiersprache wird oft für Datenanalyse verwendet?",
+      "answers": [
+        ["Python", true],
+        ["Java", false],
+        ["C#", false],
+        ["Ruby", false]
+      ]
+    },
+    {
+      "id": "41",
+      "question": "Was ist eine GUI?",
+      "answers": [
+        ["Graphical User Interface", true],
+        ["General User Input", false],
+        ["Global User Interface", false],
+        ["Generated User Input", false]
+      ]
+    },
+    {
+      "id": "42",
+      "question": "Was ist ein Botnet?",
+      "answers": [
+        ["Ein Netzwerk von Computern, die von Malware kontrolliert werden", true],
+        ["Ein Netzwerk zur Datenübertragung", false],
+        ["Eine Art von Programmiersprache", false],
+        ["Eine Sicherheitsmaßnahme für Netzwerke", false]
+      ]
+    },
+    {
+      "id": "43",
+      "question": "Was ist ein WLAN?",
+      "answers": [
+        ["Ein drahtloses lokales Netzwerk", true],
+        ["Ein Gerät zur Datenspeicherung", false],
+        ["Eine Programmiersprache", false],
+        ["Ein Computervirus", false]
+      ]
+    },
+    {
+      "id": "44",
+      "question": "Welches Protokoll wird zur sicheren Übertragung von Daten über das Internet verwendet?",
+      "answers": [
+        ["HTTPS", true],
+        ["FTP", false],
+        ["HTTP", false],
+        ["SMTP", false]
+      ]
+    },
+    {
+      "id": "45",
+      "question": "Was bedeutet 'open source' Software?",
+      "answers": [
+        ["Software, deren Quellcode frei verfügbar und veränderbar ist", true],
+        ["Software, die kostenlos heruntergeladen werden kann", false],
+        ["Software, die nur von Entwicklern verwendet werden kann", false],
+        ["Software, die keine Updates benötigt", false]
+      ]
+    },
+    {
+      "id": "46",
+      "question": "Was ist eine API?",
+      "answers": [
+        ["Eine Schnittstelle, die es Programmen ermöglicht, miteinander zu kommunizieren", true],
+        ["Ein Gerät zur Speicherung von Daten", false],
+        ["Ein Netzwerkprotokoll", false],
+        ["Eine Sicherheitsmaßnahme für Netzwerke", false]
+      ]
+    },
+    {
+      "id": "47",
+      "question": "Was ist ein Task-Manager in Windows?",
+      "answers": [
+        ["Ein Programm zur Überwachung und Steuerung laufender Prozesse", true],
+        ["Ein Speicherort für Aufgaben", false],
+        ["Ein Teil des Netzwerks", false],
+        ["Eine Art von Computervirus", false]
+      ]
+    },
+    {
+      "id": "48",
+      "question": "Was ist eine Netzwerkkarte?",
+      "answers": [
+        ["Eine Hardwarekomponente, die einen Computer mit einem Netzwerk verbindet", true],
+        ["Eine Art von Programmiersprache", false],
+        ["Ein Speichertyp", false],
+        ["Ein Betriebssystem", false]
+      ]
+    },
+    {
+      "id": "49",
+      "question": "Was ist eine SQL-Datenbank?",
+      "answers": [
+        ["Eine relationale Datenbank, die die Abfragesprache SQL verwendet", true],
+        ["Eine Programmiersprache", false],
+        ["Ein Computervirus", false],
+        ["Ein Speichermedium", false]
+      ]
+    },
+    {
+      "id": "50",
+      "question": "Was ist ein Trojaner in der Informatik?",
+      "answers": [
+        ["Eine Art von Malware, die sich als legitime Software tarnt", true],
+        ["Eine Art von Netzwerkkabel", false],
+        ["Ein Gerät zur Datenspeicherung", false],
+        ["Eine Programmiersprache", false]
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ class_name Entity
 
 @onready var ground: TextureRect = $Ground
 @onready var beastie_image: TextureRect = $BestieImage
+@onready var beastie_shadow: TextureRect = $BeastieShadow
 @onready var hit_audio_stream_player: AudioStreamPlayer = $HitAudioStreamPlayer
 @onready var died_audio_stream_player: AudioStreamPlayer = $DiedAudioStreamPlayer
 @onready var died_animation_player: AnimationPlayer = $DiedAnimationPlayer
@@ -21,6 +22,7 @@ func create(_hp:int, beastie_image_path:String, _beastie_name:String):
 	max_hp = _hp
 	beastie_name = _beastie_name
 	beastie_image.texture = load(beastie_image_path)
+	beastie_shadow.texture = beastie_image.texture
 	died_animation_player.play_backwards("died")
 	
 

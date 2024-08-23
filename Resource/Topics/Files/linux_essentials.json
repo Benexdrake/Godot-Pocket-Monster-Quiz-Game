@@ -3,6 +3,7 @@
 	"topic":"Linux Essentials",
 	"information":"Linux Essential Zertifikat",
 	"icon": "Linux.png",
+	"difficulty": 1,
   "questions": [
 	{
 	  "id": "1",

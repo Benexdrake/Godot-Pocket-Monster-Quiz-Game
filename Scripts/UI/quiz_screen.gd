@@ -24,18 +24,25 @@ func create_question(id:String):
 		current_question = owner.topic.get_question(id)
 		current_question.answers.shuffle()
 		question_label.text = current_question.question
-		quiz_button_1.text = current_question.answers[0][0]
-		quiz_button_2.text = current_question.answers[1][0]
-		quiz_button_3.text = current_question.answers[2][0]
-		quiz_button_4.text = current_question.answers[3][0]
+		check_answer_size(current_question.answers[0][0], quiz_button_1)
+		check_answer_size(current_question.answers[1][0], quiz_button_2)
+		check_answer_size(current_question.answers[2][0], quiz_button_3)
+		check_answer_size(current_question.answers[3][0], quiz_button_4)
 		
+
+func check_answer_size(answer:String, button:Button):
+	button.add_theme_font_size_override("font_size", 32)
+	if answer.length() > 50:
+		button.add_theme_font_size_override("font_size", 20)
+	button.text = answer
+	button.size = Vector2(400,150)
+
 
 func update_time_bar(current, max):
 	time_progress_bar.value = 1.0 - (current / max)
 		
 	
 func on_button_pressed(index:int):
-	
 	check_answer.emit(current_question.answers[index][1])
 	
 

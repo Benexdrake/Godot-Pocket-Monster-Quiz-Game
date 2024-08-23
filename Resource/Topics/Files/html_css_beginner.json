@@ -1,0 +1,509 @@
+{
+  "topic_id":"html_css_beginner",
+	"topic":"HTML & CSS Beginner",
+	"information":"HTML & CSS Beginner Level",
+	"icon": "HTML_CSS.png",
+	"difficulty": 1,
+  "questions": [
+    {
+      "id": "1",
+      "question": "Welches HTML-Tag wird verwendet, um eine Überschrift der Ebene 1 zu erstellen?",
+      "answers": [
+        ["<h1>", true],
+        ["<header>", false],
+        ["<head>", false],
+        ["<title>", false]
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Welches HTML-Tag wird verwendet, um einen Absatz zu erstellen?",
+      "answers": [
+        ["<p>", true],
+        ["<div>", false],
+        ["<section>", false],
+        ["<span>", false]
+      ]
+    },
+    {
+      "id": "3",
+      "question": "Wie fügt man ein Bild in HTML ein?",
+      "answers": [
+        ["<img src='image.jpg'>", true],
+        ["<picture src='image.jpg'>", false],
+        ["<image src='image.jpg'>", false],
+        ["<img href='image.jpg'>", false]
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Welches Attribut wird verwendet, um einen Link in einem neuen Tab zu öffnen?",
+      "answers": [
+        ["target='_blank'", true],
+        ["new_tab='true'", false],
+        ["open='new'", false],
+        ["window='_blank'", false]
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Welches HTML-Tag wird verwendet, um eine geordnete Liste zu erstellen?",
+      "answers": [
+        ["<ol>", true],
+        ["<ul>", false],
+        ["<li>", false],
+        ["<list>", false]
+      ]
+    },
+    {
+      "id": "6",
+      "question": "Wie fügt man eine CSS-Datei in HTML ein?",
+      "answers": [
+        ["<link rel='stylesheet' href='styles.css'>", true],
+        ["<style src='styles.css'>", false],
+        ["<link css='styles.css'>", false],
+        ["<stylesheet link='styles.css'>", false]
+      ]
+    },
+    {
+      "id": "7",
+      "question": "Wie fügt man einen Kommentar in HTML ein?",
+      "answers": [
+        ["<!-- Kommentar -->", true],
+        ["// Kommentar", false],
+        ["/* Kommentar */", false],
+        ["# Kommentar", false]
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Welches Attribut in HTML definiert den alternativen Text für ein Bild?",
+      "answers": [
+        ["alt", true],
+        ["title", false],
+        ["description", false],
+        ["caption", false]
+      ]
+    },
+    {
+      "id": "9",
+      "question": "Welches CSS-Eigenschaft legt die Hintergrundfarbe fest?",
+      "answers": [
+        ["background-color", true],
+        ["color", false],
+        ["bg-color", false],
+        ["back-color", false]
+      ]
+    },
+    {
+      "id": "10",
+      "question": "Wie definiert man eine Klasse in HTML?",
+      "answers": [
+        ["class='classname'", true],
+        ["id='classname'", false],
+        ["type='classname'", false],
+        ["name='classname'", false]
+      ]
+    },
+    {
+      "id": "11",
+      "question": "Welche CSS-Eigenschaft wird verwendet, um Text fett darzustellen?",
+      "answers": [
+        ["font-weight", true],
+        ["text-bold", false],
+        ["font-bold", false],
+        ["weight", false]
+      ]
+    },
+    {
+      "id": "12",
+      "question": "Welches HTML-Tag wird verwendet, um einen Hyperlink zu erstellen?",
+      "answers": [
+        ["<a>", true],
+        ["<link>", false],
+        ["<href>", false],
+        ["<url>", false]
+      ]
+    },
+    {
+      "id": "13",
+      "question": "Welches Attribut wird verwendet, um den Link eines Anker-Tags festzulegen?",
+      "answers": [
+        ["href", true],
+        ["src", false],
+        ["link", false],
+        ["url", false]
+      ]
+    },
+    {
+      "id": "14",
+      "question": "Welche CSS-Eigenschaft wird verwendet, um den Innenabstand eines Elements festzulegen?",
+      "answers": [
+        ["padding", true],
+        ["margin", false],
+        ["border", false],
+        ["spacing", false]
+      ]
+    },
+    {
+      "id": "15",
+      "question": "Wie fügt man einen CSS-Kommentar ein?",
+      "answers": [
+        ["/* Kommentar */", true],
+        ["// Kommentar", false],
+        ["<!-- Kommentar -->", false],
+        ["# Kommentar", false]
+      ]
+    },
+    {
+      "id": "16",
+      "question": "Welches Attribut wird verwendet, um eine eindeutige ID für ein HTML-Element zu setzen?",
+      "answers": [
+        ["id", true],
+        ["class", false],
+        ["name", false],
+        ["ref", false]
+      ]
+    },
+    {
+      "id": "17",
+      "question": "Welche CSS-Eigenschaft legt den Abstand außerhalb eines Elements fest?",
+      "answers": [
+        ["margin", true],
+        ["padding", false],
+        ["border", false],
+        ["spacing", false]
+      ]
+    },
+    {
+      "id": "18",
+      "question": "Welches HTML-Tag wird verwendet, um ein Textfeld für die Eingabe zu erstellen?",
+      "answers": [
+        ["<input>", true],
+        ["<textarea>", false],
+        ["<form>", false],
+        ["<button>", false]
+      ]
+    },
+    {
+      "id": "19",
+      "question": "Welches Attribut wird verwendet, um das Ziel eines Formulars zu bestimmen?",
+      "answers": [
+        ["action", true],
+        ["method", false],
+        ["target", false],
+        ["href", false]
+      ]
+    },
+    {
+      "id": "20",
+      "question": "Welches HTML-Tag wird verwendet, um eine Tabelle zu erstellen?",
+      "answers": [
+        ["<table>", true],
+        ["<tr>", false],
+        ["<td>", false],
+        ["<tab>", false]
+      ]
+    },
+    {
+      "id": "21",
+      "question": "Wie ändert man die Schriftgröße in CSS?",
+      "answers": [
+        ["font-size", true],
+        ["text-size", false],
+        ["size-font", false],
+        ["text-font-size", false]
+      ]
+    },
+    {
+      "id": "22",
+      "question": "Welches Attribut wird verwendet, um eine Option in einem Dropdown-Menü zu erstellen?",
+      "answers": [
+        ["<option>", true],
+        ["<select>", false],
+        ["<dropdown>", false],
+        ["<list>", false]
+      ]
+    },
+    {
+      "id": "23",
+      "question": "Wie macht man Text in CSS kursiv?",
+      "answers": [
+        ["font-style: italic;", true],
+        ["text-decoration: italic;", false],
+        ["text-style: italic;", false],
+        ["font-variant: italic;", false]
+      ]
+    },
+    {
+      "id": "24",
+      "question": "Welches Tag umschließt den gesamten HTML-Inhalt?",
+      "answers": [
+        ["<html>", true],
+        ["<body>", false],
+        ["<head>", false],
+        ["<meta>", false]
+      ]
+    },
+    {
+      "id": "25",
+      "question": "Welches Attribut wird verwendet, um die Methode eines Formulars festzulegen?",
+      "answers": [
+        ["method", true],
+        ["action", false],
+        ["target", false],
+        ["post", false]
+      ]
+    },
+    {
+      "id": "26",
+      "question": "Welches HTML-Tag wird verwendet, um einen Zeilenumbruch zu erstellen?",
+      "answers": [
+        ["<br>", true],
+        ["<hr>", false],
+        ["<break>", false],
+        ["<newline>", false]
+      ]
+    },
+    {
+      "id": "27",
+      "question": "Wie kann man in CSS einen Rahmen um ein Element erstellen?",
+      "answers": [
+        ["border", true],
+        ["outline", false],
+        ["frame", false],
+        ["border-width", false]
+      ]
+    },
+    {
+      "id": "28",
+      "question": "Welches HTML-Tag wird verwendet, um eine ungeordnete Liste zu erstellen?",
+      "answers": [
+        ["<ul>", true],
+        ["<ol>", false],
+        ["<li>", false],
+        ["<list>", false]
+      ]
+    },
+    {
+      "id": "29",
+      "question": "Welche CSS-Eigenschaft wird verwendet, um den Textinhalt horizontal zu zentrieren?",
+      "answers": [
+        ["text-align", true],
+        ["align-text", false],
+        ["center-text", false],
+        ["justify", false]
+      ]
+    },
+    {
+      "id": "30",
+      "question": "Welches HTML-Tag wird verwendet, um ein Video einzubetten?",
+      "answers": [
+        ["<video>", true],
+        ["<media>", false],
+        ["<embed>", false],
+        ["<source>", false]
+      ]
+    },
+    {
+      "id": "31",
+      "question": "Wie fügt man einen Text in CSS mit Schatten ein?",
+      "answers": [
+        ["text-shadow", true],
+        ["font-shadow", false],
+        ["shadow-text", false],
+        ["text-effect", false]
+      ]
+    },
+    {
+      "id": "32",
+      "question": "Welches HTML-Tag wird verwendet, um ein Audio-Element hinzuzufügen?",
+      "answers": [
+        ["<audio>", true],
+        ["<sound>", false],
+        ["<music>", false],
+        ["<media>", false]
+      ]
+    },
+    {
+      "id": "33",
+      "question": "Welches CSS-Attribut wird verwendet, um das Layout-Display eines Elements zu definieren?",
+      "answers": [
+        ["display", true],
+        ["layout", false],
+        ["view", false],
+        ["box", false]
+      ]
+    },
+    {
+      "id": "34",
+      "question": "Welche CSS-Eigenschaft steuert die Transparenz eines Elements?",
+      "answers": [
+        ["opacity", true],
+        ["visibility", false],
+        ["alpha", false],
+        ["transparent", false]
+      ]
+    },
+    {
+      "id": "35",
+      "question": "Welches HTML-Tag wird verwendet, um einen Dropdown-Auswahlbereich zu erstellen?",
+      "answers": [
+        ["<select>", true],
+        ["<dropdown>", false],
+        ["<option>", false],
+        ["<choice>", false]
+      ]
+    },
+    {
+      "id": "36",
+      "question": "Wie ändert man die Hintergrundfarbe eines Elements in CSS?",
+      "answers": [
+        ["background-color", true],
+        ["color", false],
+        ["bg-color", false],
+        ["back-color", false]
+      ]
+    },
+    {
+      "id": "37",
+      "question": "Welche HTML-Tags werden verwendet, um Tabellenzeilen und -spalten zu erstellen?",
+      "answers": [
+        ["<tr> und <td>", true],
+        ["<row> und <column>", false],
+        ["<tablerow> und <tablecolumn>", false],
+        ["<r> und <c>", false]
+      ]
+    },
+    {
+      "id": "38",
+      "question": "Welches CSS-Eigenschaft verwendet man für abgerundete Ecken eines Elements?",
+      "answers": [
+        ["border-radius", true],
+        ["corner-radius", false],
+        ["round-border", false],
+        ["corner-round", false]
+      ]
+    },
+    {
+      "id": "39",
+      "question": "Wie bettet man eine externe Schriftart in CSS ein?",
+      "answers": [
+        ["@font-face", true],
+        ["font-import", false],
+        ["@font-import", false],
+        ["font-embed", false]
+      ]
+    },
+    {
+      "id": "40",
+      "question": "Welches HTML-Tag wird verwendet, um Text fett darzustellen?",
+      "answers": [
+        ["<strong>", true],
+        ["<b>", false],
+        ["<bold>", false],
+        ["<em>", false]
+      ]
+    },
+    {
+      "id": "41",
+      "question": "Welches HTML-Tag wird verwendet, um Text kursiv darzustellen?",
+      "answers": [
+        ["<em>", true],
+        ["<i>", false],
+        ["<italic>", false],
+        ["<style>", false]
+      ]
+    },
+    {
+      "id": "42",
+      "question": "Welches Attribut verwendet man, um den MIME-Typ eines Skripts anzugeben?",
+      "answers": [
+        ["type", true],
+        ["script", false],
+        ["src", false],
+        ["mime", false]
+      ]
+    },
+    {
+      "id": "43",
+      "question": "Wie erstellt man eine Schaltfläche in HTML?",
+      "answers": [
+        ["<button>", true],
+        ["<input type='button'>", false],
+        ["<click>", false],
+        ["<action>", false]
+      ]
+    },
+    {
+      "id": "44",
+      "question": "Welches Attribut wird verwendet, um den Titel eines Links anzugeben?",
+      "answers": [
+        ["title", true],
+        ["href", false],
+        ["name", false],
+        ["alt", false]
+      ]
+    },
+    {
+      "id": "45",
+      "question": "Welche CSS-Eigenschaft wird verwendet, um den Textabstand zwischen Wörtern zu ändern?",
+      "answers": [
+        ["word-spacing", true],
+        ["letter-spacing", false],
+        ["text-spacing", false],
+        ["spacing", false]
+      ]
+    },
+    {
+      "id": "46",
+      "question": "Welche CSS-Eigenschaft definiert den Zeilenabstand in einem Text?",
+      "answers": [
+        ["line-height", true],
+        ["text-height", false],
+        ["height", false],
+        ["line-spacing", false]
+      ]
+    },
+    {
+      "id": "47",
+      "question": "Wie wird ein Container in HTML erstellt?",
+      "answers": [
+        ["<div>", true],
+        ["<section>", false],
+        ["<article>", false],
+        ["<container>", false]
+      ]
+    },
+    {
+      "id": "48",
+      "question": "Wie schreibt man CSS inline in ein HTML-Element?",
+      "answers": [
+        ["style='color: blue;'", true],
+        ["css='color: blue;'", false],
+        ["class='color-blue'", false],
+        ["id='color-blue'", false]
+      ]
+    },
+    {
+      "id": "49",
+      "question": "Welches HTML-Tag wird verwendet, um ein Formular zu erstellen?",
+      "answers": [
+        ["<form>", true],
+        ["<input>", false],
+        ["<fieldset>", false],
+        ["<submit>", false]
+      ]
+    },
+    {
+      "id": "50",
+      "question": "Welches HTML-Tag wird verwendet, um einen Zeugen für das Skripting hinzuzufügen?",
+      "answers": [
+        ["<script>", true],
+        ["<code>", false],
+        ["<style>", false],
+        ["<embed>", false]
+      ]
+    }
+  ]
+}

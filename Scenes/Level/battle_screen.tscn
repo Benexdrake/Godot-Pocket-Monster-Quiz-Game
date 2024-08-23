@@ -26,13 +26,15 @@ texture = ExtResource("2_wlk3t")
 
 [node name="BackButton" parent="." instance=ExtResource("2_dfu1c")]
 unique_name_in_owner = true
-offset_left = 1849.0
-offset_top = 3.0
-offset_right = 1914.0
-offset_bottom = 46.0
+z_index = 10
+offset_left = 940.0
+offset_top = 827.0
+offset_right = 1040.0
+offset_bottom = 877.0
 text = "Back"
 
 [node name="QuestionTimer" type="Timer" parent="."]
 wait_time = 10.0
+one_shot = true
 
 [node name="Timer" type="Timer" parent="."]

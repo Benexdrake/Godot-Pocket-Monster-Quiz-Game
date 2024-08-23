@@ -72,31 +72,39 @@ columns = 2
 
 [node name="QuizButton1" parent="PanelContainer2/MarginContainer/GridContainer" instance=ExtResource("1_ejodb")]
 unique_name_in_owner = true
+clip_contents = true
 custom_minimum_size = Vector2(400, 150)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "ls"
+autowrap_mode = 3
 
 [node name="QuizButton2" parent="PanelContainer2/MarginContainer/GridContainer" instance=ExtResource("1_ejodb")]
 unique_name_in_owner = true
+clip_contents = true
 custom_minimum_size = Vector2(400, 150)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "dir"
+autowrap_mode = 3
 
 [node name="QuizButton3" parent="PanelContainer2/MarginContainer/GridContainer" instance=ExtResource("1_ejodb")]
 unique_name_in_owner = true
+clip_contents = true
 custom_minimum_size = Vector2(400, 150)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "show"
+autowrap_mode = 3
 
 [node name="QuizButton4" parent="PanelContainer2/MarginContainer/GridContainer" instance=ExtResource("1_ejodb")]
 unique_name_in_owner = true
+clip_contents = true
 custom_minimum_size = Vector2(400, 150)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "list"
+autowrap_mode = 3
 
 [node name="TimeProgressBar" type="ProgressBar" parent="."]
 visible = false

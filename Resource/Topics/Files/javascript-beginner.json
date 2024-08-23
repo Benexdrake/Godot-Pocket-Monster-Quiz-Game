@@ -1,0 +1,509 @@
+{
+    "topic_id":"javascript_beginner",
+	"topic":"JavaScript Beginner",
+	"information":"JavaScript Beginner Level",
+	"icon": "JavaScript.png",
+	"difficulty": 1,
+  "questions": [
+    {
+      "id": "1",
+      "question": "Welches Schlüsselwort wird verwendet, um eine Variable in JavaScript zu deklarieren?",
+      "answers": [
+        ["var", true],
+        ["int", false],
+        ["float", false],
+        ["declare", false]
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Welcher Operator wird verwendet, um zwei Werte zu vergleichen, ohne den Datentyp zu berücksichtigen?",
+      "answers": [
+        ["==", true],
+        ["===", false],
+        ["=", false],
+        ["!=", false]
+      ]
+    },
+    {
+      "id": "3",
+      "question": "Wie erstellt man eine Funktion in JavaScript?",
+      "answers": [
+        ["function myFunction() {}", true],
+        ["def myFunction() {}", false],
+        ["create function myFunction() {}", false],
+        ["func myFunction() {}", false]
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Welcher der folgenden Werte ist in JavaScript kein primitiver Datentyp?",
+      "answers": [
+        ["Array", true],
+        ["String", false],
+        ["Number", false],
+        ["Boolean", false]
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Wie kann man eine Schleife erstellen, die von 1 bis 5 zählt?",
+      "answers": [
+        ["for (let i = 1; i <= 5; i++) {}", true],
+        ["for (let i = 1; i < 5; i++) {}", false],
+        ["while (i <= 5) {}", false],
+        ["loop i from 1 to 5 {}", false]
+      ]
+    },
+    {
+      "id": "6",
+      "question": "Welcher der folgenden Methoden wird verwendet, um ein Element in einem Array hinzuzufügen?",
+      "answers": [
+        ["push()", true],
+        ["pop()", false],
+        ["add()", false],
+        ["append()", false]
+      ]
+    },
+    {
+      "id": "7",
+      "question": "Was ist der Rückgabewert von `typeof null`?",
+      "answers": [
+        ["object", true],
+        ["null", false],
+        ["undefined", false],
+        ["boolean", false]
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Wie gibt man eine Nachricht in der Browser-Konsole aus?",
+      "answers": [
+        ["console.log('Nachricht')", true],
+        ["log('Nachricht')", false],
+        ["console.write('Nachricht')", false],
+        ["alert('Nachricht')", false]
+      ]
+    },
+    {
+      "id": "9",
+      "question": "Welches Schlüsselwort wird verwendet, um eine Konstante in JavaScript zu deklarieren?",
+      "answers": [
+        ["const", true],
+        ["var", false],
+        ["let", false],
+        ["constant", false]
+      ]
+    },
+    {
+      "id": "10",
+      "question": "Wie kommentiert man eine einzelne Zeile in JavaScript?",
+      "answers": [
+        ["// Kommentar", true],
+        ["<!-- Kommentar -->", false],
+        ["/* Kommentar */", false],
+        ["# Kommentar", false]
+      ]
+    },
+    {
+      "id": "11",
+      "question": "Welche Methode wird verwendet, um die Länge eines Arrays zu ermitteln?",
+      "answers": [
+        ["array.length", true],
+        ["array.size()", false],
+        ["array.count()", false],
+        ["array.length()", false]
+      ]
+    },
+    {
+      "id": "12",
+      "question": "Wie konvertiert man eine Zeichenkette in eine Zahl?",
+      "answers": [
+        ["parseInt()", true],
+        ["toNumber()", false],
+        ["int()", false],
+        ["Number.toInt()", false]
+      ]
+    },
+    {
+      "id": "13",
+      "question": "Wie fügt man einen Kommentar über mehrere Zeilen ein?",
+      "answers": [
+        ["/* Kommentar */", true],
+        ["<!-- Kommentar -->", false],
+        ["// Kommentar", false],
+        ["# Kommentar", false]
+      ]
+    },
+    {
+      "id": "14",
+      "question": "Was gibt die Methode `Array.pop()` zurück?",
+      "answers": [
+        ["Das letzte Element des Arrays", true],
+        ["Das erste Element des Arrays", false],
+        ["Die Länge des Arrays", false],
+        ["Ein neues Array", false]
+      ]
+    },
+    {
+      "id": "15",
+      "question": "Wie prüft man, ob eine Variable vom Typ Array ist?",
+      "answers": [
+        ["Array.isArray(variable)", true],
+        ["variable.isArray()", false],
+        ["typeof variable === 'array'", false],
+        ["isArray(variable)", false]
+      ]
+    },
+    {
+      "id": "16",
+      "question": "Welche der folgenden ist keine Schleifenstruktur in JavaScript?",
+      "answers": [
+        ["do...while", false],
+        ["for", false],
+        ["repeat...until", true],
+        ["while", false]
+      ]
+    },
+    {
+      "id": "17",
+      "question": "Welches Schlüsselwort wird verwendet, um den Wert einer Funktion zurückzugeben?",
+      "answers": [
+        ["return", true],
+        ["yield", false],
+        ["break", false],
+        ["output", false]
+      ]
+    },
+    {
+      "id": "18",
+      "question": "Welche Methode wird verwendet, um das erste Vorkommen eines Werts in einem Array zu finden?",
+      "answers": [
+        ["indexOf()", true],
+        ["find()", false],
+        ["search()", false],
+        ["positionOf()", false]
+      ]
+    },
+    {
+      "id": "19",
+      "question": "Was ist der Wert von `undefined` in JavaScript?",
+      "answers": [
+        ["Eine Variable, die deklariert, aber nicht initialisiert wurde", true],
+        ["Eine Variable mit einem Nullwert", false],
+        ["Eine nicht existierende Variable", false],
+        ["Ein leerer String", false]
+      ]
+    },
+    {
+      "id": "20",
+      "question": "Wie stoppt man eine Schleife vorzeitig?",
+      "answers": [
+        ["break", true],
+        ["stop", false],
+        ["exit", false],
+        ["return", false]
+      ]
+    },
+    {
+      "id": "21",
+      "question": "Welche Methode wird verwendet, um ein Zeichen in einer Zeichenkette zu ersetzen?",
+      "answers": [
+        ["replace()", true],
+        ["substitute()", false],
+        ["switch()", false],
+        ["change()", false]
+      ]
+    },
+    {
+      "id": "22",
+      "question": "Was ist ein Objekt in JavaScript?",
+      "answers": [
+        ["Eine Sammlung von Eigenschaften und Methoden", true],
+        ["Ein primitiver Datentyp", false],
+        ["Ein Datenarray", false],
+        ["Eine numerische Variable", false]
+      ]
+    },
+    {
+      "id": "23",
+      "question": "Wie fügt man einem Objekt eine neue Eigenschaft hinzu?",
+      "answers": [
+        ["objekt.neueEigenschaft = wert", true],
+        ["objekt.addEigenschaft(wert)", false],
+        ["objekt.push(wert)", false],
+        ["objekt[neueEigenschaft] = wert", false]
+      ]
+    },
+    {
+      "id": "24",
+      "question": "Welche der folgenden Methoden ist nützlich, um einen Wert an das Ende eines Arrays zu setzen?",
+      "answers": [
+        ["push()", true],
+        ["shift()", false],
+        ["unshift()", false],
+        ["concat()", false]
+      ]
+    },
+    {
+      "id": "25",
+      "question": "Welcher der folgenden Werte wird als falsy angesehen?",
+      "answers": [
+        ["0", true],
+        ["1", false],
+        ["'false'", false],
+        ["{}", false]
+      ]
+    },
+    {
+      "id": "26",
+      "question": "Wie ändert man das HTML einer Seite mit JavaScript?",
+      "answers": [
+        ["document.getElementById('element').innerHTML = 'Text'", true],
+        ["document.setHTML('Text')", false],
+        ["document.html('element', 'Text')", false],
+        ["document.setContent('element', 'Text')", false]
+      ]
+    },
+    {
+      "id": "27",
+      "question": "Wie beendet man eine Funktion vorzeitig?",
+      "answers": [
+        ["return", true],
+        ["exit", false],
+        ["stop", false],
+        ["end", false]
+      ]
+    },
+    {
+      "id": "28",
+      "question": "Welcher Wert wird zurückgegeben, wenn eine Funktion keinen `return`-Befehl hat?",
+      "answers": [
+        ["undefined", true],
+        ["null", false],
+        ["0", false],
+        ["false", false]
+      ]
+    },
+    {
+      "id": "29",
+      "question": "Wie wählt man ein Element anhand seiner ID aus?",
+      "answers": [
+        ["document.getElementById('id')", true],
+        ["document.selectById('id')", false],
+        ["document.querySelector('#id')", false],
+        ["document.find('id')", false]
+      ]
+    },
+    {
+      "id": "30",
+      "question": "Welcher Operator wird verwendet, um die Konkatination von Zeichenketten durchzuführen?",
+      "answers": [
+        ["+", true],
+        ["&", false],
+        ["concat()", false],
+        ["++", false]
+      ]
+    },
+    {
+      "id": "31",
+      "question": "Was ist ein Callback in JavaScript?",
+      "answers": [
+        ["Eine Funktion, die als Argument an eine andere Funktion übergeben wird", true],
+        ["Eine benannte Funktion", false],
+        ["Eine Funktion, die null zurückgibt", false],
+        ["Eine Schleifenfunktion", false]
+      ]
+    },
+    {
+      "id": "32",
+      "question": "Welche Funktion wird verwendet, um den Typ einer Variable zu bestimmen?",
+      "answers": [
+        ["typeof", true],
+        ["getType", false],
+        ["checkType", false],
+        ["typeOf", false]
+      ]
+    },
+    {
+      "id": "33",
+      "question": "Welches Schlüsselwort verhindert die weitere Ausführung im Fehlerfall?",
+      "answers": [
+        ["throw", true],
+        ["return", false],
+        ["error", false],
+        ["break", false]
+      ]
+    },
+    {
+      "id": "34",
+      "question": "Wie kann man eine Zeichenkette in Großbuchstaben umwandeln?",
+      "answers": [
+        ["toUpperCase()", true],
+        ["upper()", false],
+        ["capitalize()", false],
+        ["toUpper()", false]
+      ]
+    },
+    {
+      "id": "35",
+      "question": "Wie entfernt man den letzten Wert eines Arrays?",
+      "answers": [
+        ["pop()", true],
+        ["remove()", false],
+        ["delete()", false],
+        ["shift()", false]
+      ]
+    },
+    {
+      "id": "36",
+      "question": "Was ist die Bedeutung von `NaN` in JavaScript?",
+      "answers": [
+        ["Not a Number", true],
+        ["Not a Name", false],
+        ["Null and Nothing", false],
+        ["Negative Number", false]
+      ]
+    },
+    {
+      "id": "37",
+      "question": "Wie kann man die Länge einer Zeichenkette herausfinden?",
+      "answers": [
+        [".length", true],
+        [".size()", false],
+        [".count()", false],
+        [".len()", false]
+      ]
+    },
+    {
+      "id": "38",
+      "question": "Welcher Befehl wird verwendet, um einen Zeitverzögerer in JavaScript zu erstellen?",
+      "answers": [
+        ["setTimeout()", true],
+        ["wait()", false],
+        ["delay()", false],
+        ["timeWait()", false]
+      ]
+    },
+    {
+      "id": "39",
+      "question": "Welche Art von Schleife wird verwendet, um durch die Eigenschaften eines Objekts zu iterieren?",
+      "answers": [
+        ["for...in", true],
+        ["for", false],
+        ["forEach", false],
+        ["do...while", false]
+      ]
+    },
+    {
+      "id": "40",
+      "question": "Wie kann man eine Zeichenkette in ein Array aufteilen?",
+      "answers": [
+        ["split()", true],
+        ["slice()", false],
+        ["splice()", false],
+        ["divide()", false]
+      ]
+    },
+    {
+      "id": "41",
+      "question": "Welches Schlüsselwort wird verwendet, um eine Ausnahme abzufangen?",
+      "answers": [
+        ["catch", true],
+        ["throw", false],
+        ["error", false],
+        ["try", false]
+      ]
+    },
+    {
+      "id": "42",
+      "question": "Welche Methode wird verwendet, um einen Teil eines Arrays zu entfernen?",
+      "answers": [
+        ["splice()", true],
+        ["slice()", false],
+        ["pop()", false],
+        ["delete()", false]
+      ]
+    },
+    {
+      "id": "43",
+      "question": "Wie wird der Wert einer Variable auf `undefined` gesetzt?",
+      "answers": [
+        ["variable = undefined", true],
+        ["delete variable", false],
+        ["variable.setNull()", false],
+        ["variable.reset()", false]
+      ]
+    },
+    {
+      "id": "44",
+      "question": "Welche Methode gibt eine neue Zeichenkette ohne Leerzeichen am Anfang oder Ende zurück?",
+      "answers": [
+        ["trim()", true],
+        ["strip()", false],
+        ["cut()", false],
+        ["slice()", false]
+      ]
+    },
+    {
+      "id": "45",
+      "question": "Welches Ereignis wird ausgelöst, wenn eine Taste auf der Tastatur gedrückt wird?",
+      "answers": [
+        ["keydown", true],
+        ["keypress", false],
+        ["keyup", false],
+        ["keyclick", false]
+      ]
+    },
+    {
+      "id": "46",
+      "question": "Wie erstellt man ein JavaScript-Objekt?",
+      "answers": [
+        ["let obj = {}", true],
+        ["let obj = new Object[]", false],
+        ["let obj = new Array()", false],
+        ["let obj = []", false]
+      ]
+    },
+    {
+      "id": "47",
+      "question": "Was macht die `map()`-Methode?",
+      "answers": [
+        ["Sie erstellt ein neues Array, indem sie eine Funktion auf jedes Element anwendet", true],
+        ["Sie entfernt alle leeren Elemente eines Arrays", false],
+        ["Sie verkleinert ein Array", false],
+        ["Sie fügt eine Karte zu einem Array hinzu", false]
+      ]
+    },
+    {
+      "id": "48",
+      "question": "Was bedeutet `this` in einer JavaScript-Funktion?",
+      "answers": [
+        ["Es bezieht sich auf das Objekt, zu dem die Funktion gehört", true],
+        ["Es bezieht sich auf das globale Objekt", false],
+        ["Es bezieht sich auf das DOM", false],
+        ["Es bezieht sich auf den Rückgabewert der Funktion", false]
+      ]
+    },
+    {
+      "id": "49",
+      "question": "Wie kann man den Code blockieren, bis eine Bedingung erfüllt ist?",
+      "answers": [
+        ["await", true],
+        ["wait", false],
+        ["block", false],
+        ["hold", false]
+      ]
+    },
+    {
+      "id": "50",
+      "question": "Wie erstellt man ein `Promise` in JavaScript?",
+      "answers": [
+        ["new Promise((resolve, reject) => {})", true],
+        ["Promise.create()", false],
+        ["function Promise() {}", false],
+        ["promise.then(() => {})", false]
+      ]
+    }
+  ]
+}

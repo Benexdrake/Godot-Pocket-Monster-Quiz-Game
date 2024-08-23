@@ -17,7 +17,7 @@ func _ready() -> void:
 	for topic in GameManager.all_topics.topics:
 		var instance = topid_card_scene.instantiate() as TopicLevelCard
 		level_grid_container.add_child(instance)
-		instance.create(topic.topic_id, topic.topic,topic.icon, topic.information)
+		instance.create(topic.topic_id, topic.topic,topic.icon, topic.information, topic.difficulty)
 		
 	GlobalVariables.current_modus = GameManager.game_modus.normal
 

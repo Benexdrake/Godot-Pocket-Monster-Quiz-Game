@@ -7,8 +7,10 @@ var players_beastie_nr:int
 const TARGET_EXP_GROWTH:int = 5
 
 var current_exp:int = 0
-@export var need_exp:int = 5
+#: set = set_current_exp
 
-@export var health_points:int = 10
+var need_exp:int = 5
 
-@export var level:int = 1
+var health_points:int = 10
+
+var level:int = 1

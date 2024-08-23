@@ -1,9 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfxvb160cyohr"]
+[gd_scene load_steps=6 format=3 uid="uid://bfxvb160cyohr"]
 
 [ext_resource type="PackedScene" uid="uid://dujgwpibibjgl" path="res://Scenes/UI/vignette.tscn" id="1_1ko1y"]
 [ext_resource type="Script" path="res://Scripts/UI/main_menu.gd" id="1_ah5dj"]
 [ext_resource type="Texture2D" uid="uid://c84lf0ysjbram" path="res://Assets/Background/MainMenuScreen.jpg" id="2_hmbjl"]
 [ext_resource type="PackedScene" uid="uid://ct85uhd6hy7mo" path="res://Scenes/UI/sound_button.tscn" id="3_igb0v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_amxbp"]
+bg_color = Color(0.0980392, 0.0980392, 0.0980392, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
 
 [node name="MainMenu" type="CanvasLayer"]
 script = ExtResource("1_ah5dj")
@@ -31,6 +42,7 @@ offset_right = 214.0
 offset_bottom = 388.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_amxbp")
 
 [node name="MarginContainer" type="MarginContainer" parent="MainPanelContainer"]
 layout_mode = 2
@@ -49,12 +61,16 @@ theme_override_constants/separation = 12
 [node name="PlayButton" parent="MainPanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("3_igb0v")]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
 theme_override_font_sizes/font_size = 48
 text = "Play"
 
 [node name="OptionsButton" parent="MainPanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("3_igb0v")]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
 theme_override_font_sizes/font_size = 48
 text = "Options"
 
@@ -62,11 +78,15 @@ text = "Options"
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
 theme_override_font_sizes/font_size = 48
 text = "Status"
 
 [node name="QuitButton" parent="MainPanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("3_igb0v")]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
 theme_override_font_sizes/font_size = 48
 text = "Quit"

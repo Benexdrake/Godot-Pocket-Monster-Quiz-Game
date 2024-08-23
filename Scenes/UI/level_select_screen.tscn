@@ -45,6 +45,12 @@ texture = ExtResource("2_5d6g1")
 [node name="Vignette" parent="." instance=ExtResource("3_ilroy")]
 visible = false
 
+[node name="BackButton" parent="." instance=ExtResource("4_m0n77")]
+unique_name_in_owner = true
+offset_right = 120.0
+offset_bottom = 60.0
+text = "Back"
+
 [node name="PanelContainer" type="PanelContainer" parent="."]
 custom_minimum_size = Vector2(1200, 0)
 anchors_preset = 13
@@ -57,17 +63,19 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_8xcqo")
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer"]
 layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_constants/margin_left = 24
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/MarginContainer"]
-layout_mode = 2
-
-[node name="LevelGridContainer" type="GridContainer" parent="PanelContainer/MarginContainer/ScrollContainer"]
+[node name="LevelGridContainer" type="GridContainer" parent="PanelContainer/ScrollContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 6
@@ -76,17 +84,13 @@ theme_override_constants/h_separation = 32
 theme_override_constants/v_separation = 32
 columns = 2
 
-[node name="BackButton" parent="." instance=ExtResource("4_m0n77")]
-unique_name_in_owner = true
-text = "Back"
-
 [node name="PanelContainer2" type="PanelContainer" parent="."]
 custom_minimum_size = Vector2(100, 200)
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_top = -170.0
-offset_right = 250.0
+offset_right = 260.0
 offset_bottom = 170.0
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_b0t3x")
@@ -95,7 +99,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_b0t3x")
 layout_mode = 2
 theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 12
+theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 12
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer2/MarginContainer"]

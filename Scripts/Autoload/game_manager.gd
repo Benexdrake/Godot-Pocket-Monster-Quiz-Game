@@ -1,6 +1,6 @@
 extends Node
 
-const SAVE_FILE_PATH:String = "user://save.file_20_08"
+const SAVE_FILE_PATH:String = "user://save.file"
 
 var beasties = preload("res://Resource/Beasties/all_beasties.tres") as AllBeasties
 
@@ -56,6 +56,8 @@ func load_player(player):
 	GlobalVariables.player.need_exp = player["need_exp"]
 	GlobalVariables.player.health_points = player["health_points"]
 	GlobalVariables.player.level = player["level"]
+	
+	print(player["need_exp"])
 
 
 func get_beastie(nr:int):

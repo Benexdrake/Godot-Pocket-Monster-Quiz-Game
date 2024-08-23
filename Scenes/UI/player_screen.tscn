@@ -1,7 +1,84 @@
-[gd_scene load_steps=4 format=3 uid="uid://bageij0jym25k"]
+[gd_scene load_steps=15 format=3 uid="uid://bageij0jym25k"]
 
-[ext_resource type="PackedScene" uid="uid://351xjncb05ia" path="res://Scenes/Entity/entity.tscn" id="1_d63yv"]
 [ext_resource type="Script" path="res://Scripts/UI/player_screen.gd" id="1_ph6qo"]
+[ext_resource type="Script" path="res://Scripts/Entity/entity.gd" id="2_4ta3p"]
+[ext_resource type="Texture2D" uid="uid://cr7soje4787of" path="res://Assets/plattform_grass.png" id="3_cnh6y"]
+[ext_resource type="Texture2D" uid="uid://bcxnwb5h2vqis" path="res://Assets/Beasties/Front/4.png" id="4_trwy3"]
+[ext_resource type="Shader" path="res://Resource/Shader/hit_flash_component.gdshader" id="5_5o2ag"]
+[ext_resource type="AudioStream" uid="uid://cuutb3mtj2o36" path="res://Assets/SFX/10_Battle_SFX/22_Slash_04.wav" id="6_6j8um"]
+[ext_resource type="Texture2D" uid="uid://dewsa1448utn5" path="res://Assets/Beasties/Back/4.png" id="6_co1ie"]
+[ext_resource type="AudioStream" uid="uid://dv1vs1wras50r" path="res://Assets/SFX/10_Battle_SFX/69_Enemy_death_01.wav" id="7_ti5c7"]
+
+[sub_resource type="Animation" id="Animation_0v54m"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BestieImage:material:shader_parameter/lerp_percent")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BestieImage:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xs36x"]
+resource_name = "died"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BestieImage:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ehy4t"]
+resource_name = "hit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BestieImage:material:shader_parameter/lerp_percent")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_30rgm"]
+_data = {
+"RESET": SubResource("Animation_0v54m"),
+"died": SubResource("Animation_xs36x"),
+"hit": SubResource("Animation_ehy4t")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cux2e"]
+resource_local_to_scene = true
+shader = ExtResource("5_5o2ag")
+shader_parameter/lerp_percent = 0.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uughg"]
 bg_color = Color(0.0846899, 0.0846899, 0.0846899, 1)
@@ -17,8 +94,56 @@ shadow_offset = Vector2(10, 10)
 [node name="PlayerScreen" type="CanvasLayer"]
 script = ExtResource("1_ph6qo")
 
-[node name="PlayerEntity" parent="." instance=ExtResource("1_d63yv")]
+[node name="PlayerEntity" type="Node2D" parent="."]
 position = Vector2(180, 876)
+script = ExtResource("2_4ta3p")
+
+[node name="DiedAnimationPlayer" type="AnimationPlayer" parent="PlayerEntity"]
+libraries = {
+"": SubResource("AnimationLibrary_30rgm")
+}
+
+[node name="HitAnimationPlayer" type="AnimationPlayer" parent="PlayerEntity"]
+libraries = {
+"": SubResource("AnimationLibrary_30rgm")
+}
+
+[node name="Ground" type="TextureRect" parent="PlayerEntity"]
+offset_left = -400.0
+offset_top = -129.0
+offset_right = 400.0
+offset_bottom = 121.0
+texture = ExtResource("3_cnh6y")
+
+[node name="BeastieShadow" type="TextureRect" parent="PlayerEntity"]
+visible = false
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 1
+offset_left = -378.0
+offset_top = -187.0
+offset_right = 402.0
+offset_bottom = 77.0
+pivot_offset = Vector2(229, 400)
+texture = ExtResource("4_trwy3")
+expand_mode = 2
+
+[node name="BestieImage" type="TextureRect" parent="PlayerEntity"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_cux2e")
+offset_left = -222.0
+offset_top = -373.0
+offset_right = 178.0
+offset_bottom = 27.0
+pivot_offset = Vector2(400, 400)
+texture = ExtResource("6_co1ie")
+expand_mode = 2
+
+[node name="HitAudioStreamPlayer" type="AudioStreamPlayer" parent="PlayerEntity"]
+stream = ExtResource("6_6j8um")
+
+[node name="DiedAudioStreamPlayer" type="AudioStreamPlayer" parent="PlayerEntity"]
+stream = ExtResource("7_ti5c7")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 offset_right = 500.0

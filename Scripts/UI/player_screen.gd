@@ -10,6 +10,9 @@ extends CanvasLayer
 
 func _ready() -> void:
 	timer.timeout.connect(on_timer_timeout)
+	
+	
+	
 	var battle_screen = get_tree().get_first_node_in_group("battle_screen") as BattleScreen
 	
 	if battle_screen == null:
@@ -25,6 +28,7 @@ func update():
 	exp_progress_bar.value = float(GlobalVariables.player.current_exp) / float(GlobalVariables.player.need_exp)
 	name_label.text = player_entity.beastie_name
 	level_label.text = "lv." + str(GlobalVariables.player.level)
+	
 	
 
 func on_hp_changed():

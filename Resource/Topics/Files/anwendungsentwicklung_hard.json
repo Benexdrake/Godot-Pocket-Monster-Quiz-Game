@@ -1,0 +1,429 @@
+{
+  "topic_id":"anwendungsentwickler_hard",
+	"topic":"FI AE Schwer",
+	"information":"Anwendungsentwickler Schwer Level",
+	"icon": "IT.png",
+	"difficulty": 3,
+  "questions": [
+	{
+	  "id": "1",
+	  "question": "Was ist der Hauptunterschied zwischen einer Klasse und einem Interface in objektorientierten Programmiersprachen wie Java?",
+	  "answers": [
+		["Eine Klasse kann Methoden implementieren, ein Interface nur deren Signaturen definieren", true],
+		["Ein Interface kann Methoden implementieren, eine Klasse nur deren Signaturen definieren", false],
+		["Eine Klasse kann nur abstrakte Methoden enthalten, ein Interface nicht", false],
+		["Ein Interface kann keine Eigenschaften definieren, eine Klasse schon", false]
+	  ]
+	},
+	{
+	  "id": "2",
+	  "question": "Welcher Entwurfsmuster-Typ wird verwendet, um die Erstellung von Objekten zu steuern, anstatt den Client direkt neue Objekte zu erzeugen?",
+	  "answers": [
+		["Factory Pattern", true],
+		["Observer Pattern", false],
+		["Singleton Pattern", false],
+		["Decorator Pattern", false]
+	  ]
+	},
+	{
+	  "id": "3",
+	  "question": "Was ist das Ziel des SOLID-Prinzips in der Softwareentwicklung?",
+	  "answers": [
+		["Die Software wartbarer, verständlicher und flexibler zu machen", true],
+		["Die Laufzeit von Programmen zu verkürzen", false],
+		["Die Benutzeroberfläche benutzerfreundlicher zu gestalten", false],
+		["Die Speichernutzung von Programmen zu reduzieren", false]
+	  ]
+	},
+	{
+	  "id": "4",
+	  "question": "Was bedeutet das 'L' im SOLID-Prinzip?",
+	  "answers": [
+		["Liskov Substitution Principle", true],
+		["Linear Dependency Principle", false],
+		["Logic-based Inheritance Principle", false],
+		["Language Independence Principle", false]
+	  ]
+	},
+	{
+	  "id": "5",
+	  "question": "In der Softwareentwicklung, was bedeutet DRY?",
+	  "answers": [
+		["Don't Repeat Yourself", true],
+		["Direct Resource Yield", false],
+		["Data Redundancy Yield", false],
+		["Dynamic Resource Year", false]
+	  ]
+	},
+	{
+	  "id": "6",
+	  "question": "Welcher der folgenden Algorithmen ist am besten geeignet, um eine große unsortierte Liste zu durchsuchen?",
+	  "answers": [
+		["Binary Search", false],
+		["Linear Search", true],
+		["Depth-First Search", false],
+		["Breadth-First Search", false]
+	  ]
+	},
+	{
+	  "id": "7",
+	  "question": "Was ist der Unterschied zwischen Overloading und Overriding in Java?",
+	  "answers": [
+		["Overloading bezieht sich auf Methoden mit dem gleichen Namen, aber unterschiedlichen Parametern; Overriding überschreibt Methoden der Basisklasse in der abgeleiteten Klasse", true],
+		["Overriding bezieht sich auf Methoden mit dem gleichen Namen, aber unterschiedlichen Parametern; Overloading überschreibt Methoden der Basisklasse", false],
+		["Overloading bedeutet, dass Methoden in verschiedenen Klassen überschrieben werden, während Overriding sich auf Parameterunterschiede bezieht", false],
+		["Overloading funktioniert nur mit Konstruktoren, während Overriding für normale Methoden gilt", false]
+	  ]
+	},
+	{
+	  "id": "8",
+	  "question": "Welche der folgenden Optionen beschreibt am besten den Zweck von Unit Tests?",
+	  "answers": [
+		["Testen einzelner Code-Einheiten oder Funktionen in Isolation", true],
+		["Überprüfung der grafischen Benutzeroberfläche", false],
+		["Testen der Interaktion zwischen verschiedenen Systemkomponenten", false],
+		["Testen der Performance des gesamten Systems", false]
+	  ]
+	},
+	{
+	  "id": "9",
+	  "question": "Welche Datenstruktur verwendet einen LIFO-Ansatz?",
+	  "answers": [
+		["Stack", true],
+		["Queue", false],
+		["Linked List", false],
+		["HashMap", false]
+	  ]
+	},
+	{
+	  "id": "10",
+	  "question": "Was versteht man unter dem Begriff 'Garbage Collection' in Programmiersprachen wie Java?",
+	  "answers": [
+		["Ein automatischer Speicherbereinigungsprozess, der nicht mehr verwendete Objekte entfernt", true],
+		["Ein Prozess, der die CPU-Leistung verbessert", false],
+		["Eine Methode zur Optimierung der Festplattennutzung", false],
+		["Ein Konzept zur Verbesserung der Netzwerksicherheit", false]
+	  ]
+	},
+	{
+	  "id": "11",
+	  "question": "Was bedeutet der Begriff 'Thread-Safety' in der Softwareentwicklung?",
+	  "answers": [
+		["Ein Code ist sicher, wenn er von mehreren Threads gleichzeitig ausgeführt werden kann, ohne dass unerwünschte Effekte auftreten", true],
+		["Ein Code, der keine externen Abhängigkeiten hat", false],
+		["Ein Programm, das keine Interruptions- oder Kontextwechsel zulässt", false],
+		["Ein Programm, das nur auf Single-Core-CPUs ausgeführt werden kann", false]
+	  ]
+	},
+	{
+	  "id": "12",
+	  "question": "Welcher Datenbanktyp eignet sich am besten für die Speicherung von hierarchischen Datenstrukturen?",
+	  "answers": [
+		["NoSQL-Datenbanken", true],
+		["Relationale Datenbanken", false],
+		["Flat-File-Datenbanken", false],
+		["XML-Datenbanken", false]
+	  ]
+	},
+	{
+	  "id": "13",
+	  "question": "Welcher der folgenden Algorithmen wird verwendet, um einen minimalen Spannbaum (Minimum Spanning Tree) zu finden?",
+	  "answers": [
+		["Kruskal's Algorithmus", true],
+		["Dijkstra's Algorithmus", false],
+		["A* Algorithmus", false],
+		["Bubble Sort", false]
+	  ]
+	},
+	{
+	  "id": "14",
+	  "question": "Welcher Begriff beschreibt am besten die Kapselung in der objektorientierten Programmierung?",
+	  "answers": [
+		["Das Verbergen der internen Details einer Klasse vor außenstehenden Zugriffen", true],
+		["Das Erstellen von Objekten innerhalb einer Klasse", false],
+		["Das Verwenden von Vererbung zwischen Klassen", false],
+		["Das Aufrufen einer Methode durch mehrere Klassen", false]
+	  ]
+	},
+	{
+	  "id": "15",
+	  "question": "Was ist eine Lambda-Funktion in Programmiersprachen wie Java oder Python?",
+	  "answers": [
+		["Eine anonyme Funktion, die als Ausdruck geschrieben wird", true],
+		["Eine Methode, die nur innerhalb von Klassen verwendet wird", false],
+		["Ein rekursiver Algorithmus", false],
+		["Eine Art von Exception", false]
+	  ]
+	},
+	{
+	  "id": "16",
+	  "question": "Welche der folgenden Aussagen beschreibt am besten den 'Observer'-Entwurfsmuster?",
+	  "answers": [
+		["Es definiert eine Eins-zu-viele-Abhängigkeit, bei der mehrere Objekte benachrichtigt werden, wenn sich der Zustand eines Objekts ändert", true],
+		["Es erstellt ein Proxy-Objekt, das anstelle des eigentlichen Objekts verwendet wird", false],
+		["Es erlaubt es, eine Familie von Algorithmen zu definieren und sie in einer Klasse auszutauschen", false],
+		["Es trennt die Erzeugung eines Objekts von seiner Repräsentation", false]
+	  ]
+	},
+	{
+	  "id": "17",
+	  "question": "Was bedeutet 'Polymorphismus' in der objektorientierten Programmierung?",
+	  "answers": [
+		["Die Fähigkeit von Objekten, sich je nach Kontext unterschiedlich zu verhalten", true],
+		["Das Vererben von Eigenschaften zwischen Klassen", false],
+		["Das Erstellen neuer Klassen durch Wiederverwendung vorhandener", false],
+		["Das Ausführen eines Programms auf mehreren Betriebssystemen", false]
+	  ]
+	},
+	{
+	  "id": "18",
+	  "question": "Was beschreibt am besten den Begriff 'Dependency Injection'?",
+	  "answers": [
+		["Eine Technik, um Abhängigkeiten von Objekten anstatt sie selbst zu erstellen, zu injizieren", true],
+		["Ein Verfahren zur Speicheroptimierung", false],
+		["Ein Weg zur Performance-Verbesserung", false],
+		["Eine Technik zur parallelen Ausführung von Code", false]
+	  ]
+	},
+	{
+	  "id": "19",
+	  "question": "Was ist die 'Big O'-Notation in der Informatik?",
+	  "answers": [
+		["Eine Beschreibung der Laufzeitkomplexität eines Algorithmus", true],
+		["Eine Methode zur Datenkomprimierung", false],
+		["Ein Weg, um Netzwerkverbindungen zu optimieren", false],
+		["Ein Verfahren zur Verschlüsselung von Daten", false]
+	  ]
+	},
+	{
+	  "id": "20",
+	  "question": "Was ist die Hauptfunktion von REST in Web-APIs?",
+	  "answers": [
+		["REST bietet eine einfache Möglichkeit, Daten zwischen einem Client und einem Server auszutauschen", true],
+		["REST verschlüsselt Webanfragen für mehr Sicherheit", false],
+		["REST dient zur Erstellung von Datenbankabfragen", false],
+		["REST wird für die Datenverarbeitung in Echtzeit verwendet", false]
+	  ]
+	},
+	{
+	  "id": "21",
+	  "question": "Welche der folgenden Techniken ist am besten geeignet, um Deadlocks in der parallelen Programmierung zu vermeiden?",
+	  "answers": [
+		["Verwenden von Zeitüberschreitungen (Timeouts)", true],
+		["Verwenden von Multithreading", false],
+		["Erhöhen der CPU-Geschwindigkeit", false],
+		["Vermeidung von Globalen Variablen", false]
+	  ]
+	},
+	{
+	  "id": "22",
+	  "question": "Was ist die Hauptidee hinter dem MVC-Architekturmuster?",
+	  "answers": [
+		["Die Trennung von Daten, Logik und Benutzeroberfläche", true],
+		["Die Parallelisierung von Prozessen", false],
+		["Die Erzeugung von zufälligen Daten", false],
+		["Die Optimierung von Laufzeitressourcen", false]
+	  ]
+	},
+	{
+	  "id": "23",
+	  "question": "Welche Art von Fehler wird am häufigsten durch fehlende Validierung von Benutzereingaben in Webanwendungen verursacht?",
+	  "answers": [
+		["SQL-Injection", true],
+		["Memory Leak", false],
+		["Null Pointer Exception", false],
+		["Deadlock", false]
+	  ]
+	},
+	{
+	  "id": "24",
+	  "question": "Was ist eine rekursive Funktion?",
+	  "answers": [
+		["Eine Funktion, die sich selbst aufruft", true],
+		["Eine Funktion, die in einer Schleife läuft", false],
+		["Eine Funktion, die nur einmal aufgerufen wird", false],
+		["Eine Funktion, die nur in Ausnahmefällen verwendet wird", false]
+	  ]
+	},
+	{
+	  "id": "25",
+	  "question": "Was ist der Hauptvorteil von Continuous Integration (CI) in der Softwareentwicklung?",
+	  "answers": [
+		["Automatisierte und häufige Tests von Code-Änderungen", true],
+		["Verbesserung der Speicheroptimierung", false],
+		["Reduktion der CPU-Belastung", false],
+		["Erhöhte Code-Sicherheit", false]
+	  ]
+	},
+	{
+	  "id": "26",
+	  "question": "Was ist das Ziel des 'Dependency Inversion Principle' im SOLID-Prinzip?",
+	  "answers": [
+		["Hohe Ebenen von Modulen sollten nicht von niedrigen Ebenen abhängig sein; beide sollten von Abstraktionen abhängig sein", true],
+		["Niedrige Module sollten die Abstraktionen implementieren", false],
+		["Nur hohe Module sollten abhängige Klassen implementieren", false],
+		["Die Abhängigkeit auf die Basisklasse sollte entfernt werden", false]
+	  ]
+	},
+	{
+	  "id": "27",
+	  "question": "Was ist ein Singleton-Pattern?",
+	  "answers": [
+		["Ein Entwurfsmuster, das sicherstellt, dass eine Klasse nur eine Instanz hat", true],
+		["Ein Entwurfsmuster zur Optimierung der Datenbankleistung", false],
+		["Ein Muster für rekursive Algorithmen", false],
+		["Ein Entwurfsmuster zur Erstellung von Objekten zur Laufzeit", false]
+	  ]
+	},
+	{
+	  "id": "28",
+	  "question": "Welches der folgenden ist kein NoSQL-Datenbanktyp?",
+	  "answers": [
+		["Relationale Datenbanken", true],
+		["Document Stores", false],
+		["Key-Value Stores", false],
+		["Graphdatenbanken", false]
+	  ]
+	},
+	{
+	  "id": "29",
+	  "question": "Welcher Algorithmus wird verwendet, um die kürzesten Pfade in einem Graphen zu berechnen?",
+	  "answers": [
+		["Dijkstra's Algorithmus", true],
+		["Merge Sort", false],
+		["Depth-First Search", false],
+		["Bubble Sort", false]
+	  ]
+	},
+	{
+	  "id": "30",
+	  "question": "Was ist der Unterschied zwischen REST und SOAP?",
+	  "answers": [
+		["REST ist leichter und basiert auf HTTP, während SOAP komplexer und auf XML basiert", true],
+		["SOAP ist schneller als REST", false],
+		["REST erfordert die Verwendung von XML, während SOAP JSON unterstützt", false],
+		["SOAP ist ein Webentwicklungsrahmen, REST ist eine Programmiersprache", false]
+	  ]
+	},
+	{
+	  "id": "31",
+	  "question": "Was ist der Unterschied zwischen einem GET und einem POST Request in HTTP?",
+	  "answers": [
+		["GET sendet Daten als Teil der URL, POST sendet Daten im Nachrichtentext", true],
+		["GET ist sicherer als POST", false],
+		["POST ist schneller als GET", false],
+		["POST verwendet weniger Bandbreite als GET", false]
+	  ]
+	},
+	{
+	  "id": "32",
+	  "question": "Was versteht man unter 'Lazy Loading'?",
+	  "answers": [
+		["Eine Technik, um Objekte oder Ressourcen nur dann zu laden, wenn sie benötigt werden", true],
+		["Eine Technik zur Parallelisierung von Datenbankabfragen", false],
+		["Eine Art von Garbage Collection", false],
+		["Ein Verfahren zur Datenkomprimierung", false]
+	  ]
+	},
+	{
+	  "id": "33",
+	  "question": "Was versteht man unter 'Hashing' in der Informatik?",
+	  "answers": [
+		["Die Umwandlung von Daten in eine feste Größe durch eine Hash-Funktion", true],
+		["Die Komprimierung von großen Datenmengen", false],
+		["Eine Methode zur Datenverschlüsselung", false],
+		["Eine Technik zur Datenbankoptimierung", false]
+	  ]
+	},
+	{
+	  "id": "34",
+	  "question": "Welche Methode wird am häufigsten verwendet, um sensible Daten in einer Datenbank zu schützen?",
+	  "answers": [
+		["Verschlüsselung", true],
+		["Komprimierung", false],
+		["Indexierung", false],
+		["Fragmentierung", false]
+	  ]
+	},
+	{
+	  "id": "35",
+	  "question": "Welche Art von Test wird verwendet, um zu überprüfen, ob Änderungen an einem Teil des Codes keine unbeabsichtigten Auswirkungen auf andere Teile haben?",
+	  "answers": [
+		["Regressionstests", true],
+		["Leistungstests", false],
+		["Komponententests", false],
+		["Integrationstests", false]
+	  ]
+	},
+	{
+	  "id": "36",
+	  "question": "Was ist der Zweck eines Load Balancers in einer Webanwendung?",
+	  "answers": [
+		["Verteilung des eingehenden Datenverkehrs auf mehrere Server", true],
+		["Komprimierung des HTTP-Datenverkehrs", false],
+		["Speichern von Backups", false],
+		["Erhöhung der Bandbreite für den Datenverkehr", false]
+	  ]
+	},
+	{
+	  "id": "37",
+	  "question": "Welche der folgenden Optionen beschreibt den Begriff 'Normalization' in der Datenbanktheorie?",
+	  "answers": [
+		["Der Prozess der Organisation von Daten in einer Datenbank, um Redundanzen zu reduzieren", true],
+		["Der Prozess der Verschlüsselung von Daten", false],
+		["Eine Technik zur Parallelisierung von Datenbankabfragen", false],
+		["Der Prozess der Defragmentierung einer Datenbank", false]
+	  ]
+	},
+	{
+	  "id": "38",
+	  "question": "Was versteht man unter einem 'Memory Leak' in der Softwareentwicklung?",
+	  "answers": [
+		["Ein Zustand, in dem der Speicher nicht freigegeben wird, obwohl er nicht mehr benötigt wird", true],
+		["Ein Fehler in der Datenübertragung", false],
+		["Ein Problem, bei dem ein Programm nicht ausreichend Speicher zugewiesen bekommt", false],
+		["Eine Sicherheitslücke in der Speicherverschlüsselung", false]
+	  ]
+	},
+	{
+	  "id": "39",
+	  "question": "Welche Programmiersprache wird oft in der Entwicklung von Machine Learning Modellen verwendet?",
+	  "answers": [
+		["Python", true],
+		["Java", false],
+		["C#", false],
+		["PHP", false]
+	  ]
+	},
+	{
+	  "id": "40",
+	  "question": "Was bedeutet der Begriff 'Asynchrone Programmierung'?",
+	  "answers": [
+		["Ein Programmablauf, bei dem Aufgaben parallel ausgeführt werden und nicht blockierend auf andere warten", true],
+		["Ein Ablauf, bei dem alle Aufgaben in einer sequentiellen Reihenfolge ausgeführt werden", false],
+		["Ein Verfahren zur Speicheroptimierung", false],
+		["Ein Mechanismus zur Datenverschlüsselung", false]
+	  ]
+	},
+	{
+	  "id": "41",
+	  "question": "Welche der folgenden Techniken wird verwendet, um den Zustand einer Webanwendung zwischen HTTP-Anfragen zu speichern?",
+	  "answers": [
+		["Sessions", true],
+		["Cookies", false],
+		["Hashing", false],
+		["Asynchrone Requests", false]
+	  ]
+	},
+	{
+	  "id": "42",
+	  "question": "Was ist der Unterschied zwischen einer relationalen und einer NoSQL-Datenbank?",
+	  "answers": [
+		["Relationale Datenbanken verwenden Tabellen mit festgelegten Schemas, während NoSQL flexibler und schemalos ist", true],
+		["NoSQL-Datenbanken verwenden SQL zur Abfrage von Daten", false],
+		["Relationale Datenbanken speichern Daten in JSON-Format, NoSQL nicht", false],
+		["Relationale Datenbanken unterstützen keine Skalierung, NoSQL schon", false]
+	  ]
+	}
+  ]
+}
