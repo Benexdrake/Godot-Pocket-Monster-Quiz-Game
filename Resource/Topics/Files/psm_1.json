@@ -1,0 +1,509 @@
+{
+  "topic_id":"psm_1",
+	"topic":"Professional Scrum Master 1",
+	"information":"Professional Scrum Master PSM1",
+	"icon": "Scrum.png",
+	"difficulty": 1,
+  "questions": [
+    {
+      "id": "1",
+      "question": "Was ist die Hauptaufgabe des Scrum Masters?",
+      "answer": [
+        ["Das Team vor externen Störungen zu schützen", true],
+        ["Die Anforderungen des Product Owners zu dokumentieren", false],
+        ["Das Projekt zu managen", false],
+        ["Das Team zu micro-managen", false]
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Welche Rolle ist verantwortlich für das Management des Product Backlogs?",
+      "answer": [
+        ["Der Product Owner", true],
+        ["Der Scrum Master", false],
+        ["Das Entwicklungsteam", false],
+        ["Der Stakeholder", false]
+      ]
+    },
+    {
+      "id": "3",
+      "question": "Was ist ein Sprint in Scrum?",
+      "answer": [
+        ["Eine Zeitspanne, in der ein inkrementelles Produkt erstellt wird", true],
+        ["Ein Meeting, um das nächste Produkt zu planen", false],
+        ["Ein Brainstorming-Sitzung für neue Ideen", false],
+        ["Eine Methode zur Priorisierung von Aufgaben", false]
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Welche der folgenden Aussagen beschreibt das Daily Scrum am besten?",
+      "answer": [
+        ["Ein kurzes Meeting, bei dem das Entwicklungsteam den Fortschritt bespricht", true],
+        ["Ein Meeting, um die Aufgaben des Product Owners zu diskutieren", false],
+        ["Ein Meeting, bei dem das Team den Stakeholdern berichtet", false],
+        ["Ein Treffen zum Überprüfen der Roadmap", false]
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Welche Rolle ist verantwortlich für die Maximierung des Werts des Produkts?",
+      "answer": [
+        ["Der Product Owner", true],
+        ["Der Scrum Master", false],
+        ["Das Entwicklungsteam", false],
+        ["Der Projektmanager", false]
+      ]
+    },
+    {
+      "id": "6",
+      "question": "Was passiert in einer Sprint Retrospektive?",
+      "answer": [
+        ["Das Team reflektiert über den vergangenen Sprint und identifiziert Verbesserungsmöglichkeiten", true],
+        ["Das Team plant den nächsten Sprint", false],
+        ["Das Team definiert neue Anforderungen", false],
+        ["Der Fortschritt des Projekts wird Stakeholdern präsentiert", false]
+      ]
+    },
+    {
+      "id": "7",
+      "question": "Wie lange dauert ein Sprint in Scrum üblicherweise?",
+      "answer": [
+        ["Ein bis vier Wochen", true],
+        ["Ein Tag", false],
+        ["Ein Monat", false],
+        ["Sechs Wochen", false]
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Was ist ein Inkrement in Scrum?",
+      "answer": [
+        ["Ein fertiges und potentiell auslieferbares Produkt", true],
+        ["Eine Aufgabe im Product Backlog", false],
+        ["Eine Funktion, die im Sprint geplant wurde", false],
+        ["Ein Meeting zur Planung des nächsten Sprints", false]
+      ]
+    },
+    {
+      "id": "9",
+      "question": "Wer ist verantwortlich für das Einhalten der Scrum-Prinzipien?",
+      "answer": [
+        ["Der Scrum Master", true],
+        ["Der Product Owner", false],
+        ["Das Management", false],
+        ["Die Stakeholder", false]
+      ]
+    },
+    {
+      "id": "10",
+      "question": "Was ist der Zweck des Sprint Reviews?",
+      "answer": [
+        ["Das Team präsentiert, was während des Sprints erreicht wurde", true],
+        ["Das Team erstellt neue Aufgaben", false],
+        ["Das Team bespricht Probleme mit Stakeholdern", false],
+        ["Das Team plant die nächsten Sprints", false]
+      ]
+    },
+    {
+      "id": "11",
+      "question": "Was ist eine Definition of Done (DoD)?",
+      "answer": [
+        ["Eine Liste von Kriterien, die erfüllt sein müssen, bevor eine Aufgabe als fertig gilt", true],
+        ["Die finale Präsentation des Produkts", false],
+        ["Ein Treffen mit dem Kunden zur Abnahme", false],
+        ["Ein Teammeeting zur Erstellung neuer Anforderungen", false]
+      ]
+    },
+    {
+      "id": "12",
+      "question": "Wie oft findet das Daily Scrum statt?",
+      "answer": [
+        ["Einmal am Tag", true],
+        ["Einmal pro Woche", false],
+        ["Einmal pro Monat", false],
+        ["Nach Bedarf", false]
+      ]
+    },
+    {
+      "id": "13",
+      "question": "Welches Artefakt repräsentiert alle Arbeiten, die im Sprint erledigt werden sollen?",
+      "answer": [
+        ["Das Sprint Backlog", true],
+        ["Das Product Backlog", false],
+        ["Das Burn-Down-Chart", false],
+        ["Das Inkrement", false]
+      ]
+    },
+    {
+      "id": "14",
+      "question": "Was ist das Product Backlog?",
+      "answer": [
+        ["Eine priorisierte Liste von Features, die entwickelt werden sollen", true],
+        ["Eine Liste der täglichen Aufgaben des Teams", false],
+        ["Eine Liste der erledigten Aufgaben", false],
+        ["Ein Diagramm, das den Fortschritt des Projekts zeigt", false]
+      ]
+    },
+    {
+      "id": "15",
+      "question": "Wer ist verantwortlich für die Sprint-Ziele?",
+      "answer": [
+        ["Das gesamte Scrum Team", true],
+        ["Der Scrum Master", false],
+        ["Der Product Owner", false],
+        ["Die Stakeholder", false]
+      ]
+    },
+    {
+      "id": "16",
+      "question": "Welche der folgenden Aussagen ist wahr über das Scrum-Team?",
+      "answer": [
+        ["Das Scrum-Team ist selbstorganisiert und funktionsübergreifend", true],
+        ["Das Scrum-Team wird vom Projektmanager geleitet", false],
+        ["Das Scrum-Team folgt den Anweisungen des Managements", false],
+        ["Das Scrum-Team besteht nur aus Entwicklern", false]
+      ]
+    },
+    {
+      "id": "17",
+      "question": "Was ist der Hauptzweck eines Burn-Down-Charts?",
+      "answer": [
+        ["Den verbleibenden Arbeitsaufwand im Sprint zu visualisieren", true],
+        ["Den Gesamtfortschritt des Projekts zu zeigen", false],
+        ["Die Teamzusammensetzung zu dokumentieren", false],
+        ["Die Erwartungen der Stakeholder zu managen", false]
+      ]
+    },
+    {
+      "id": "18",
+      "question": "Wie definiert Scrum den Begriff 'empirischer Prozess'? ",
+      "answer": [
+        ["Durch Beobachtung und Erfahrung wird das Produkt kontinuierlich verbessert", true],
+        ["Alle Anforderungen müssen zu Beginn des Projekts klar definiert sein", false],
+        ["Das Team erhält Anweisungen von externen Managern", false],
+        ["Das Projekt wird basierend auf theoretischen Modellen gesteuert", false]
+      ]
+    },
+    {
+      "id": "19",
+      "question": "Welche der folgenden Aussagen beschreibt die Rolle des Product Owners am besten?",
+      "answer": [
+        ["Der Product Owner ist verantwortlich für die Maximierung des Werts des Produkts", true],
+        ["Der Product Owner verwaltet die täglichen Aufgaben des Teams", false],
+        ["Der Product Owner führt die Sprint Retrospektive durch", false],
+        ["Der Product Owner erstellt das Burn-Down-Chart", false]
+      ]
+    },
+    {
+      "id": "20",
+      "question": "Wie kann das Entwicklungsteam seine Leistung während des Sprints verbessern?",
+      "answer": [
+        ["Durch regelmäßige Teilnahme an den Retrospektiven und Anwendung der identifizierten Verbesserungen", true],
+        ["Durch Erhöhung der Arbeitsstunden", false],
+        ["Durch häufigere Meetings mit dem Scrum Master", false],
+        ["Durch tägliche Statusberichte an den Product Owner", false]
+      ]
+    },
+    {
+      "id": "21",
+      "question": "Welches der folgenden Meetings ist KEIN Scrum-Meeting?",
+      "answer": [
+        ["Sprint Planning", false],
+        ["Daily Scrum", false],
+        ["Sprint Review", false],
+        ["Projektstatus-Meeting", true]
+      ]
+    },
+    {
+      "id": "22",
+      "question": "Welche der folgenden Aussagen über das Daily Scrum ist richtig?",
+      "answer": [
+        ["Es ist eine Zeitbox von 15 Minuten", true],
+        ["Es wird vom Product Owner geleitet", false],
+        ["Es wird nach Bedarf abgehalten", false],
+        ["Es ist optional", false]
+      ]
+    },
+    {
+      "id": "23",
+      "question": "Wie wird die Reihenfolge der Items im Product Backlog festgelegt?",
+      "answer": [
+        ["Nach Priorität, festgelegt vom Product Owner", true],
+        ["Nach Dringlichkeit, bestimmt vom Entwicklungsteam", false],
+        ["Nach Anweisung des Scrum Masters", false],
+        ["Nach Zufall", false]
+      ]
+    },
+    {
+      "id": "24",
+      "question": "Wer kann ein Sprint abbrechen?",
+      "answer": [
+        ["Der Product Owner", true],
+        ["Der Scrum Master", false],
+        ["Das Entwicklungsteam", false],
+        ["Die Stakeholder", false]
+      ]
+    },
+    {
+      "id": "25",
+      "question": "Wie viele Product Owner gibt es in einem Scrum-Team?",
+      "answer": [
+        ["Einen", true],
+        ["Keinen", false],
+        ["Einen pro Teammitglied", false],
+        ["Mehrere", false]
+      ]
+    },
+    {
+      "id": "26",
+      "question": "Was ist die Hauptaufgabe des Scrum Masters während eines Sprints?",
+      "answer": [
+        ["Das Team zu unterstützen, Hindernisse zu beseitigen", true],
+        ["Das Team zu managen", false],
+        ["Dem Product Owner zu berichten", false],
+        ["Den Fortschritt zu dokumentieren", false]
+      ]
+    },
+    {
+      "id": "27",
+      "question": "Wer nimmt am Sprint Review teil?",
+      "answer": [
+        ["Das gesamte Scrum-Team und die Stakeholder", true],
+        ["Nur das Entwicklungsteam", false],
+        ["Nur der Scrum Master und der Product Owner", false],
+        ["Nur der Product Owner", false]
+      ]
+    },
+    {
+      "id": "28",
+      "question": "Was wird während des Sprint Plannings definiert?",
+      "answer": [
+        ["Die Sprint-Ziele und das Sprint Backlog", true],
+        ["Die Teamzusammensetzung", false],
+        ["Die Präsentation für das Sprint Review", false],
+        ["Das Burn-Down-Chart", false]
+      ]
+    },
+    {
+      "id": "29",
+      "question": "Wie kann der Erfolg eines Sprints gemessen werden?",
+      "answer": [
+        ["Anhand der Erfüllung der Sprint-Ziele", true],
+        ["Anhand der Anzahl der produzierten Aufgaben", false],
+        ["Anhand der Dauer des Sprints", false],
+        ["Anhand der Kosten des Sprints", false]
+      ]
+    },
+    {
+      "id": "30",
+      "question": "Welches der folgenden Dokumente enthält die Anforderungen für das Projekt?",
+      "answer": [
+        ["Das Product Backlog", true],
+        ["Das Sprint Backlog", false],
+        ["Die Roadmap", false],
+        ["Der Projektplan", false]
+      ]
+    },
+    {
+      "id": "31",
+      "question": "Was ist ein potentiell auslieferbares Inkrement?",
+      "answer": [
+        ["Eine funktionale Version des Produkts, die nach jedem Sprint zur Verfügung steht", true],
+        ["Ein unfertiges Produkt, das noch getestet werden muss", false],
+        ["Eine Zusammenfassung des Sprints", false],
+        ["Ein Teil des Produktbacklogs", false]
+      ]
+    },
+    {
+      "id": "32",
+      "question": "Welches Scrum-Event dient dazu, Verbesserungen im Prozess zu identifizieren?",
+      "answer": [
+        ["Die Sprint Retrospektive", true],
+        ["Das Sprint Planning", false],
+        ["Das Daily Scrum", false],
+        ["Das Sprint Review", false]
+      ]
+    },
+    {
+      "id": "33",
+      "question": "Wie lange sollte ein Sprint Review dauern?",
+      "answer": [
+        ["Vier Stunden für einen einmonatigen Sprint", true],
+        ["Ein ganzer Arbeitstag", false],
+        ["Zwei Stunden, unabhängig von der Sprint-Dauer", false],
+        ["Eine Stunde", false]
+      ]
+    },
+    {
+      "id": "34",
+      "question": "Wie wird entschieden, welche Product Backlog Items in den nächsten Sprint aufgenommen werden?",
+      "answer": [
+        ["Das Entwicklungsteam wählt die Items basierend auf seiner Kapazität", true],
+        ["Der Scrum Master wählt die Items aus", false],
+        ["Die Stakeholder bestimmen die Auswahl", false],
+        ["Der Projektmanager entscheidet darüber", false]
+      ]
+    },
+    {
+      "id": "35",
+      "question": "Wer ist für die Qualität des Produkts verantwortlich?",
+      "answer": [
+        ["Das gesamte Scrum-Team", true],
+        ["Der Product Owner", false],
+        ["Der Scrum Master", false],
+        ["Die Stakeholder", false]
+      ]
+    },
+    {
+      "id": "36",
+      "question": "Was ist Timeboxing in Scrum?",
+      "answer": [
+        ["Eine feste Zeitdauer für ein Scrum-Event", true],
+        ["Das Setzen von Deadlines für Product Backlog Items", false],
+        ["Eine Technik zur Priorisierung von Aufgaben", false],
+        ["Die Verwaltung der Roadmap", false]
+      ]
+    },
+    {
+      "id": "37",
+      "question": "Welche der folgenden Optionen beschreibt am besten den Zweck des Scrum Frameworks?",
+      "answer": [
+        ["Die Bereitstellung eines flexiblen Ansatzes für die Entwicklung und Lieferung von Produkten", true],
+        ["Die Festlegung fester Prozesse für die Produktentwicklung", false],
+        ["Die Verwaltung von Budget und Ressourcen", false],
+        ["Das Erstellen von detaillierten Spezifikationen zu Beginn des Projekts", false]
+      ]
+    },
+    {
+      "id": "38",
+      "question": "Wer führt die Sprint Retrospektive?",
+      "answer": [
+        ["Der Scrum Master", true],
+        ["Der Product Owner", false],
+        ["Das Entwicklungsteam", false],
+        ["Der Projektmanager", false]
+      ]
+    },
+    {
+      "id": "39",
+      "question": "Was ist eine Velocity in Scrum?",
+      "answer": [
+        ["Eine Messgröße für die Arbeit, die in einem Sprint erledigt wurde", true],
+        ["Die Geschwindigkeit, mit der das Team Meetings abhält", false],
+        ["Eine Priorisierungstechnik", false],
+        ["Ein Termin für die Produktpräsentation", false]
+      ]
+    },
+    {
+      "id": "40",
+      "question": "Was sollte am Ende eines Sprints verfügbar sein?",
+      "answer": [
+        ["Ein potentiell auslieferbares Produktinkrement", true],
+        ["Ein detaillierter Bericht für die Stakeholder", false],
+        ["Ein neues Product Backlog", false],
+        ["Eine überarbeitete Roadmap", false]
+      ]
+    },
+    {
+      "id": "41",
+      "question": "Was ist der Unterschied zwischen dem Product Backlog und dem Sprint Backlog?",
+      "answer": [
+        ["Das Product Backlog enthält alle Anforderungen, das Sprint Backlog nur die Aufgaben für den Sprint", true],
+        ["Das Sprint Backlog enthält alle Aufgaben des Projekts, das Product Backlog nur die Ideen", false],
+        ["Das Product Backlog enthält nur Aufgaben für das Team, das Sprint Backlog enthält Management-Aufgaben", false],
+        ["Es gibt keinen Unterschied", false]
+      ]
+    },
+    {
+      "id": "42",
+      "question": "Was bedeutet Transparenz im Scrum-Kontext?",
+      "answer": [
+        ["Alle Aspekte des Prozesses und Fortschritts müssen sichtbar und nachvollziehbar sein", true],
+        ["Das Entwicklungsteam muss ständig berichten", false],
+        ["Der Scrum Master muss alle Entscheidungen dokumentieren", false],
+        ["Der Product Owner muss wöchentliche Berichte verfassen", false]
+      ]
+    },
+    {
+      "id": "43",
+      "question": "Wer bestimmt die Dauer eines Sprints?",
+      "answer": [
+        ["Das gesamte Scrum-Team", true],
+        ["Der Scrum Master", false],
+        ["Der Product Owner", false],
+        ["Die Stakeholder", false]
+      ]
+    },
+    {
+      "id": "44",
+      "question": "Welche der folgenden Aussagen ist über den Scrum Master falsch?",
+      "answer": [
+        ["Der Scrum Master hat die Aufgabe, Hindernisse für das Team zu beseitigen", false],
+        ["Der Scrum Master leitet das Daily Scrum", false],
+        ["Der Scrum Master entscheidet, welche Product Backlog Items im Sprint enthalten sind", true],
+        ["Der Scrum Master fördert das Verständnis und die Praxis von Scrum", false]
+      ]
+    },
+    {
+      "id": "45",
+      "question": "Was ist ein Sprint Goal?",
+      "answer": [
+        ["Ein spezifisches Ziel, das während des Sprints erreicht werden soll", true],
+        ["Die Menge an Aufgaben, die das Team übernehmen kann", false],
+        ["Der Fortschritt des Teams", false],
+        ["Der Plan für die nächsten Retrospektiven", false]
+      ]
+    },
+    {
+      "id": "46",
+      "question": "Was ist die maximale Dauer eines Sprints?",
+      "answer": [
+        ["Ein Monat", true],
+        ["Zwei Wochen", false],
+        ["Drei Monate", false],
+        ["Sechs Wochen", false]
+      ]
+    },
+    {
+      "id": "47",
+      "question": "Welche der folgenden Praktiken unterstützt das Scrum Framework NICHT?",
+      "answer": [
+        ["Wasserfall-Planung", true],
+        ["Inkrementelle Entwicklung", false],
+        ["Kontinuierliche Verbesserung", false],
+        ["Transparenz im Team", false]
+      ]
+    },
+    {
+      "id": "48",
+      "question": "Welches Scrum-Event ist am besten geeignet, um den Fortschritt des Teams zu überprüfen?",
+      "answer": [
+        ["Das Sprint Review", true],
+        ["Das Daily Scrum", false],
+        ["Die Sprint Retrospektive", false],
+        ["Das Sprint Planning", false]
+      ]
+    },
+    {
+      "id": "49",
+      "question": "Was ist die Aufgabe des Entwicklungsteams während des Sprints?",
+      "answer": [
+        ["Die Lieferung eines potentiell auslieferbaren Produktinkrements", true],
+        ["Die Verwaltung des Product Backlogs", false],
+        ["Die Durchführung von Stakeholder-Meetings", false],
+        ["Das Erstellen von Dokumentationen", false]
+      ]
+    },
+    {
+      "id": "50",
+      "question": "Wie kann ein Scrum-Team kontinuierlich besser werden?",
+      "answer": [
+        ["Durch Reflektion und Anpassung der Prozesse in den Sprint Retrospektiven", true],
+        ["Durch ständige Rückmeldungen vom Management", false],
+        ["Durch eine höhere Anzahl an Meetings", false],
+        ["Durch die Aufnahme zusätzlicher Teammitglieder", false]
+      ]
+    }
+  ]
+}

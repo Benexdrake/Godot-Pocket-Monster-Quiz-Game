@@ -1,0 +1,509 @@
+{
+  "topic_id":"aws_cloud_practitioner",
+	"topic":"AWS Cloud Practitioner",
+	"information":"AWS Cloud Practitioner Zertifikat",
+	"icon": "AWS.png",
+	"difficulty": 1,
+  "questions": [
+    {
+      "id": "1",
+      "question": "Was ist der Hauptvorteil der Verwendung von Cloud Computing?",
+      "answer": [
+        ["Flexibilität und Skalierbarkeit der Ressourcen", true],
+        ["Erhöhte Komplexität der Infrastruktur", false],
+        ["Manuelle Verwaltung von Servern", false],
+        ["Erhöhte Betriebskosten", false]
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Was bedeutet der Begriff 'Regions' in AWS?",
+      "answer": [
+        ["Physische Standorte weltweit, die mehrere Availability Zones enthalten", true],
+        ["Eine Sammlung von EC2-Instanzen", false],
+        ["Der virtuelle Speicherort einer Datenbank", false],
+        ["Ein Netzwerkprotokoll zur Kommunikation zwischen AWS-Diensten", false]
+      ]
+    },
+    {
+      "id": "3",
+      "question": "Was beschreibt AWS EC2 am besten?",
+      "answer": [
+        ["Ein Service für skalierbare Rechenkapazität in der Cloud", true],
+        ["Ein Tool zum Erstellen von Datenbanken", false],
+        ["Ein Storage-Dienst für Objektspeicher", false],
+        ["Ein Service zur Verwaltung von AWS-Konten", false]
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Welcher AWS-Dienst ermöglicht die Verteilung des Datenverkehrs auf mehrere EC2-Instanzen?",
+      "answer": [
+        ["Elastic Load Balancing (ELB)", true],
+        ["Amazon S3", false],
+        ["AWS Lambda", false],
+        ["Amazon RDS", false]
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Was bietet Amazon S3?",
+      "answer": [
+        ["Einen sicheren, skalierbaren Objektspeicher", true],
+        ["Einen Dienst zur Verwaltung von Servern", false],
+        ["Eine Plattform für Machine Learning", false],
+        ["Ein Content Delivery Network", false]
+      ]
+    },
+    {
+      "id": "6",
+      "question": "Was ist der Zweck von Amazon CloudFront?",
+      "answer": [
+        ["Es ist ein Content Delivery Network (CDN) zur Beschleunigung der Bereitstellung von Inhalten", true],
+        ["Es ist ein Dienst zur Erstellung von Datenpipelines", false],
+        ["Es ist ein Monitoring-Tool für Netzwerke", false],
+        ["Es ist ein Service für das Management von Datenbanken", false]
+      ]
+    },
+    {
+      "id": "7",
+      "question": "Was ist AWS Lambda?",
+      "answer": [
+        ["Ein Dienst, der das Ausführen von Code ohne Serververwaltung ermöglicht", true],
+        ["Ein NoSQL-Datenbankdienst", false],
+        ["Ein Service für das Management von Netzwerken", false],
+        ["Ein Speicher-Optimierungsdienst", false]
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Was beschreibt AWS CloudFormation am besten?",
+      "answer": [
+        ["Ein Dienst zur Automatisierung der Bereitstellung von AWS-Ressourcen über Vorlagen", true],
+        ["Ein Tool zur Optimierung der Netzwerklatenz", false],
+        ["Eine Funktion zur Sicherung von Datenbanken", false],
+        ["Eine Methode zur Verwaltung von Sicherheitsrichtlinien", false]
+      ]
+    },
+    {
+      "id": "9",
+      "question": "Welcher Service wird verwendet, um verwaltete Relational Database Services (RDS) bereitzustellen?",
+      "answer": [
+        ["Amazon RDS", true],
+        ["Amazon DynamoDB", false],
+        ["AWS CloudTrail", false],
+        ["Amazon EFS", false]
+      ]
+    },
+    {
+      "id": "10",
+      "question": "Was ist der Zweck von AWS Identity and Access Management (IAM)?",
+      "answer": [
+        ["Verwaltung von Benutzerzugriffen und Berechtigungen auf AWS-Ressourcen", true],
+        ["Erstellen von Netzwerkrichtlinien", false],
+        ["Automatisierung von Infrastruktur-Bereitstellungen", false],
+        ["Monitoring der AWS-Regionen", false]
+      ]
+    },
+    {
+      "id": "11",
+      "question": "Was ist der Vorteil von Reserved Instances in AWS?",
+      "answer": [
+        ["Kosteneinsparungen im Vergleich zu On-Demand-Instances", true],
+        ["Erhöhte Flexibilität bei der Ressourcennutzung", false],
+        ["Automatisiertes Daten-Backup", false],
+        ["Reduzierung der Netzwerklatenz", false]
+      ]
+    },
+    {
+      "id": "12",
+      "question": "Was ermöglicht Amazon RDS?",
+      "answer": [
+        ["Verwaltete relationale Datenbanken mit automatisierten Backups", true],
+        ["Unbegrenzten Objektspeicher für Dateien", false],
+        ["Skalierbare Rechenkapazität ohne Serververwaltung", false],
+        ["Erstellung von benutzerdefinierten VPCs", false]
+      ]
+    },
+    {
+      "id": "13",
+      "question": "Welche der folgenden Optionen ist kein Bestandteil des AWS Shared Responsibility Model?",
+      "answer": [
+        ["AWS ist verantwortlich für die Sicherheit der Cloud", false],
+        ["AWS-Kunden sind verantwortlich für die Sicherheit in der Cloud", true],
+        ["AWS verwaltet die Verschlüsselung der Kundendaten", false],
+        ["AWS-Kunden verwalten die Konfiguration ihrer Netzwerksicherheit", true]
+      ]
+    },
+    {
+      "id": "14",
+      "question": "Was ist der Zweck von AWS CloudWatch?",
+      "answer": [
+        ["Überwachen und Aufzeichnen von Leistungsmetriken und Logs", true],
+        ["Optimierung von Netzwerkanfragen", false],
+        ["Bereitstellung von Objektspeicher", false],
+        ["Erstellen und Verwalten von Containern", false]
+      ]
+    },
+    {
+      "id": "15",
+      "question": "Welcher Dienst ermöglicht das Erstellen von benutzerdefinierten Virtual Private Clouds (VPCs)?",
+      "answer": [
+        ["Amazon VPC", true],
+        ["Amazon S3", false],
+        ["Amazon RDS", false],
+        ["AWS Lambda", false]
+      ]
+    },
+    {
+      "id": "16",
+      "question": "Was ist der Vorteil von Multi-AZ-Bereitstellungen in Amazon RDS?",
+      "answer": [
+        ["Erhöhte Ausfallsicherheit und automatische Failover-Funktionalität", true],
+        ["Automatische Datenkomprimierung", false],
+        ["Reduzierte Betriebskosten", false],
+        ["Verbesserte Performance bei großen Datenmengen", false]
+      ]
+    },
+    {
+      "id": "17",
+      "question": "Was ist der Hauptzweck von Amazon Route 53?",
+      "answer": [
+        ["Domain Name System (DNS)-Service", true],
+        ["Bereitstellung von speicheroptimierten Instances", false],
+        ["Erstellen von automatisierten Datenpipelines", false],
+        ["Verwaltung von Zugriffskontrollen", false]
+      ]
+    },
+    {
+      "id": "18",
+      "question": "Welcher Dienst unterstützt das Erstellen von hochverfügbaren, elastischen Anwendungen ohne Server?",
+      "answer": [
+        ["AWS Lambda", true],
+        ["Amazon EC2", false],
+        ["Amazon S3", false],
+        ["Amazon EFS", false]
+      ]
+    },
+    {
+      "id": "19",
+      "question": "Welcher AWS-Dienst dient zur Verwaltung von Containern?",
+      "answer": [
+        ["Amazon ECS", true],
+        ["AWS CloudTrail", false],
+        ["Amazon RDS", false],
+        ["Amazon S3", false]
+      ]
+    },
+    {
+      "id": "20",
+      "question": "Was ist der Zweck von AWS Auto Scaling?",
+      "answer": [
+        ["Automatisches Skalieren von EC2-Instances basierend auf der Auslastung", true],
+        ["Verwalten von S3-Bucket-Berechtigungen", false],
+        ["Erstellen von Netzwerk-Security-Gruppen", false],
+        ["Bereitstellung von relationalen Datenbanken", false]
+      ]
+    },
+    {
+      "id": "21",
+      "question": "Welche Datenbank unterstützt nahtlose Skalierbarkeit und ist NoSQL-basiert?",
+      "answer": [
+        ["Amazon DynamoDB", true],
+        ["Amazon RDS", false],
+        ["Amazon S3", false],
+        ["AWS Lambda", false]
+      ]
+    },
+    {
+      "id": "22",
+      "question": "Was ist der Vorteil von Amazon EFS (Elastic File System)?",
+      "answer": [
+        ["Gemeinsamer Dateizugriff für mehrere EC2-Instances", true],
+        ["Verwaltung von Objektspeicher", false],
+        ["Bereitstellung von In-Memory-Datenbanken", false],
+        ["Erstellen von Datenvisualisierungen", false]
+      ]
+    },
+    {
+      "id": "23",
+      "question": "Welche Option beschreibt am besten den Unterschied zwischen einem Region und einer Availability Zone?",
+      "answer": [
+        ["Eine Region besteht aus mehreren Availability Zones", true],
+        ["Eine Availability Zone besteht aus mehreren Regionen", false],
+        ["Eine Availability Zone enthält eine Sammlung von IAM-Richtlinien", false],
+        ["Eine Region ist eine einzelne, isolierte Dateneinheit", false]
+      ]
+    },
+    {
+      "id": "24",
+      "question": "Welcher Service wird verwendet, um Server-Backups zu erstellen und zu verwalten?",
+      "answer": [
+        ["AWS Backup", true],
+        ["Amazon RDS", false],
+        ["Amazon ECS", false],
+        ["Amazon CloudFront", false]
+      ]
+    },
+    {
+      "id": "25",
+      "question": "Welcher Service ist für die sichere Verwaltung von Schlüsseln und Verschlüsselungen in AWS verantwortlich?",
+      "answer": [
+        ["AWS Key Management Service (KMS)", true],
+        ["AWS CloudFormation", false],
+        ["Amazon S3", false],
+        ["Amazon SNS", false]
+      ]
+    },
+    {
+      "id": "26",
+      "question": "Was bietet der AWS Free Tier?",
+      "answer": [
+        ["Kostenlose Nutzung bestimmter AWS-Dienste bis zu bestimmten Limits", true],
+        ["Unbegrenzten kostenlosen Speicherplatz", false],
+        ["Unbegrenzte Rechenleistung", false],
+        ["Kostenlosen Zugang zu allen AWS-Diensten ohne Beschränkung", false]
+      ]
+    },
+    {
+      "id": "27",
+      "question": "Welcher Dienst ermöglicht die Automatisierung von Softwarebereitstellungen auf EC2-Instanzen?",
+      "answer": [
+        ["AWS Elastic Beanstalk", true],
+        ["Amazon CloudFront", false],
+        ["AWS Direct Connect", false],
+        ["Amazon RDS", false]
+      ]
+    },
+    {
+      "id": "28",
+      "question": "Was ist der Hauptvorteil von Amazon S3 Glacier?",
+      "answer": [
+        ["Langfristige, kostengünstige Archivierung von Daten", true],
+        ["Schnellere Bereitstellung von Inhalten", false],
+        ["Optimierung der Netzwerkverbindungen", false],
+        ["Verwaltung von Container-Clustern", false]
+      ]
+    },
+    {
+      "id": "29",
+      "question": "Was ist der Zweck von AWS Direct Connect?",
+      "answer": [
+        ["Ermöglicht eine dedizierte Netzwerkverbindung zwischen lokalen Rechenzentren und AWS", true],
+        ["Erstellen und Verwalten von virtuellen Maschinen", false],
+        ["Speicherung von Daten in der Cloud", false],
+        ["Automatisches Skalieren von Anwendungen", false]
+      ]
+    },
+    {
+      "id": "30",
+      "question": "Was ist der Zweck von AWS CloudTrail?",
+      "answer": [
+        ["Überwachung und Protokollierung von AWS-API-Aktivitäten", true],
+        ["Erstellen von Objektspeichern", false],
+        ["Verwalten von Verschlüsselungsschlüsseln", false],
+        ["Erstellung von Virtual Private Clouds", false]
+      ]
+    },
+    {
+      "id": "31",
+      "question": "Was ist der Hauptvorteil von Spot Instances in AWS?",
+      "answer": [
+        ["Reduzierte Kosten im Vergleich zu On-Demand-Instances", true],
+        ["Garantierte Verfügbarkeit von Ressourcen", false],
+        ["Automatisierte Netzwerkbereitstellung", false],
+        ["Langfristige Speicherkapazität", false]
+      ]
+    },
+    {
+      "id": "32",
+      "question": "Was ist der Zweck von Amazon SNS (Simple Notification Service)?",
+      "answer": [
+        ["Senden von Benachrichtigungen und Nachrichten an verteilte Systeme", true],
+        ["Verwalten von relationalen Datenbanken", false],
+        ["Erstellen von Datensicherungen", false],
+        ["Bereitstellen von speicheroptimierten Instances", false]
+      ]
+    },
+    {
+      "id": "33",
+      "question": "Welche AWS-Datenbank ist speziell für Data Warehousing und Analytik ausgelegt?",
+      "answer": [
+        ["Amazon Redshift", true],
+        ["Amazon Aurora", false],
+        ["Amazon DynamoDB", false],
+        ["Amazon RDS", false]
+      ]
+    },
+    {
+      "id": "34",
+      "question": "Was ist der Vorteil von Auto Scaling Gruppen?",
+      "answer": [
+        ["Automatisches Hoch- und Runterskalieren von EC2-Instances basierend auf vordefinierten Richtlinien", true],
+        ["Verwaltung von Datenbankverschlüsselungen", false],
+        ["Erstellung von virtuellen Maschinen", false],
+        ["Erhöhung der Datenbankspeicherkapazität", false]
+      ]
+    },
+    {
+      "id": "35",
+      "question": "Welche Option beschreibt Amazon Elastic Block Store (EBS) am besten?",
+      "answer": [
+        ["Persistenter Blockspeicher für EC2-Instances", true],
+        ["Datenbankverwaltungssystem", false],
+        ["NoSQL-Datenbankdienst", false],
+        ["Objektspeicher für Medieninhalte", false]
+      ]
+    },
+    {
+      "id": "36",
+      "question": "Was ist der Vorteil von AWS Elastic Beanstalk?",
+      "answer": [
+        ["Vereinfachte Bereitstellung und Verwaltung von Anwendungen", true],
+        ["Automatisierte Netzwerksicherheit", false],
+        ["Verwaltung von Blockchain-Netzwerken", false],
+        ["Erstellung von In-Memory-Datenbanken", false]
+      ]
+    },
+    {
+      "id": "37",
+      "question": "Welcher AWS-Dienst bietet skalierbare Container-Orchestrierung?",
+      "answer": [
+        ["Amazon ECS", true],
+        ["AWS Direct Connect", false],
+        ["Amazon RDS", false],
+        ["AWS Lambda", false]
+      ]
+    },
+    {
+      "id": "38",
+      "question": "Welcher Service hilft bei der Implementierung von serverlosen APIs?",
+      "answer": [
+        ["Amazon API Gateway", true],
+        ["Amazon S3", false],
+        ["AWS Lambda", false],
+        ["AWS CloudTrail", false]
+      ]
+    },
+    {
+      "id": "39",
+      "question": "Was bietet AWS Shield?",
+      "answer": [
+        ["Schutz vor DDoS-Angriffen auf AWS-Ressourcen", true],
+        ["Optimierung der Anwendungsleistung", false],
+        ["Verwaltung von Containern", false],
+        ["Skalierbarer Blockspeicher", false]
+      ]
+    },
+    {
+      "id": "40",
+      "question": "Welche Rolle spielt der AWS Cost Explorer?",
+      "answer": [
+        ["Ermöglicht das Analysieren von AWS-Ausgaben und die Optimierung von Kosten", true],
+        ["Verwaltung von Verschlüsselungsschlüsseln", false],
+        ["Verwaltung von S3-Bucket-Berechtigungen", false],
+        ["Automatisierte Datenbankbereitstellung", false]
+      ]
+    },
+    {
+      "id": "41",
+      "question": "Was ist der Hauptzweck von AWS Artifact?",
+      "answer": [
+        ["Bereitstellung von Compliance-Berichten und Sicherheitsdokumenten", true],
+        ["Erstellen von S3-Buckets", false],
+        ["Verwaltung von Netzwerkprotokollen", false],
+        ["Verwalten von Benutzerzugriffsrechten", false]
+      ]
+    },
+    {
+      "id": "42",
+      "question": "Was ist der Zweck von Amazon GuardDuty?",
+      "answer": [
+        ["Erkennung und Überwachung von Bedrohungen und verdächtigen Aktivitäten", true],
+        ["Verwalten von Netzwerkverbindungen", false],
+        ["Optimierung der Anwendungsleistung", false],
+        ["Erstellen von verschlüsselten S3-Buckets", false]
+      ]
+    },
+    {
+      "id": "43",
+      "question": "Welcher AWS-Dienst unterstützt das Erstellen von großen Datenpipelines zur Analyse und Verarbeitung von Daten?",
+      "answer": [
+        ["AWS Data Pipeline", true],
+        ["Amazon SNS", false],
+        ["Amazon EFS", false],
+        ["AWS Auto Scaling", false]
+      ]
+    },
+    {
+      "id": "44",
+      "question": "Was ermöglicht Amazon Elastic Transcoder?",
+      "answer": [
+        ["Transkodierung und Konvertierung von Medieninhalten in verschiedene Formate", true],
+        ["Verwaltung von Container-Orchestrierung", false],
+        ["Erstellen von serverlosen Anwendungen", false],
+        ["Automatisiertes Datenbank-Backup", false]
+      ]
+    },
+    {
+      "id": "45",
+      "question": "Was ist der Hauptzweck von AWS Trusted Advisor?",
+      "answer": [
+        ["Beratung zu Best Practices bei Sicherheit, Kosten und Leistung", true],
+        ["Erstellen von Netzwerkrichtlinien", false],
+        ["Verwaltung von Container-Orchestrierungen", false],
+        ["Verwaltung von Datenbankverbindungen", false]
+      ]
+    },
+    {
+      "id": "46",
+      "question": "Welcher AWS-Dienst bietet langfristigen, sicheren Cloudspeicher für Backup- und Archivierungszwecke?",
+      "answer": [
+        ["Amazon S3 Glacier", true],
+        ["Amazon CloudFront", false],
+        ["Amazon ECS", false],
+        ["AWS Lambda", false]
+      ]
+    },
+    {
+      "id": "47",
+      "question": "Was bietet AWS CodeBuild?",
+      "answer": [
+        ["Ein vollständig verwalteter Dienst zum Kompilieren von Quellcode, Ausführen von Tests und Erstellen von Softwarepaketen", true],
+        ["Automatisiertes API-Management", false],
+        ["Verwaltung von Verschlüsselungsschlüsseln", false],
+        ["Erstellung von Datenspeichern", false]
+      ]
+    },
+    {
+      "id": "48",
+      "question": "Welcher AWS-Dienst ermöglicht eine nahtlose Verwaltung von hybriden Cloud-Umgebungen?",
+      "answer": [
+        ["AWS Outposts", true],
+        ["Amazon SNS", false],
+        ["Amazon RDS", false],
+        ["AWS CloudTrail", false]
+      ]
+    },
+    {
+      "id": "49",
+      "question": "Welcher Vorteil bietet Amazon Lightsail?",
+      "answer": [
+        ["Einfache und kostengünstige Cloud-Dienste für kleinere Anwendungen und Projekte", true],
+        ["Verwaltung von Blockchain-Netzwerken", false],
+        ["Automatisierung von Netzwerksicherheitsrichtlinien", false],
+        ["Erstellen von In-Memory-Datenbanken", false]
+      ]
+    },
+    {
+      "id": "50",
+      "question": "Was ermöglicht AWS Snowball?",
+      "answer": [
+        ["Datenübertragung von lokalen Rechenzentren zu AWS durch physische Speichergeräte", true],
+        ["Erstellen von benutzerdefinierten Machine-Learning-Modellen", false],
+        ["Verwaltung von Benutzerzugriffsrechten", false],
+        ["Optimierung der Anwendungsleistung", false]
+      ]
+    }
+  ]
+}

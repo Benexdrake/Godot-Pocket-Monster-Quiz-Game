@@ -1,0 +1,509 @@
+{
+  "topic_id":"az_900",
+	"topic":"AZ-900",
+	"information":"Azure Fundamentals AZ-900",
+	"icon": "Azure.png",
+	"difficulty": 1,
+  "questions": [
+    {
+      "id": "1",
+      "question": "Was ist Microsoft Azure?",
+      "answer": [
+        ["Ein Cloud-Computing-Dienst", true],
+        ["Ein Betriebssystem", false],
+        ["Eine Programmiersprache", false],
+        ["Eine Datenbank", false]
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Was ist ein Vorteil der Cloud-Computing-Dienste?",
+      "answer": [
+        ["Skalierbarkeit", true],
+        ["Erhöhte Hardwarekosten", false],
+        ["Manuelle Updates", false],
+        ["Feste Leistung", false]
+      ]
+    },
+    {
+      "id": "3",
+      "question": "Was bedeutet IaaS?",
+      "answer": [
+        ["Infrastructure as a Service", true],
+        ["Integration as a Service", false],
+        ["Information as a Service", false],
+        ["Internet as a Service", false]
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Welche der folgenden Dienste gehört zu Platform as a Service (PaaS)?",
+      "answer": [
+        ["Azure App Service", true],
+        ["Azure Virtual Machines", false],
+        ["Azure Blob Storage", false],
+        ["Azure SQL Database", false]
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Welche Art von Cloud-Modell bietet die höchste Kontrolle über die Infrastruktur?",
+      "answer": [
+        ["Private Cloud", true],
+        ["Public Cloud", false],
+        ["Hybrid Cloud", false],
+        ["Community Cloud", false]
+      ]
+    },
+    {
+      "id": "6",
+      "question": "Welches der folgenden ist ein Beispiel für einen hybriden Cloud-Einsatz?",
+      "answer": [
+        ["Teile der Infrastruktur lokal und Teile in der Public Cloud", true],
+        ["Alle Dienste in einer Public Cloud", false],
+        ["Alle Dienste in einer Private Cloud", false],
+        ["Mehrere Public Cloud-Anbieter verwenden", false]
+      ]
+    },
+    {
+      "id": "7",
+      "question": "Was ist Azure Virtual Machines?",
+      "answer": [
+        ["Ein IaaS-Dienst, der virtuelle Maschinen bereitstellt", true],
+        ["Ein PaaS-Dienst für das Hosting von Webanwendungen", false],
+        ["Ein Serverloser Berechnungsdienst", false],
+        ["Ein Tool zum Verwalten von Netzwerkressourcen", false]
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Welcher Azure-Dienst bietet serverloses Computing?",
+      "answer": [
+        ["Azure Functions", true],
+        ["Azure Virtual Machines", false],
+        ["Azure Load Balancer", false],
+        ["Azure Blob Storage", false]
+      ]
+    },
+    {
+      "id": "9",
+      "question": "Was ist der Hauptvorteil von serverlosem Computing?",
+      "answer": [
+        ["Automatische Skalierung und Abrechnung nach Verbrauch", true],
+        ["Feste Infrastrukturkosten", false],
+        ["Manuelle Skalierung", false],
+        ["Erhöhte Verwaltungskomplexität", false]
+      ]
+    },
+    {
+      "id": "10",
+      "question": "Welche Art von Cloud-Dienst ist Azure Blob Storage?",
+      "answer": [
+        ["Storage as a Service", true],
+        ["Compute as a Service", false],
+        ["Platform as a Service", false],
+        ["Infrastructure as a Service", false]
+      ]
+    },
+    {
+      "id": "11",
+      "question": "Welches der folgenden ist kein Typ von Azure Storage?",
+      "answer": [
+        ["Tape Storage", true],
+        ["Blob Storage", false],
+        ["File Storage", false],
+        ["Queue Storage", false]
+      ]
+    },
+    {
+      "id": "12",
+      "question": "Was ist der Zweck von Azure Active Directory?",
+      "answer": [
+        ["Identitäts- und Zugriffsverwaltung", true],
+        ["Dateispeicherung", false],
+        ["Datenbankverwaltung", false],
+        ["Netzwerküberwachung", false]
+      ]
+    },
+    {
+      "id": "13",
+      "question": "Welches der folgenden Beispiele beschreibt einen SaaS-Dienst?",
+      "answer": [
+        ["Office 365", true],
+        ["Azure Virtual Machines", false],
+        ["Azure Functions", false],
+        ["Azure App Service", false]
+      ]
+    },
+    {
+      "id": "14",
+      "question": "Was ist eine Ressourcengruppe in Azure?",
+      "answer": [
+        ["Eine logische Container für Azure-Ressourcen", true],
+        ["Eine physische Gruppe von Servern", false],
+        ["Ein Netzwerkprotokoll", false],
+        ["Ein Benutzerkonto", false]
+      ]
+    },
+    {
+      "id": "15",
+      "question": "Welche Azure-Komponente ermöglicht die Erstellung und Verwaltung von Virtuellen Netzwerken?",
+      "answer": [
+        ["Azure Virtual Network", true],
+        ["Azure Virtual Machines", false],
+        ["Azure Blob Storage", false],
+        ["Azure Active Directory", false]
+      ]
+    },
+    {
+      "id": "16",
+      "question": "Was ist der Zweck von Azure DevOps?",
+      "answer": [
+        ["Es unterstützt Continuous Integration und Continuous Delivery (CI/CD)", true],
+        ["Es verwaltet Datenbanken", false],
+        ["Es bietet Speicherlösungen", false],
+        ["Es verwaltet virtuelle Maschinen", false]
+      ]
+    },
+    {
+      "id": "17",
+      "question": "Welche Azure-Dienste werden typischerweise für maschinelles Lernen verwendet?",
+      "answer": [
+        ["Azure Machine Learning und Cognitive Services", true],
+        ["Azure Active Directory", false],
+        ["Azure Kubernetes Service", false],
+        ["Azure Functions", false]
+      ]
+    },
+    {
+      "id": "18",
+      "question": "Was bietet Azure Cost Management?",
+      "answer": [
+        ["Tools zur Überwachung und Verwaltung von Cloud-Ausgaben", true],
+        ["Speicheroptimierung", false],
+        ["Leistungsoptimierung für virtuelle Maschinen", false],
+        ["Datenbankmanagement", false]
+      ]
+    },
+    {
+      "id": "19",
+      "question": "Welches der folgenden ist eine Methode zur Implementierung von Cloud-Sicherheit in Azure?",
+      "answer": [
+        ["Network Security Groups (NSGs)", true],
+        ["Azure Load Balancer", false],
+        ["Azure Blob Storage", false],
+        ["Azure Logic Apps", false]
+      ]
+    },
+    {
+      "id": "20",
+      "question": "Was ist Azure Policy?",
+      "answer": [
+        ["Ein Dienst, der es ermöglicht, Compliance-Anforderungen durchzusetzen", true],
+        ["Ein Load-Balancing-Dienst", false],
+        ["Eine Speicherlösung", false],
+        ["Eine Datenverarbeitungsplattform", false]
+      ]
+    },
+    {
+      "id": "21",
+      "question": "Was bietet Azure Traffic Manager?",
+      "answer": [
+        ["Lastverteilung des eingehenden Datenverkehrs auf verschiedene Dienste", true],
+        ["Speicherverwaltung", false],
+        ["Identitätsverwaltung", false],
+        ["Datensicherung", false]
+      ]
+    },
+    {
+      "id": "22",
+      "question": "Welche Azure-Dienst bietet eine skalierbare und verwaltete Datenbanklösung?",
+      "answer": [
+        ["Azure SQL Database", true],
+        ["Azure DevOps", false],
+        ["Azure Functions", false],
+        ["Azure Virtual Network", false]
+      ]
+    },
+    {
+      "id": "23",
+      "question": "Was ist Azure Marketplace?",
+      "answer": [
+        ["Ein Online-Store für zertifizierte Anwendungen und Services", true],
+        ["Ein Tool zur Verwaltung von Cloud-Ausgaben", false],
+        ["Eine Plattform zur Verwaltung von Identitäten", false],
+        ["Eine Entwicklungsumgebung", false]
+      ]
+    },
+    {
+      "id": "24",
+      "question": "Welcher Azure-Dienst ermöglicht das Sichern und Wiederherstellen von Daten?",
+      "answer": [
+        ["Azure Backup", true],
+        ["Azure Active Directory", false],
+        ["Azure Logic Apps", false],
+        ["Azure Monitor", false]
+      ]
+    },
+    {
+      "id": "25",
+      "question": "Welcher Dienst ermöglicht die Verwaltung von Richtlinien und Compliance in Azure?",
+      "answer": [
+        ["Azure Policy", true],
+        ["Azure DevOps", false],
+        ["Azure Functions", false],
+        ["Azure Storage", false]
+      ]
+    },
+    {
+      "id": "26",
+      "question": "Welcher Azure-Dienst bietet ein Content Delivery Network (CDN)?",
+      "answer": [
+        ["Azure CDN", true],
+        ["Azure Blob Storage", false],
+        ["Azure Active Directory", false],
+        ["Azure Virtual Network", false]
+      ]
+    },
+    {
+      "id": "27",
+      "question": "Was ist der Zweck von Azure Load Balancer?",
+      "answer": [
+        ["Verteilung des eingehenden Datenverkehrs auf mehrere Backend-Dienste", true],
+        ["Speichern von Daten in der Cloud", false],
+        ["Verwalten von Identitäten", false],
+        ["Bereitstellen von Datenbankdiensten", false]
+      ]
+    },
+    {
+      "id": "28",
+      "question": "Welcher Dienst bietet die Verwaltung von Ereignissen und Benachrichtigungen in Azure?",
+      "answer": [
+        ["Azure Event Grid", true],
+        ["Azure Functions", false],
+        ["Azure Storage", false],
+        ["Azure SQL Database", false]
+      ]
+    },
+    {
+      "id": "29",
+      "question": "Was ist der Vorteil von Azure Advisor?",
+      "answer": [
+        ["Es bietet Empfehlungen zur Optimierung von Azure-Ressourcen", true],
+        ["Es speichert Daten sicher in der Cloud", false],
+        ["Es erstellt virtuelle Netzwerke", false],
+        ["Es überwacht den Netzwerkverkehr", false]
+      ]
+    },
+    {
+      "id": "30",
+      "question": "Welcher Dienst wird zur Analyse und Visualisierung von Daten in Echtzeit verwendet?",
+      "answer": [
+        ["Azure Stream Analytics", true],
+        ["Azure Storage", false],
+        ["Azure Active Directory", false],
+        ["Azure SQL Database", false]
+      ]
+    },
+    {
+      "id": "31",
+      "question": "Welcher Dienst bietet die Überwachung und Analyse von Azure-Ressourcen?",
+      "answer": [
+        ["Azure Monitor", true],
+        ["Azure Storage", false],
+        ["Azure SQL Database", false],
+        ["Azure DevOps", false]
+      ]
+    },
+    {
+      "id": "32",
+      "question": "Was ist der Hauptvorteil von Azure Functions?",
+      "answer": [
+        ["Serverloses Computing", true],
+        ["Speicherung großer Datenmengen", false],
+        ["Verwalten von Benutzern und Identitäten", false],
+        ["Bereitstellung virtueller Maschinen", false]
+      ]
+    },
+    {
+      "id": "33",
+      "question": "Was bedeutet die horizontale Skalierung in Azure?",
+      "answer": [
+        ["Hinzufügen weiterer Instanzen einer Ressource", true],
+        ["Erhöhen der Speicherkapazität einer Ressource", false],
+        ["Erhöhen der Rechenleistung einer virtuellen Maschine", false],
+        ["Verringern der Anzahl von Ressourcen", false]
+      ]
+    },
+    {
+      "id": "34",
+      "question": "Welcher Azure-Dienst bietet einen verwalteten Kubernetes-Dienst?",
+      "answer": [
+        ["Azure Kubernetes Service (AKS)", true],
+        ["Azure Virtual Machines", false],
+        ["Azure Functions", false],
+        ["Azure App Service", false]
+      ]
+    },
+    {
+      "id": "35",
+      "question": "Welcher Dienst hilft bei der Verwaltung von Cloud-Sicherheitsrichtlinien?",
+      "answer": [
+        ["Azure Security Center", true],
+        ["Azure SQL Database", false],
+        ["Azure Active Directory", false],
+        ["Azure App Service", false]
+      ]
+    },
+    {
+      "id": "36",
+      "question": "Was ist der Hauptzweck von Azure Logic Apps?",
+      "answer": [
+        ["Automatisierung von Workflows", true],
+        ["Speicherung von Daten", false],
+        ["Verwaltung von Netzwerken", false],
+        ["Überwachung von Ressourcen", false]
+      ]
+    },
+    {
+      "id": "37",
+      "question": "Was ist Azure DevTest Labs?",
+      "answer": [
+        ["Ein Dienst zum Erstellen von Testumgebungen", true],
+        ["Ein Dienst zur Verwaltung von Datenbanken", false],
+        ["Ein Speicherdienst", false],
+        ["Ein Load-Balancing-Dienst", false]
+      ]
+    },
+    {
+      "id": "38",
+      "question": "Was ist Azure Batch?",
+      "answer": [
+        ["Ein Dienst zum Ausführen von parallelen Berechnungen", true],
+        ["Ein Speicherverwaltungsdienst", false],
+        ["Ein Netzwerkverwaltungsdienst", false],
+        ["Ein Identitätsverwaltungsdienst", false]
+      ]
+    },
+    {
+      "id": "39",
+      "question": "Was bietet Azure Cosmos DB?",
+      "answer": [
+        ["Eine weltweit verteilte, mehrmandantenfähige Datenbanklösung", true],
+        ["Speicheroptimierung", false],
+        ["Netzwerksicherheit", false],
+        ["Serverloses Computing", false]
+      ]
+    },
+    {
+      "id": "40",
+      "question": "Welcher Dienst wird zur Überwachung und Verwaltung von Netzwerken in Azure verwendet?",
+      "answer": [
+        ["Azure Network Watcher", true],
+        ["Azure SQL Database", false],
+        ["Azure Storage", false],
+        ["Azure DevOps", false]
+      ]
+    },
+    {
+      "id": "41",
+      "question": "Was ist Azure Cognitive Services?",
+      "answer": [
+        ["Eine Sammlung von APIs für KI und maschinelles Lernen", true],
+        ["Ein Speicherdienst", false],
+        ["Ein Identitätsmanagement-Dienst", false],
+        ["Ein Load-Balancer", false]
+      ]
+    },
+    {
+      "id": "42",
+      "question": "Welcher Dienst unterstützt die Verwaltung von Softwarecontainern in Azure?",
+      "answer": [
+        ["Azure Kubernetes Service", true],
+        ["Azure Blob Storage", false],
+        ["Azure Active Directory", false],
+        ["Azure Logic Apps", false]
+      ]
+    },
+    {
+      "id": "43",
+      "question": "Was ist Azure Automation?",
+      "answer": [
+        ["Ein Dienst zur Automatisierung von Verwaltungsaufgaben", true],
+        ["Ein Speicherdienst", false],
+        ["Ein Containerdienst", false],
+        ["Ein Sicherheitsdienst", false]
+      ]
+    },
+    {
+      "id": "44",
+      "question": "Was ist der Hauptvorteil von Azure Reserved Instances?",
+      "answer": [
+        ["Kosteneinsparungen durch Vorauszahlung für virtuelle Maschinen", true],
+        ["Höhere Leistung für virtuelle Maschinen", false],
+        ["Höhere Sicherheit für virtuelle Netzwerke", false],
+        ["Serverloses Computing", false]
+      ]
+    },
+    {
+      "id": "45",
+      "question": "Was ist Azure Disk Encryption?",
+      "answer": [
+        ["Ein Dienst zur Verschlüsselung von virtuellen Maschinen und Festplatten", true],
+        ["Ein Dienst zur Überwachung des Netzwerkverkehrs", false],
+        ["Ein Containerverwaltungsdienst", false],
+        ["Ein Speicherdienst", false]
+      ]
+    },
+    {
+      "id": "46",
+      "question": "Was ist der Hauptzweck von Azure Sentinel?",
+      "answer": [
+        ["Ein Cloud-basiertes SIEM-Tool zur Sicherheitsüberwachung", true],
+        ["Ein Load-Balancing-Dienst", false],
+        ["Ein Speicherdienst", false],
+        ["Ein Entwicklungs- und Testwerkzeug", false]
+      ]
+    },
+    {
+      "id": "47",
+      "question": "Welcher Dienst in Azure ermöglicht die Durchführung von Disaster Recovery?",
+      "answer": [
+        ["Azure Site Recovery", true],
+        ["Azure Kubernetes Service", false],
+        ["Azure SQL Database", false],
+        ["Azure Functions", false]
+      ]
+    },
+    {
+      "id": "48",
+      "question": "Welcher Azure-Dienst ermöglicht die Verwaltung von Containern?",
+      "answer": [
+        ["Azure Container Instances", true],
+        ["Azure Storage", false],
+        ["Azure Active Directory", false],
+        ["Azure SQL Database", false]
+      ]
+    },
+    {
+      "id": "49",
+      "question": "Was ist die Funktion von Azure Application Gateway?",
+      "answer": [
+        ["Ein Dienst, der als Web Traffic Load Balancer dient", true],
+        ["Ein Dienst zur Verwaltung von Containerinstanzen", false],
+        ["Ein Speicherdienst", false],
+        ["Ein Identitätsverwaltungsdienst", false]
+      ]
+    },
+    {
+      "id": "50",
+      "question": "Was ermöglicht Azure Bastion?",
+      "answer": [
+        ["Sicheren RDP- und SSH-Zugriff auf virtuelle Maschinen ohne öffentliche IP", true],
+        ["Speicherverwaltung", false],
+        ["Netzwerküberwachung", false],
+        ["Serverloses Computing", false]
+      ]
+    }
+  ]
+}
